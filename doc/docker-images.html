@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>OCaml and OPAM Docker Container Images</title>
+  <meta name="description" content="Docker is a container manager that can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contain...">
+  <!-- todo: include this into main.css -->
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://ocamllabs.github.io//doc/docker-images.html">
+  <link rel="alternate" type="application/rss+xml" title="OCaml Labs" href="https://ocamllabs.github.io//feed.xml">
+</head>
+
+  <body>
+    <div class="page-content">
+      <div class="container">
+        <div class="three columns">
+          <header class="site-header">
+
+  <h2 class="logo">
+   <a href="/">OCaml Labs</a><br />
+   
+   <img width="100px" src="/assets/img/origami-camel.png" />
+   
+  </h2>
+
+  <div class="nav">
+    
+    <label for="menu-toggle" class="menu-icon">
+        <!--div data-icon="ei-navicon"></div-->
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="site-nav">
+      <nav>
+        <ul class="page-link">
+          <li><a href="/">Home</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/doc">Projects</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/people">People</a></li>
+          <li><a href="/papers">Papers</a></li>
+          <li><a href="/talks">Talks</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/feed.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+        </div>
+
+        <div class="nine columns" style="z-index:100;">
+          <div class="wrapper">
+            <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">OCaml and OPAM Docker Container Images</h1>
+  </header>
+
+  <div class="article-content">
+    <p><a href="http://docker.com">Docker</a> is a container manager that can build images automatically by reading the instructions from a <code class="highlighter-rouge">Dockerfile</code>. A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image. By calling <code class="highlighter-rouge">docker build</code> from your terminal, you can have Docker build your image step-by-step, executing the instructions successively. We maintain OCaml and OPAM images across a variety of Linux distributions, which can be used for <a href="/doc/ci.html">continuous integration testing</a> or for day-to-day code development using <a href="https://www.docker.com/products/docker">Docker for Mac or Windows</a>.</p>
+
+<h3 id="tldr-for-opam-use">TL;DR for OPAM use</h3>
+
+<ul>
+  <li>Base image for Debian available via <code class="highlighter-rouge">ocaml/opam</code>.  Use it in a Dockerfile via <code class="highlighter-rouge">FROM ocaml/opam</code> or directly via <code class="highlighter-rouge">docker run -it ocaml/opam</code> to get an interactive shell with OPAM initialised.</li>
+  <li>The images all contain an <code class="highlighter-rouge">opam</code> user with the default remote as <code class="highlighter-rouge">/home/opam/opam-repository</code>.  You can merge extra commits in there and run <code class="highlighter-rouge">opam update</code> (e.g. to test PRs).</li>
+  <li>See this <a href="https://github.com/avsm/ocaml-dockerfile/blob/master/.travis.yml">travis.yml</a> for an example of how to do multi-distro testing using the <a href="http://travis-ci.org">Travis CI service</a>.</li>
+  <li>Look at <a href="https://github.com/avsm/ocaml-docker-infra">opam install docker-infra</a> for CLI commands that generate Dockerfiles for your projects.</li>
+</ul>
+
+<h2 id="building-a-development-image">Building a development image</h2>
+
+<ul>
+  <li>The <a href="https://github.com/avsm/ocaml-dockerfile">ocaml-dockerfile</a> repository has a DSL to generate your own Dockerfiles programmatically.</li>
+  <li>The <a href="https://github.com/avsm/ocaml-docker-infra">ocaml-docker-infra</a> repository has CLI commands that generate Dockerfiles for your projects for common tasks such as building PRs from GitHub.</li>
+</ul>
+
+<h2 id="base-images">Base Images</h2>
+
+<p>There are several sets of layered images published on the Docker Hub:</p>
+
+<ul>
+  <li><a href="https://hub.docker.com/r/ocaml/ocaml/">ocaml/ocaml</a>:  The base OCaml images install the development tools and a system OCaml compiler that is sufficient to build OPAM.  These are not intended to be used directly by users since the exact version of the OCaml compiler depends on the distribution involved.</li>
+  <li><a href="https://hub.docker.com/r/ocaml/opam/">ocaml/opam</a>: The base OPAM images that provide an initialised OPAM environment with a specific version of the OCaml compiler, and a working <code class="highlighter-rouge">opam depext</code> plugin.</li>
+  <li><a href="https://hub.docker.com/r/ocaml/opam-dev/">ocaml/opam-dev</a>: The base OPAM2 images that provide an initialised OPAM2 environment with a specific version of the OCaml compiler, and a working <code class="highlighter-rouge">opam depext</code> plugin.  These use the latest snapshots of the OPAM2 development branch, with a migrated OPAM repository.</li>
+</ul>
+
+<p>Most users should primarily use the <code class="highlighter-rouge">ocaml/opam</code> endpoint for development. These images all have multiple Docker tags associated with them, each of which represents a combination of the distribution and OCaml version.  For example, <code class="highlighter-rouge">docker pull ocaml/opam:alpine-3.5_ocaml-4.04.0</code> will obtain the Alpine Linux 3.5 and OCaml 4.04.0 image.</p>
+
+<p>When building Dockerfiles from this image, the <a href="https://docs.docker.com/engine/reference/builder/#entrypoint">entrypoint</a> to the container runs the command via <code class="highlighter-rouge">opam config exec --</code>, which ensures that all of the locally installed OPAM libraries and environment variables are set.</p>
+
+<p>See the Docker Hub <a href="https://hub.docker.com/r/ocaml/opam/">README</a> for the full list of supported distributions and compiler snapshots.</p>
+
+<h3 id="using-these-images">Using these images</h3>
+
+<p>The Hub images are rebuilt weekly from the latest public <a href="https://github.com/ocaml/opam-repository">OPAM repository</a>. You can therefore use them as the basis for automated testing and local development.</p>
+
+<h4 id="automated-testing">Automated testing</h4>
+
+<p>Many continuous integration systems now support Docker containers, and so you can use them to test your software on several distributions.</p>
+
+<h5 id="travis-ci">Travis CI</h5>
+
+<p>The <a href="https://github.com/ocaml/ocaml-ci-scripts">ocaml/ocaml-ci-scripts</a> contains shell scripts and documentation about how to activate Travis builds.</p>
+
+<p>Inside there is support for multi-distro builds as well; see this example in <a href="https://github.com/avsm/ocaml-dockerfile/blob/master/.travis.yml">OCaml-Dockerfile</a> for an example of how to use it in Travis to build the same package on Debian, Ubuntu, CentOS, Fedora, Alpine and other Linux variants.</p>
+
+<h5 id="local-ci">Local CI</h5>
+
+<p>If you install Docker on your laptop, you can also run the <em>same</em> tests offline as well as via online CI.  This is useful to test things quickly before pushing them to GitHub.</p>
+
+<h5 id="on-prem-ci">On-prem CI</h5>
+
+<p>If you want to run the containers on your own servers, then some additional services can be brought up to provide the support:</p>
+
+<ul>
+  <li><em><a href="https://hub.docker.com/r/ocaml/opam-archive">ocaml/opam-archive</a></em> provides a web service running on port 8081 that serves the latest snapshot of the OPAM repository (including all the source code).</li>
+  <li><em><a href="https://hub.docker.com/r/avsm/opam-solver-proxy">avsm/opam-solver-proxy</a></em> provides a remote Aspcud solver service.  This is necessary for those distributions that do not natively package Aspcud.</li>
+</ul>
+
+<p>Both of these can be run inside a <a href="https://docs.docker.com/compose/">Docker Compose</a> file, or via the <a href="http://cloud.docker.com">Docker Cloud</a> service.  For example, a public version of the solver runs at <a href="http://solver.ocaml.io:8080">http://solver.ocaml.io:8080</a>, and is used by default in distributions that do not include Aspcud (such as Fedora 24 or CentOS 7).</p>
+
+<h3 id="contributing-new-base-images">Contributing new base images</h3>
+
+<ul>
+  <li>See various distros in README. TODO</li>
+  <li>Built by calling dockerfile-ocaml and pushing to ocaml/ocaml-dockerfiles and an autobuild on Docker Hub.</li>
+</ul>
+
+<p>New images are most welcome.</p>
+
+<p>Steps:</p>
+
+<ul>
+  <li>opam depext must work with the distro</li>
+  <li>add ocaml-dockerfile support for the new one</li>
+</ul>
+
+<hr />
+
+<h2>Recent Activity</h2>
+<div class="post_news">
+
+
+
+<div class="post_news_mini_header">News</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">17 Jan, 2017</span>:
+<a href="/events/2017/01/17/POPLBlog.html">POPL 2017 Liveblog</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">20 May, 2016</span>:
+<a href="/projects/2016/05/20/ARMed-reason.html">ARM-ed with Reason</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">18 May, 2016</span>:
+<a href="/releases/2016/05/18/datakit.html">Pipelines with OCaml - Managing version-controlled data with Datakit</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">17 May, 2016</span>:
+<a href="/releases/2016/05/17/a-new-reason-for-ocaml.html">A new Reason for OCaml</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">24 Mar, 2016</span>:
+<a href="/releases/2016/03/24/docker-for-mac-beta.html">Docker for Mac and Windows Beta</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="post_news_mini_header">Talks</div>
+
+<div class="post_title_light">
+  <i class="fa fa-users"></i>
+  <span class="post_date">14 Jun, 2016</span>:
+  <a href="/talks/#talks-ldnfunc16anil">The functional innards of Docker for Mac and Windows</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-users"></i>
+  <span class="post_date">23 Nov, 2015</span>:
+  <a href="/talks/#talks-dceu15">Unikernels, meet Docker!</a>
+</div>
+
+
+
+
+
+</div>
+
+<hr />
+
+  </div>
+
+</article>
+
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+        Content © 2012-2017 under a <a href="https://wiki.creativecommons.org/wiki/CC0">CC0</a> license.<br />
+        Theme based on <a href="https://github.com/wild-flame/jekyll-simple">Jekyll-Simple</a> by <a href="http://wildflame.me">wildflame</a>.
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        
+        <a href="https://github.com/ocamllabs"><i class="fa fa-github fa-2x"></i></a>
+        
+        
+        <a href="https://twitter.com/ocamllabs"><i class="fa fa-twitter fa-2x"></i></a>
+        
+      </section>
+    </div>
+  </div>
+</footer>
+ 
+    </div>
+  </body>
+</html>

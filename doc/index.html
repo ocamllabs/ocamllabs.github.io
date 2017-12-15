@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects</title>
+  <meta name="description" content="Watch our projects and progress by looking at the details below, and follow our OCaml Labs repository on GitHub. It doesn’t include all of the individual pro...">
+  <!-- todo: include this into main.css -->
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://ocamllabs.github.io//doc/">
+  <link rel="alternate" type="application/rss+xml" title="OCaml Labs" href="https://ocamllabs.github.io//feed.xml">
+</head>
+
+  <body>
+    <div class="page-content">
+      <div class="container">
+        <div class="three columns">
+          <header class="site-header">
+
+  <h2 class="logo">
+   <a href="/">OCaml Labs</a><br />
+   
+   <img width="100px" src="/assets/img/origami-camel.png" />
+   
+  </h2>
+
+  <div class="nav">
+    
+    <label for="menu-toggle" class="menu-icon">
+        <!--div data-icon="ei-navicon"></div-->
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="site-nav">
+      <nav>
+        <ul class="page-link">
+          <li><a href="/">Home</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/doc">Projects</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/people">People</a></li>
+          <li><a href="/papers">Papers</a></li>
+          <li><a href="/talks">Talks</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/feed.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+        </div>
+
+        <div class="nine columns" style="z-index:100;">
+          <div class="wrapper">
+            <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Projects</h1>
+  </header>
+
+  <div class="article-content">
+    <p>Watch our projects and progress by looking at the details below, and follow our OCaml Labs repository on GitHub. It doesn’t include all of the individual projects, which often sit in individual repositories until release.</p>
+
+<h2 id="ocaml-compiler">OCaml Compiler</h2>
+
+<p>This refers to the core compiler toolchain, the <a href="https://caml.inria.fr/">OCaml language</a> and runtime system. Our work includes daily maintenance such as bug fixes and long term improvements to the type system and runtime libraries. We are actively engaging with the wider OCaml community to ensure that improvements and modifications we propose are thoroughly discussed, well-formulated and maintainable. Recent projects include significant work towards multicore support for parallelism and concurrency in OCaml together with greater facilitation for metaprogramming approaches.</p>
+
+<p>Major efforts in this space include:</p>
+
+<ul>
+  <li><a href="/doc/multicore.html">Multicore OCaml</a></li>
+  <li><a href="/doc/effects.html">Algebraic Effects</a></li>
+  <li><a href="/doc/reagents.html">Reagents</a></li>
+  <li><a href="/doc/macros.html">Macros</a></li>
+  <li><a href="/doc/ppx.html">PPX Syntax Extensions</a></li>
+  <li><a href="/doc/implicits.html">Modular Implicits</a></li>
+  <li><a href="/doc/afl.html">AFL</a></li>
+  <li><a href="/doc/dwarf-debugging.html">DWARF GDB Debugging</a></li>
+  <li><a href="/doc/namespaces-module-aliases.html">Namespaces and Module Aliases</a></li>
+  <li><a href="/doc/higher-kinded-polymorphism.html">Higher-kinded Polymorphism</a></li>
+  <li><a href="/doc/exceptions.html">Exception Matching</a></li>
+  <li><a href="/doc/open-types.html">Extensible Open Types</a></li>
+  <li><a href="/doc/java.html">OCaml-Java</a></li>
+  <li><a href="/doc/syntax-extensions.html">Syntax Extensions</a></li>
+  <li><a href="/doc/record-disambiguation.html">Record Disambiguation</a></li>
+</ul>
+
+<h2 id="ocaml-platform">OCaml Platform</h2>
+
+<p>The Platform combines the core OCaml compiler with a coherent set of libraries, tools and documentation. We look to large-scale users of OCaml to guide the direction of development in this area, including <a href="https://blogs.janestreet.com/category/ocaml/">Jane Street</a>, <a href="https://mirage.io/">MirageOS</a>, <a href="https://blog.docker.com/2016/06/docker-mac-windows-public-beta/">Docker</a> and <a href="https://github.com/facebook/reason">Facebook</a>. Recent developments have focussed on the developer experience; tooling improvements around packaging, build and test infrastructure; and support for different operating systems and infrastructures.</p>
+
+<ul>
+  <li><a href="/doc/platform.html">The OCaml Platform</a>: All details of Platform features</li>
+</ul>
+
+<h2 id="ecosystem">Ecosystem</h2>
+
+<h3 id="mirageos">MirageOS</h3>
+
+<p><a href="https://mirage.io">MirageOS</a> is a library operating system written in OCaml that can be used to build unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms.</p>
+
+<p>There is a vibrant and growing ecosystem around constructing libraries for MirageOS that are built in pure OCaml with minimal external dependencies - this unlocks that functionality in all of the target architectures that it supports. MirageOS depends on a number of components that are developed and maintained by OCaml Labs, some of which form the <a href="/doc/platform.html">OCaml Platform</a> and some which are independent.</p>
+
+<ul>
+  <li><a href="/doc/canopy.html">Canopy</a></li>
+</ul>
+
+<h2 id="databox">DataBox</h2>
+
+<p>The <a href="http://www.databoxproject.uk">DataBox</a> is a means of enhancing accountability and giving individuals control over the use of their personal data.
+The Databox envisions an open-source personal networked device, augmented by cloud-hosted services, that collates, curates, and mediates access to an individual’s personal data by verified and audited third party applications and services.</p>
+
+<ul>
+  <li><a href="/doc/nqsb.html">Not Quite So Broken libraries</a></li>
+  <li><a href="/doc/databox.html">DataBox</a></li>
+</ul>
+
+<h3 id="consensus-systems">Consensus Systems</h3>
+
+<ul>
+  <li><a href="/doc/consensus.html">Consensus Systems</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+        Content © 2012-2017 under a <a href="https://wiki.creativecommons.org/wiki/CC0">CC0</a> license.<br />
+        Theme based on <a href="https://github.com/wild-flame/jekyll-simple">Jekyll-Simple</a> by <a href="http://wildflame.me">wildflame</a>.
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        
+        <a href="https://github.com/ocamllabs"><i class="fa fa-github fa-2x"></i></a>
+        
+        
+        <a href="https://twitter.com/ocamllabs"><i class="fa fa-twitter fa-2x"></i></a>
+        
+      </section>
+    </div>
+  </div>
+</footer>
+ 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OCaml Labs</title>
+    <description>OCaml Labs is an initiative within the Cambridge Computer Laboratory started by Anil Madhavapeddy in 2011 to promote research, growth and collaboration within the wider OCaml community.
+</description>
+    <link>https://ocamllabs.github.io//</link>
+    <atom:link href="https://ocamllabs.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 15 Dec 2017 10:38:32 +0000</pubDate>
+    <lastBuildDate>Fri, 15 Dec 2017 10:38:32 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+    
+      <item>
+        <title>testing ocaml-migrate-parsetree with `ppx_deriving_crowbar`</title>
+        <description>&lt;h1 id=&quot;testing-ocaml-migrate-parsetree-with-ppx_deriving_crowbar&quot;&gt;testing ocaml-migrate-parsetree with &lt;code class=&quot;highlighter-rouge&quot;&gt;ppx_deriving_crowbar&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/stedolan/crowbar/issues/7&quot;&gt;Early feedback&lt;/a&gt; on Crowbar suggested that some automated method of constructing generators might be useful.  It wasn’t necessary to do this immediately for &lt;a href=&quot;https://github.com/yomimono/ocaml-test-stdlib&quot;&gt;the demonstration of testing the OCaml standard library’s Map and Set functors&lt;/a&gt; with Crowbar, but what about more complicated types?  Like, say, the complicated and heavily mutually recursive types that compose &lt;a href=&quot;https://github.com/ocaml/ocaml/blob/trunk/parsing/parsetree.mli&quot;&gt;OCaml parsetrees&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;With an eye to solving this problem, I looked into a few options and finally settled on using &lt;a href=&quot;https://github.com/ocaml-ppx/ppx_deriving&quot;&gt;ppx_deriving&lt;/a&gt;.  &lt;code class=&quot;highlighter-rouge&quot;&gt;ppx_deriving&lt;/code&gt; is “a library simplifying type-driven code generation”, and not just for the author of an automatic code-generating tool, but also for the user who might wish to use such tools, or the maintainer who wants to be sure that multiple tools can be used together easily.  Using &lt;code class=&quot;highlighter-rouge&quot;&gt;ppx_deriving&lt;/code&gt;, one can annotate a type &lt;code class=&quot;highlighter-rouge&quot;&gt;t&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;type t = {
+  a : int;
+  b : Parsetree.core_type;
+} [@@deriving myplugin]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and &lt;code class=&quot;highlighter-rouge&quot;&gt;myplugin&lt;/code&gt; will have a chance to generate code based on the structure of &lt;code class=&quot;highlighter-rouge&quot;&gt;t&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was able to create such a tool for Crowbar, creatively named &lt;a href=&quot;https://github.com/yomimono/ppx_deriving_crowbar&quot;&gt;ppx_deriving_crowbar&lt;/a&gt;.  The plugin is still in an experimental state, but mostly fulfills the requirements for &lt;code class=&quot;highlighter-rouge&quot;&gt;ppx_deriving&lt;/code&gt; plugins set out in that project’s README.  It is capable of making generators for &lt;a href=&quot;https://github.com/yomimono/ocaml-test-omp/blob/primary/test/parsetree_405.ml&quot;&gt;OCaml 4.05 parsetrees&lt;/a&gt; and certificates for the &lt;a href=&quot;https://github.com/mirleft/ocaml-x509&quot;&gt;x509 library&lt;/a&gt;, and probably much more!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/12/14/DerivingCrowbar.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/12/14/DerivingCrowbar.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>fuzzing</category>
+        
+        <category>afl</category>
+        
+        <category>crowbar</category>
+        
+        <category>ppx</category>
+        
+        <category>tooling</category>
+        
+        <category>testing</category>
+        
+        <category>platform</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Windows Unicode Support - A Bug-Fix 12 Years in the Making</title>
+        <description>&lt;p&gt;(Only) 12 years after the initial Mantis issues - and with thanks to a huge community effort - we now have Windows support in the OCaml 4.06.0 release candidate! Read more in David’s &lt;a href=&quot;http://www.dra27.uk/blog/platform/2017/10/30/ocaml-unicode.html&quot;&gt;detailed blog post&lt;/a&gt; and follow the conversation on our &lt;a href=&quot;https://discuss.ocaml.org/t/windows-unicode-support-in-ocaml-4-06-0/1034&quot;&gt;Discuss forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/10/30/WindowsUnicode.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/10/30/WindowsUnicode.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>windows</category>
+        
+        <category>unicode</category>
+        
+        <category>release</category>
+        
+        <category>mantis</category>
+        
+        <category>github</category>
+        
+        <category>travis</category>
+        
+        <category>ci</category>
+        
+        <category>platform</category>
+        
+        <category>ecosystem</category>
+        
+        <category>tooling</category>
+        
+        <category>testing</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Fuzzing for CI Workflows</title>
+        <description>&lt;p&gt;Stephen Dolan recently presented &lt;a href=&quot;https://github.com/stedolan/crowbar&quot;&gt;crowbar&lt;/a&gt; at the 2017 OCaml Workshop. Crowbar bridges a gap between property-based testing frameworks and instrumentation-based automated testing techniques.  Tests written in Crowbar can be executed by the wildly popular and successful &lt;a href=&quot;http://lcamtuf.coredump.cx/afl&quot;&gt;American Fuzzy Lop&lt;/a&gt; fuzzer.  (For more on testing OCaml code with AFL, see &lt;a href=&quot;https://github.com/stedolan/ocaml-afl-persistent/blob/master/README.md&quot;&gt;the afl-persistent README&lt;/a&gt;, Crowbar’s &lt;a href=&quot;https://github.com/stedolan/crowbar/tree/master/examples&quot;&gt;examples&lt;/a&gt;, or a user’s &lt;a href=&quot;https://somerandomidiot.com/blog/2017/04/26/crowbar-dhcp/&quot;&gt;DHCP library tests&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;American Fuzzy Lop provides a command-line tool for running tests, &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt;.  &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; will invoke one test instance to run a given test continuously on different inputs, keeping track of which inputs generated crashes (or, for Crowbar, were counterexamples for a given proposition).  The default settings for &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; don’t terminate when crashes are discovered, or when new execution paths haven’t been found.  The user is expected to terminate all the instances themselves when they’re satisfied that enough work has been done (as indicated, colorfully, in the excellent GUI), and then inspect the files left by &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; during the run.&lt;/p&gt;
+
+&lt;p&gt;The workflow is a great fit for a security researcher trying to find vulnerabilities in existing, released software (especially one who wants to assign work to all of the CPUs they have access to explicitly), but it doesn’t fit well into a continuous testing workflow at all.  &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; is a tool for running Crowbar tests in your CI environment, so fuzzing is as easy as unit testing – both to perform, and to inform decisions with.&lt;/p&gt;
+
+&lt;h2 id=&quot;goals-for-ocaml-bun&quot;&gt;Goals for &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deliver “counterexample found, here it is” or “no counterexamples found in the allotted time” in automated run contexts.&lt;/li&gt;
+  &lt;li&gt;Require no persistent storage for the user to be able to analyze and reproduce crash inputs and execution.&lt;/li&gt;
+  &lt;li&gt;Make full use of available resources both in shared cloud environments and self-hosted test environments.&lt;/li&gt;
+  &lt;li&gt;Play nicely with container testing environments.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whats-ocaml-bun-do-so-far&quot;&gt;What’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; do so far?&lt;/h2&gt;
+
+&lt;h3 id=&quot;easy-fixes&quot;&gt;Easy Fixes&lt;/h3&gt;
+
+&lt;p&gt;Some of these problems are fixable with the default &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; by just setting some environment variables: &lt;code class=&quot;highlighter-rouge&quot;&gt;AFL_BENCH_UNTIL_CRASH&lt;/code&gt; causes &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; to exit after finding one crash, and &lt;code class=&quot;highlighter-rouge&quot;&gt;AFL_EXIT_WHEN_DONE&lt;/code&gt; causes &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; to exit “when all existing paths have been fuzzed and there were no new finds for a while” (in other words: as far as we can tell, we’re unlikely to find a counterexample to the properties being tested).&lt;/p&gt;
+
+&lt;p&gt;For non-parallel &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; runs, these environment variables and a bit of shell scripting are sufficient to integrate &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; into a traditional CI workflow, but this doesn’t make good use of the available resources in most contexts - even free-tier TravisCI jobs have two CPU cores available, and we’d really like to use them.&lt;/p&gt;
+
+&lt;h3 id=&quot;parallelism&quot;&gt;Parallelism&lt;/h3&gt;
+
+&lt;p&gt;A single &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; instance wishes to bind to a particular free CPU core and execute there; in order to use multiple cores, one needs to launch multiple &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; instances (but not too many).  &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; instances can be easily configured to share information about their exploration of the available paths, but not to coordinate on exit conditions: if one &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; finds a crash and exits, the others will continue fuzzing until they find another crash or are satisfied that no others exist.  &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; will start as many &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; instances in parallel as AFL’s own tools report can usefully run on a system, then force all of the instances to finish once one reports that it’s found a crash.&lt;/p&gt;
+
+&lt;h3 id=&quot;reporting-results&quot;&gt;Reporting Results&lt;/h3&gt;
+
+&lt;p&gt;When a particular piece of input is discovered to cause a crash, &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; saves it in a directory; the analyst running the test is expected to re-run the test with this input and observe the crash behavior.  This workflow doesn’t work at all in ephemeral environments like cloud-based CI platforms, where the person working on the software has no access to the filesystem used by the test system.  &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; exfiltrates any discovered inputs that caused crashes by outputting them in a copy-paste friendly format, so that even if you can only get data out from a web console, you’ll still be able to get the input that caused the crash.&lt;/p&gt;
+
+&lt;h1 id=&quot;fun-modules-to-test-the-ocaml-standard-library&quot;&gt;Fun modules to test: the OCaml standard library&lt;/h1&gt;
+
+&lt;p&gt;A test framework isn’t very useful without something to test.  OCaml 4.06.0 recently entered feature freeze and includes new functions in the standard library, so it seemed reasonable to target some interesting modules in that codebase.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/yomimono/ocaml-test-stdlib&quot;&gt;ocaml-test-stdlib&lt;/a&gt; repository contains some Crowbar tests for the Set and Map modules, including tests adapted from the &lt;a href=&quot;https://github.com/ocaml/ocaml/blob/d10f0857a40001f65f4cc00f6ee187cbd5227738/testsuite/tests/basic/maps.ml#L34&quot;&gt;unit tests for &lt;code class=&quot;highlighter-rouge&quot;&gt;Map.update&lt;/code&gt;&lt;/a&gt; added for 4.06.0 .  These tests use several modules from the standard library as inputs for the Make functors of Map and Set.  Int, String, Char, Nativeint, and Uchar are all potential candidates for Map keys or values, as well as Set elements.  Tests for all of these modules (although not all combinations for Map keys and values) are generated, and have an equal chance of being chosen for execution.&lt;/p&gt;
+
+&lt;h2 id=&quot;stdlib-tests-as-a-proxy-for-ci&quot;&gt;stdlib tests as a proxy for CI&lt;/h2&gt;
+
+&lt;p&gt;Testing the OCaml standard library in a feature-frozen release isn’t a perfect proxy for the workflow we’d like to support in &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt;.  Fortunately, continually iterating on the tests themselves is a fairly good proxy for iterating on the code behind them - we have many deploy cycles, and sometimes tests have bugs in them which necessitate retaining and using the crashy input to make improvements.&lt;/p&gt;
+
+&lt;p&gt;So far, we’ve run these tests on a machine with 8 CPU cores, and found no property violations in either beta of 4.06.0.  We ran the same set of tests against the known-buggy 4.04.0, and were pleased to see many property violations in the Set module, so we’re confident that at least some classes of property violation are detected.&lt;/p&gt;
+
+&lt;h1 id=&quot;where-this-tooling-fits&quot;&gt;Where This Tooling Fits&lt;/h1&gt;
+
+&lt;p&gt;We can’t prove that an implementation is correct with &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt;, or tools built on similar technologies.  Instead, we hope to provide a tool which:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fits easily into CI workflows&lt;/li&gt;
+  &lt;li&gt;requires little developer effort to write useful tests&lt;/li&gt;
+  &lt;li&gt;rewards any test effort with outsized likelihood of discovering useful errors&lt;/li&gt;
+  &lt;li&gt;delivers results with a minimum of fuss for maximum convenience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope that the ease of using &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;afl-fuzz&lt;/code&gt; is complementary to approaches which require more developer involvement and attention like verification.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-bun&lt;/code&gt; is currently in active development and much about it may change before settling, but if you’d like to give it a try, you are welcome to &lt;a href=&quot;https://github.com/yomimono/ocaml-bun&quot;&gt;visit the repository&lt;/a&gt;!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/10/24/Bun.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/10/24/Bun.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>fuzzing</category>
+        
+        <category>afl</category>
+        
+        <category>crowbar</category>
+        
+        <category>travis</category>
+        
+        <category>ci</category>
+        
+        <category>platform</category>
+        
+        <category>tooling</category>
+        
+        <category>testing</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Testing Your Own Fork With OCaml's GitHub CI</title>
+        <description>&lt;p&gt;There are various Continuous Integration (CI) systems monitoring OCaml. The most publicly visible of these are the two which run on our GitHub repository: &lt;a href=&quot;https://travis-ci.org/ocaml/ocaml/branches&quot;&gt;Travis&lt;/a&gt;, which tests GNU/Linux in 32-bit and 64-bit configurations and also performs a few sanity checks on pull requests, and &lt;a href=&quot;https://ci.appveyor.com/project/avsm/ocaml/history&quot;&gt;AppVeyor&lt;/a&gt; which tests some of the native Windows ports.&lt;/p&gt;
+
+&lt;p&gt;Between branching and a new release of OCaml there is a large spike in activity, and our CI systems can become overloaded when running across many PRs and branches. We’d like to encourage contributors to enable Travis and AppVeyor on their own forks of OCaml prior to making pull requests where possible - David Allsopp explains how in this &lt;a href=&quot;http://www.dra27.uk/blog/platform/2017/09/27/ocaml-github-ci.html&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join the wider discussion at &lt;a href=&quot;https://discuss.ocaml.org/t/setting-up-appveyor-and-travis-for-your-own-ocaml-fork/892&quot;&gt;discuss.ocaml.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/09/27/GithubCI.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/09/27/GithubCI.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>appveyor</category>
+        
+        <category>travis</category>
+        
+        <category>ci</category>
+        
+        <category>platform</category>
+        
+        <category>windows</category>
+        
+        <category>ecosystem</category>
+        
+        <category>tooling</category>
+        
+        <category>testing</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Platforms, Packaging, Progress</title>
+        <description>&lt;p&gt;Richard Mortier recently decided to refresh and update his &lt;a href=&quot;https://github.com/mor1/ocal/&quot;&gt;ocal&lt;/a&gt; command-line calendaring package, and took the opportunity to use the new packaging and build features present in &lt;a href=&quot;https://opam.ocaml.org/&quot;&gt;opam&lt;/a&gt;: &lt;a href=&quot;https://github.com/dbuenzli/topkg&quot;&gt;topkg&lt;/a&gt; and &lt;a href=&quot;https://github.com/janestreet/jbuilder&quot;&gt;jbuilder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mort.io/blog/2017/08/28/past-present-future/&quot;&gt;This post&lt;/a&gt; from Mort details the process of removing remnants of older features such as &lt;a href=&quot;https://github.com/ocaml/oasis&quot;&gt;Oasis&lt;/a&gt;, creating new jbuild files and topkg skeletons, and finally preparing and publishing a release into opam.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/09/04/OcalPlatformPackaging.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/09/04/OcalPlatformPackaging.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>platform</category>
+        
+        <category>build</category>
+        
+        <category>jbuilder</category>
+        
+        <category>opam</category>
+        
+        <category>ocal</category>
+        
+        <category>topkg</category>
+        
+        <category>tooling</category>
+        
+        <category>oasis</category>
+        
+        <category>package</category>
+        
+        <category>mirage</category>
+        
+        <category>ecosystem</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Merlin 3.0.0 on Windows</title>
+        <description>&lt;p&gt;David Allsopp has previously contributed patches for native Windows support to Merlin, and after the release of &lt;a href=&quot;http://opam.ocaml.org/packages/merlin/merlin.3.0.0/&quot;&gt;Merlin 3.0.0&lt;/a&gt; back in July, he’s been working with Frédéric Bour to port the new features to Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.dra27.uk/blog/platform/2017/08/24/merlin-3-on-windows.html&quot;&gt;This post&lt;/a&gt; from David explores some of the challenges for cross-platform development between Windows and Unix systems.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/08/25/Merlin3WindowsSupport.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/08/25/Merlin3WindowsSupport.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>platform</category>
+        
+        <category>merlin</category>
+        
+        <category>editor</category>
+        
+        <category>windows</category>
+        
+        <category>ecosystem</category>
+        
+        <category>tooling</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>A New Implementation of Git</title>
+        <description>&lt;p&gt;Displaying his own true sense of style, Romain Calascibetta added an incredibly detailed (and hilariously funny) PR for integrating his new Git implementation into &lt;a href=&quot;https://github.com/mirage/ocaml-git&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-git&lt;/code&gt;&lt;/a&gt; - using the new implementation!&lt;/p&gt;
+
+&lt;p&gt;For the last ~6 months, Romain has been working hard to improve &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-git&lt;/code&gt;: decoding/encoding PACK files; implementing the &lt;code class=&quot;highlighter-rouge&quot;&gt;git gc&lt;/code&gt; command; &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;; and HTTP protocol.&lt;/p&gt;
+
+&lt;p&gt;He is currently integrating this work into the existing &lt;code class=&quot;highlighter-rouge&quot;&gt;ocaml-git&lt;/code&gt; implementation using a bottom-to-top method, and as the new additions will break compatibility, he’s asked for community involvement to help decide aspects of the API and forward development.&lt;/p&gt;
+
+&lt;p&gt;If you want to know more about “the mystery of the chocolate”, read the &lt;a href=&quot;https://github.com/mirage/ocaml-git/pull/227&quot;&gt;full PR&lt;/a&gt; and contribute your thoughts!&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//rfc/2017/07/27/NewGitRFC.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//rfc/2017/07/27/NewGitRFC.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>git</category>
+        
+        <category>ocamlgit</category>
+        
+        <category>irmin</category>
+        
+        <category>mirageos</category>
+        
+        <category>mirage</category>
+        
+        <category>ecosystem</category>
+        
+        <category>tooling</category>
+        
+        <category>http</category>
+        
+        <category>serialisation</category>
+        
+        <category>pack</category>
+        
+        <category>sirodepac</category>
+        
+        <category>faraday</category>
+        
+        <category>angstrom</category>
+        
+        <category>farfadet</category>
+        
+        <category>decompress</category>
+        
+        <category>digestif</category>
+        
+        
+        <category>RFC</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Major Releases of Cohttp, Conduit, DNS and TCP/IP Libraries</title>
+        <description>&lt;p&gt;Whilst &lt;a href=&quot;https://gist.github.com/avsm/9a7ca626f8fe2154525561d9b196ce47&quot;&gt;porting a large portion of Mirage libraries&lt;/a&gt; to use &lt;a href=&quot;https://github.com/janestreet/jbuilder&quot;&gt;Jbuilder&lt;/a&gt;, the &lt;a href=&quot;https://mirage.io/&quot;&gt;MirageOS&lt;/a&gt; core team realised it was also a great opportunity to reorganise the package structure of some specific libraries, update/remove old code and improve overall functionality.&lt;/p&gt;
+
+&lt;p&gt;Many of the new releases include popular libraries used by projects other than MirageOS, and the maintainers have helpfully provided details on what has changed, specific improvements and adjustments users will need to make in order to use them. These libraries include &lt;a href=&quot;https://github.com/mirage/ocaml-cohttp&quot;&gt;Cohttp&lt;/a&gt;, &lt;a href=&quot;https://github.com/mirage/ocaml-conduit&quot;&gt;Conduit&lt;/a&gt;, &lt;a href=&quot;https://github.com/mirage/ocaml-dns&quot;&gt;DNS&lt;/a&gt; and &lt;a href=&quot;https://github.com/mirage/mirage-tcpip&quot;&gt;TCP/IP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Main repackaging improvements to these libraries include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Optional dependencies removed from opam packaging: No need to specify a long set of packages to activate a specific compilation of features&lt;/li&gt;
+  &lt;li&gt;Ported to use &lt;a href=&quot;https://github.com/janestreet/jbuilder&quot;&gt;Jbuilder&lt;/a&gt;: This speeds up builds and makes use of modern OCaml features&lt;/li&gt;
+  &lt;li&gt;No more camlp4! Camlp4 has been removed entirely, and the replacement &lt;a href=&quot;https://github.com/janestreet/ppx_driver&quot;&gt;ppx_driver&lt;/a&gt; makes use of &lt;a href=&quot;http://ocamllabs.io/projects/2017/02/15/ocaml-migrate-parsetree.html&quot;&gt;ocaml migrate parsetree&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Get involved:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Read the &lt;a href=&quot;https://discuss.ocaml.org/t/ann-major-releases-of-cohttp-conduit-dns-tcpip/571&quot;&gt;release notes&lt;/a&gt; for a full list of changes and incompatibilities&lt;/li&gt;
+  &lt;li&gt;Update your own code in line with these versions to avoid constraining users&lt;/li&gt;
+  &lt;li&gt;Join the conversation on the &lt;a href=&quot;https://discuss.ocaml.org/t/ann-major-releases-of-cohttp-conduit-dns-tcpip/571/2&quot;&gt;OCaml Discuss Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//releases/2017/07/19/MirageOSLibraryReleases.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//releases/2017/07/19/MirageOSLibraryReleases.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>opam</category>
+        
+        <category>mirage</category>
+        
+        <category>mirageos</category>
+        
+        <category>cohttp</category>
+        
+        <category>tcpip</category>
+        
+        <category>conduit</category>
+        
+        <category>jbuilder</category>
+        
+        <category>camlp4</category>
+        
+        
+        <category>Releases</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>OCaml 4.05.0 Released</title>
+        <description>&lt;p&gt;Following some minor releases in the last month, &lt;a href=&quot;https://discuss.ocaml.org/t/ann-ocaml-4-05-0-released/541&quot;&gt;OCaml 4.05.0 was released today&lt;/a&gt; and is available as an opam switch, or from &lt;a href=&quot;https://caml.inria.fr/pub/distrib/ocaml-4.05/&quot;&gt;source&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The release comprises over 130 &lt;a href=&quot;https://github.com/ocaml/ocaml/blob/4.05.0/Changes&quot;&gt;changes&lt;/a&gt;, with a few breaking existing programs. General changes include language optimisations, runtime and type system improvements, bug fixing and some internal compiler-libs alterations.&lt;/p&gt;
+
+&lt;p&gt;More specifically, the &lt;a href=&quot;http://caml.inria.fr/pub/docs/manual-ocaml/&quot;&gt;OCaml manual&lt;/a&gt; has been updated, with dead links removed and a new document detailing how to contribute upstream, and there have been lots of enhancements to the OCaml compiler. A lot of work has gone into Makefile factorization for the compiler distribution build system, with Sébastien Hinderer harmonizing the build rules and merging the Unix and Windows build systems. The OCaml compiler user-interface and associated warnings have also been developed, with better, more consistent error reports and recognition for extra arguments and variables.&lt;/p&gt;
+
+&lt;p&gt;At least two of the PRs upstreamed started during &lt;a href=&quot;http://ocamllabs.io/compiler-hacking/&quot;&gt;OCaml Compiler Hack events&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ocaml/ocaml/pull/1035&quot;&gt;Improving print exceptions in installed custom printers&lt;/a&gt; from Tadeu Zagallo in &lt;a href=&quot;http://reynard.io/2017/02/10/CompHackSummary.html&quot;&gt;February 2017&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ocaml/ocaml/pull/902&quot;&gt;Truncate in Buffer module&lt;/a&gt; from Dhruv Makwana in &lt;a href=&quot;http://reynard.io/2016/11/16/CompHack.html&quot;&gt;November 2016&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are several contributions from OCaml Labs, with David Allsopp, Frédéric Bour, Daniel Bünzli, Stephen Dolan, Hannes Mehnert, Gabriel de Perthuis, Mark Shinwell, KC Sivaramakrishnan and Leo White all heavily involved in fixes, review and discussion. Full details can be found in the &lt;a href=&quot;https://github.com/ocaml/ocaml/blob/4.05.0/Changes&quot;&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//releases/2017/07/13/ocaml4.05.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//releases/2017/07/13/ocaml4.05.html</guid>
+        
+        <category>ocaml</category>
+        
+        <category>opam</category>
+        
+        <category>compiler</category>
+        
+        <category>skylake</category>
+        
+        <category>intel</category>
+        
+        
+        <category>Releases</category>
+        
+      </item>
+    
+    
+    
+      <item>
+        <title>Intel Hyper-Threading Bug Uncovered by OCaml Developers</title>
+        <description>&lt;p&gt;The OCaml community has helped uncover a serious microcode defect on Intel Skylake and Kaby Lake processors with hyper-threading enabled. Debian have issued a &lt;a href=&quot;https://lists.debian.org/debian-devel/2017/06/msg00308.html&quot;&gt;security advisory&lt;/a&gt; encouraging users of systems with the affected processors to apply the BIOS/UEFI update, or disable hyper-threading.&lt;/p&gt;
+
+&lt;p&gt;Related issues have been under investigation since 2016, when OCaml developers began experiencing unpredictable behaviour when using the Intel Skylake and Kaby Lake CPUs. As detailed on the &lt;a href=&quot;https://caml.inria.fr/mantis/view.php?id=7452&quot;&gt;Mantis issue&lt;/a&gt;, these included “random crashes from the compiler, and more rarely, occurrences of bad assembly code being generated (which as failed to compile), or instruction being trapped at runtime while the compiler is running.” The issues were linked to hyper-threading, and mentioned to Intel back in March 2017, with no reply from them directly. Further investigation followed over the next few months, with developers continuing to reproduce the bug successfully, until a possible fix for the microcode defect was &lt;a href=&quot;http://metadata.ftp-master.debian.org/changelogs/non-free/i/intel-microcode/intel-microcode_3.20170511.1_changelog&quot;&gt;noticed&lt;/a&gt;. The fix solved the OCaml issue, and it was quickly passed onto the Debian developers.&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;http://ocamllabs.io/people/&quot;&gt;Mark Shinwell&lt;/a&gt; for liaising with Intel and the Debian developers to help surface this issue.&lt;/p&gt;
+
+&lt;p&gt;Follow the conversation on the &lt;a href=&quot;https://lists.debian.org/debian-devel/2017/06/msg00308.html&quot;&gt;Debian mailing list&lt;/a&gt; and &lt;a href=&quot;https://news.ycombinator.com/item?id=14630183&quot;&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+        <link>https://ocamllabs.github.io//general/2017/06/26/IntelHyperThreadBug.html</link>
+        <guid isPermaLink="true">https://ocamllabs.github.io//general/2017/06/26/IntelHyperThreadBug.html</guid>
+        
+        <category>intel</category>
+        
+        <category>ocaml</category>
+        
+        <category>debian</category>
+        
+        <category>compiler</category>
+        
+        <category>hyper-threading</category>
+        
+        
+        <category>General</category>
+        
+      </item>
+    
+    
+  </channel>
+</rss>

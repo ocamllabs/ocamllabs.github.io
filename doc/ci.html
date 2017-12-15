@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Continuous Integration for OCaml</title>
+  <meta name="description" content="This is a work in progress document, contact anil@recoil.org">
+  <!-- todo: include this into main.css -->
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://ocamllabs.github.io//doc/ci.html">
+  <link rel="alternate" type="application/rss+xml" title="OCaml Labs" href="https://ocamllabs.github.io//feed.xml">
+</head>
+
+  <body>
+    <div class="page-content">
+      <div class="container">
+        <div class="three columns">
+          <header class="site-header">
+
+  <h2 class="logo">
+   <a href="/">OCaml Labs</a><br />
+   
+   <img width="100px" src="/assets/img/origami-camel.png" />
+   
+  </h2>
+
+  <div class="nav">
+    
+    <label for="menu-toggle" class="menu-icon">
+        <!--div data-icon="ei-navicon"></div-->
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="site-nav">
+      <nav>
+        <ul class="page-link">
+          <li><a href="/">Home</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/doc">Projects</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/people">People</a></li>
+          <li><a href="/papers">Papers</a></li>
+          <li><a href="/talks">Talks</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/feed.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+        </div>
+
+        <div class="nine columns" style="z-index:100;">
+          <div class="wrapper">
+            <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Continuous Integration for OCaml</h1>
+  </header>
+
+  <div class="article-content">
+    <p><em>This is a work in progress document, contact anil@recoil.org</em></p>
+
+<p>The OCaml project has a lot of physical infrastructure to host services and run automated continuous integration tests.  OCaml Labs maintains a bunch of these, mainly centred around the <a href="https://github.com/docker/datakit">DataKit CI</a> continuous integration system released by Docker.  This page describes how the CI works, where it is deployed, and what the roadmap for next steps are.</p>
+
+<h2 id="background">Background</h2>
+
+<p>The DataKit CI is a domain-specific language to describe continuous integration tests that should run on every commit to a repository.  The test descriptions define tests that take a precise set of Git inputs as their inputs, run functions across them, and report the results as GitHub <a href="https://developer.github.com/v3/repos/statuses/">statuses</a>.  If any changes are pushed to the source code repositories being tracked, the tests are rerun on the new code.  Results are stored in Git branches, so that they can be checked out individually and inspected to help diagnose where failures came from.</p>
+
+<p>The details of DataKit CI are documented in the <a href="https://github.com/docker/datakit/tree/master/ci">repository</a>, and the rest of this page describes the OCaml, OPAM and MirageOS test pieces specifically, and their relevance to OCaml developers.</p>
+
+<ul>
+  <li>Source code: <a href="https://github.com/avsm/mirage-ci">https://github.com/avsm/mirage-ci</a></li>
+</ul>
+
+<h2 id="deployments">Deployments</h2>
+
+<p>TODO</p>
+
+<ul>
+  <li><a href="https://ci.ocaml.io">https://ci.ocaml.io</a></li>
+  <li><a href="https://ci.mirage.io">https://ci.mirage.io</a></li>
+</ul>
+
+<h2 id="development">Development</h2>
+
+<h3 id="maintainers-guide">Maintainers Guide</h3>
+
+<h4 id="opam-repository">OPAM Repository</h4>
+
+<p>TODO</p>
+
+<ul>
+  <li>What tests are run</li>
+  <li>What the UI does</li>
+  <li>How to checkout the state code</li>
+</ul>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<h3 id="phase-1">Phase 1</h3>
+
+<p>TODO</p>
+
+<hr />
+
+<h2>Recent Activity</h2>
+<div class="post_news">
+
+
+
+<div class="post_news_mini_header">News</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">30 Oct, 2017</span>:
+<a href="/general/2017/10/30/WindowsUnicode.html">Windows Unicode Support - A Bug-Fix 12 Years in the Making</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">24 Oct, 2017</span>:
+<a href="/general/2017/10/24/Bun.html">Fuzzing for CI Workflows</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">27 Sep, 2017</span>:
+<a href="/general/2017/09/27/GithubCI.html">Testing Your Own Fork With OCaml's GitHub CI</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">24 Feb, 2017</span>:
+<a href="/releases/2017/02/24/irmin1release.html">Irmin 1.0 Released!</a>
+</div>
+
+<div class="post_title_light">
+  <i class="fa fa-newspaper-o"></i>
+   <span class="post_date">18 May, 2016</span>:
+<a href="/releases/2016/05/18/datakit.html">Pipelines with OCaml - Managing version-controlled data with Datakit</a>
+</div>
+
+
+
+
+
+
+<div class="post_news_mini_header">Papers</div>
+
+<div class="post_title_light">
+  <i class="fa fa-book"></i>
+  <span class="post_date">24 Sep, 2013</span>:
+  <a href="/papers/#papers-ocamlot-ocaml13">OCamlot: OCaml Online Testing</a>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  </div>
+
+</article>
+
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+        Content © 2012-2017 under a <a href="https://wiki.creativecommons.org/wiki/CC0">CC0</a> license.<br />
+        Theme based on <a href="https://github.com/wild-flame/jekyll-simple">Jekyll-Simple</a> by <a href="http://wildflame.me">wildflame</a>.
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        
+        <a href="https://github.com/ocamllabs"><i class="fa fa-github fa-2x"></i></a>
+        
+        
+        <a href="https://twitter.com/ocamllabs"><i class="fa fa-twitter fa-2x"></i></a>
+        
+      </section>
+    </div>
+  </div>
+</footer>
+ 
+    </div>
+  </body>
+</html>
