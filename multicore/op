@@ -1,0 +1,80 @@
+['4.06.1+multicore', '4.06.1+multicore+atomic-mark', '4.06.1+multicore+cas-promotion', '4.06.1+multicore+xchg-writes', '4.06.1+trunk']
+<table id="example" class="display" style="width:100%"><thead><tr>
+  <th>4.06.1+multicore</th>
+  <th>4.06.1+multicore+atomic-mark</th>
+  <th>4.06.1+multicore+cas-promotion</th>
+  <th>4.06.1+multicore+xchg-writes</th>
+  <th>4.06.1+trunk</th>
+</tr></thead><tbody>
+4.06.1+trunk
+4.06.1+multicore+xchg-writes
+4.06.1+multicore+cas-promotion
+4.06.1+multicore
+4.06.1+multicore+atomic-mark
+{'4.06.1+multicore+xchg-writes': ('2018-08-30-1115/4.06.1+multicore+xchg-writes', '9dd276c8'), '4.06.1+multicore+cas-promotion': ('2018-08-30-1115/4.06.1+multicore+cas-promotion', '3b3e17c9'), '4.06.1+trunk': ('2018-08-30-1115/4.06.1+trunk', '81dc8e8f'), '4.06.1+multicore+atomic-mark': ('2018-08-30-1115/4.06.1+multicore+atomic-mark', '30659065'), '4.06.1+multicore': ('2018-08-30-1115/4.06.1+multicore', '8c73b7b1')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore">8c73b7b1</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+atomic-mark">30659065</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+trunk">81dc8e8f</input></td>
+  </tr>
+4.06.1+multicore
+{'4.06.1+multicore': ('2018-08-30-1045/4.06.1+multicore', '8c73b7b1')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-30-1045/4.06.1+multicore">8c73b7b1</input></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+4.06.1+trunk
+4.06.1+multicore+xchg-writes
+4.06.1+multicore+cas-promotion
+4.06.1+multicore
+{'4.06.1+multicore+xchg-writes': ('2018-08-29-1700/4.06.1+multicore+xchg-writes', '9dd276c8'), '4.06.1+multicore+cas-promotion': ('2018-08-29-1700/4.06.1+multicore+cas-promotion', '3b3e17c9'), '4.06.1+trunk': ('2018-08-29-1700/4.06.1+trunk', '81dc8e8f'), '4.06.1+multicore': ('2018-08-29-1700/4.06.1+multicore', 'bdd1555e')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore">bdd1555e</input></td>
+    <td></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+trunk">81dc8e8f</input></td>
+  </tr>
+4.06.1+trunk
+4.06.1+multicore+xchg-writes
+4.06.1+multicore+cas-promotion
+4.06.1+multicore
+{'4.06.1+multicore+xchg-writes': ('2018-08-29-1605/4.06.1+multicore+xchg-writes', '9dd276c8'), '4.06.1+multicore+cas-promotion': ('2018-08-29-1605/4.06.1+multicore+cas-promotion', '3b3e17c9'), '4.06.1+trunk': ('2018-08-29-1605/4.06.1+trunk', '81dc8e8f'), '4.06.1+multicore': ('2018-08-29-1605/4.06.1+multicore', 'bdd1555e')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore">bdd1555e</input></td>
+    <td></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+trunk">81dc8e8f</input></td>
+  </tr>
+4.06.1+trunk
+4.06.1+multicore+xchg-writes
+4.06.1+multicore+cas-promotion
+4.06.1+multicore
+{'4.06.1+multicore+xchg-writes': ('2018-08-29-1400/4.06.1+multicore+xchg-writes', '9dd276c8'), '4.06.1+multicore+cas-promotion': ('2018-08-29-1400/4.06.1+multicore+cas-promotion', '3b3e17c9'), '4.06.1+trunk': ('2018-08-29-1400/4.06.1+trunk', '81dc8e8f'), '4.06.1+multicore': ('2018-08-29-1400/4.06.1+multicore', 'bdd1555e')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore">bdd1555e</input></td>
+    <td></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+trunk">81dc8e8f</input></td>
+  </tr>
+4.06.1+trunk
+4.06.1+multicore+cas-promotion
+4.06.1+multicore
+{'4.06.1+multicore+cas-promotion': ('2018-08-28-1432/4.06.1+multicore+cas-promotion', '3b3e17c9'), '4.06.1+multicore': ('2018-08-28-1432/4.06.1+multicore', '3f68507c'), '4.06.1+trunk': ('2018-08-28-1432/4.06.1+trunk', '81dc8e8f')}
+  <tr>
+    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+multicore">3f68507c</input></td>
+    <td></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td></td>
+    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+trunk">81dc8e8f</input></td>
+  </tr>
+4.06.1+trunk
+4.06.1+multicore
+</table>

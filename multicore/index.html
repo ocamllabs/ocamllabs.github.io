@@ -1,21 +1,20 @@
 <html><head><title>bench index</title></head><body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"> </script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <style type="text/css" class="init">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"> </script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+		<style type="text/css" class="init">
 
-    </style>
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		</style>
+		<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-    <script src="compare.js"></script>
-    <script type="text/javascript" class="init">
-      $(document).ready(function() {
-        $('#example').DataTable({ "order": [[ 0, "desc" ]] });
-      } );
-    </script>
-    <div id="container" style="width: 90%;"> <canvas id="chart"></canvas> </div>
-    <div> <input type="button" value="compare" id="compareButton" onclick="plot()"> </div>
-    </br>
+		<script src="compare.js"></script>
+		<script type="text/javascript" class="init">
+			$(document).ready(function() {
+				$('#example').DataTable({ "order": [[ 0, "desc" ]] });
+			} );
+		</script>
+		<div id="container" style="width: 90%;"> <canvas id="chart"></canvas> </div>
+		</br>
 <table id="example" class="display" style="width:90%"><thead><tr>
   <th>Date</th>
   <th>4.06.1+multicore</th>
@@ -25,16 +24,32 @@
   <th>4.06.1+trunk</th>
 </tr></thead><tbody>
   <tr>
+    <td>2018-08-31-0845</td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-31-0845/4.06.1+multicore">db44acc8</input></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2018-08-31-0815</td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-31-0815/4.06.1+multicore">2dcef939</input></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>2018-08-30-1115</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore">8c73b7b1</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+atomic-mark">30659065</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1115/4.06.1+trunk">81dc8e8f</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1115/4.06.1+multicore">8c73b7b1</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1115/4.06.1+multicore+atomic-mark">30659065</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1115/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1115/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1115/4.06.1+trunk">81dc8e8f</input></td>
   </tr>
   <tr>
     <td>2018-08-30-1045</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-30-1045/4.06.1+multicore">8c73b7b1</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-30-1045/4.06.1+multicore">8c73b7b1</input></td>
     <td></td>
     <td></td>
     <td></td>
@@ -42,35 +57,35 @@
   </tr>
   <tr>
     <td>2018-08-29-1700</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore">bdd1555e</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1700/4.06.1+multicore">bdd1555e</input></td>
     <td></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1700/4.06.1+trunk">81dc8e8f</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1700/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1700/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1700/4.06.1+trunk">81dc8e8f</input></td>
   </tr>
   <tr>
     <td>2018-08-29-1605</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore">bdd1555e</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1605/4.06.1+multicore">bdd1555e</input></td>
     <td></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1605/4.06.1+trunk">81dc8e8f</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1605/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1605/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1605/4.06.1+trunk">81dc8e8f</input></td>
   </tr>
   <tr>
     <td>2018-08-29-1400</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore">bdd1555e</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1400/4.06.1+multicore">bdd1555e</input></td>
     <td></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-29-1400/4.06.1+trunk">81dc8e8f</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1400/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1400/4.06.1+multicore+xchg-writes">9dd276c8</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-29-1400/4.06.1+trunk">81dc8e8f</input></td>
   </tr>
   <tr>
     <td>2018-08-28-1432</td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+multicore">3f68507c</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-28-1432/4.06.1+multicore">3f68507c</input></td>
     <td></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-28-1432/4.06.1+multicore+cas-promotion">3b3e17c9</input></td>
     <td></td>
-    <td><input type="checkbox" name="benchrun" value="2018-08-28-1432/4.06.1+trunk">81dc8e8f</input></td>
+    <td><input type="checkbox" name="benchrun" onclick="plot()" value="2018-08-28-1432/4.06.1+trunk">81dc8e8f</input></td>
   </tr>
 </table>
 </body></html>
