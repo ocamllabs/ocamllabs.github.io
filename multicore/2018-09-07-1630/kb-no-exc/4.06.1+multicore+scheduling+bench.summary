@@ -1,0 +1,46 @@
+((success false) (name kb-no-exc)
+ (context_id 4.06.1+multicore+scheduling+bench) (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 351070325) (stddev -NAN) (mini 351070325)
+     (maxi 351070325) (runs 1)))
+   (Size
+    ((success true) (mean 867125) (stddev 0) (mini 867125) (maxi 867125)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 670417) (stddev 0) (mini 670417) (maxi 670417)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 196708) (stddev 0) (mini 196708) (maxi 196708)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 37609474) (stddev -NAN) (mini 37609474)
+     (maxi 37609474) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 4644391) (stddev -NAN) (mini 4644391)
+     (maxi 4644391) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 0.12348784776942108) (stddev -NAN)
+     (mini 0.12348784776942108) (maxi 0.12348784776942108) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 356352) (stddev -NAN) (mini 356352) (maxi 356352)
+     (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 143) (stddev -NAN) (mini 143) (maxi 143) (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 112) (stddev -NAN) (mini 112) (maxi 112) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 270336) (stddev -NAN) (mini 270336) (maxi 270336)
+     (runs 1)))))
+ (error
+  ((""
+     "allocated_words: 37609552\
+    \nminor_words: 37609474\
+    \npromoted_words: 4644313\
+    \nmajor_words: 4644391\
+    \nminor_collections: 143\
+    \nmajor_collections: 112\
+    \nheap_words: 270336\
+    \ntop_heap_words: 356352\
+    \nfree(): invalid pointer\
+    \n"))))
