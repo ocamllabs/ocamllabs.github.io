@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bench build results</title>
+  <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <style type="text/css"><!--
+     div {padding:3ex;}
+     pre {padding:1ex;border:1px solid grey;background-color:#eee;}
+     table {border-collapse:collapse;margin:auto;}
+     thead {position:-webkit-sticky;position:-moz-sticky;position:sticky;top:0;}
+     tfoot {position:-webkit-sticky;position:-moz-sticky;position:sticky;bottom:0;}
+     thead th {background-color:#dde;}
+         td {text-align: right;}
+     tr:nth-child(odd) {background-color:#eef;}
+     th, td {padding:2ex; border:1px solid #e0e0e0;}
+     .logs {display:none;}
+     .logs:target {display:block;position:fixed;top:5%;left:5%;right:5%;bottom:5%;border:1px solid black;background-color:white;overflow:scroll;z-index:10;}
+     .close {display:block;position:fixed;top:7%;right:7%;}
+     a:target {background-color:#e0e000;}
+  --></style>
+</head><body>
+<div>
+<table class="sortable">
+<thead>
+  <tr><th>Package</th><th>4.06.1+multicore+bench</th><th>4.06.1+multicore+bench time (s)</th></tr>
+</thead>
+<tbody>
+  <tr><th id="almabench-bench.1.0">almabench-bench.1.0</th><td><a id="4.06.1+multicore+bench:almabench-bench.1.0">OK</a></td><td>0.314</td></tr>
+  <tr><th id="async.v0.11.0">async.v0.11.0</th><td><a id="4.06.1+multicore+bench:async.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async-echo-bench.1.0">async-echo-bench.1.0</th><td><a id="4.06.1+multicore+bench:async-echo-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async-rpc-bench.1.0">async-rpc-bench.1.0</th><td><a id="4.06.1+multicore+bench:async-rpc-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_extra.v0.11.1">async_extra.v0.11.1</th><td><a id="4.06.1+multicore+bench:async_extra.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_kernel.v0.11.1">async_kernel.v0.11.1</th><td><a id="4.06.1+multicore+bench:async_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_rpc_kernel.v0.11.0">async_rpc_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_unix.v0.11.0">async_unix.v0.11.0</th><td><a id="4.06.1+multicore+bench:async_unix.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="base.v0.11.1">base.v0.11.1</th><td><a id="4.06.1+multicore+bench:base.v0.11.1">OK</a></td><td>9.882</td></tr>
+  <tr><th id="base-bytes.base">base-bytes.base</th><td><a id="4.06.1+multicore+bench:base-bytes.base">OK</a></td><td>0.000</td></tr>
+  <tr><th id="base64.2.2.0">base64.2.2.0</th><td><a id="4.06.1+multicore+bench:base64.2.2.0">OK</a></td><td>0.283</td></tr>
+  <tr><th id="bdd-bench.1.0">bdd-bench.1.0</th><td><a id="4.06.1+multicore+bench:bdd-bench.1.0">OK</a></td><td>0.347</td></tr>
+  <tr><th id="bin_prot.v0.11.0">bin_prot.v0.11.0</th><td><a id="4.06.1+multicore+bench:bin_prot.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="biniou.1.2.0">biniou.1.2.0</th><td><a id="4.06.1+multicore+bench:biniou.1.2.0">OK</a></td><td>1.409</td></tr>
+  <tr><th id="camlimages.5.0.1">camlimages.5.0.1</th><td><a id="4.06.1+multicore+bench:camlimages.5.0.1" href="#log-4.06.1+multicore+bench-camlimages-5.0.1">Failure (1)</a></td><td>0.807</td></tr>
+  <tr><th id="camlpdf.2.2.1+multicore">camlpdf.2.2.1+multicore</th><td><a id="4.06.1+multicore+bench:camlpdf.2.2.1+multicore">OK</a></td><td>16.698</td></tr>
+  <tr><th id="chameneos-bench.1.0">chameneos-bench.1.0</th><td><a id="4.06.1+multicore+bench:chameneos-bench.1.0" title="Failed dependencies: lwt.4.1.0, ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="cohttp.1.0.0">cohttp.1.0.0</th><td><a id="4.06.1+multicore+bench:cohttp.1.0.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="cohttp-bench.1.0">cohttp-bench.1.0</th><td><a id="4.06.1+multicore+bench:cohttp-bench.1.0" title="Failed dependencies: lwt.4.1.0, ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="conf-autoconf.0.1">conf-autoconf.0.1</th><td><a id="4.06.1+multicore+bench:conf-autoconf.0.1">OK</a></td><td>1.033</td></tr>
+  <tr><th id="conf-gmp.1">conf-gmp.1</th><td><a id="4.06.1+multicore+bench:conf-gmp.1">OK</a></td><td>0.359</td></tr>
+  <tr><th id="conf-libpcre.1">conf-libpcre.1</th><td><a id="4.06.1+multicore+bench:conf-libpcre.1">OK</a></td><td>1.042</td></tr>
+  <tr><th id="conf-m4.1">conf-m4.1</th><td><a id="4.06.1+multicore+bench:conf-m4.1">OK</a></td><td>0.088</td></tr>
+  <tr><th id="conf-perl.1">conf-perl.1</th><td><a id="4.06.1+multicore+bench:conf-perl.1">OK</a></td><td>0.385</td></tr>
+  <tr><th id="conf-pkg-config.1.1">conf-pkg-config.1.1</th><td><a id="4.06.1+multicore+bench:conf-pkg-config.1.1">OK</a></td><td>0.623</td></tr>
+  <tr><th id="conf-which.1">conf-which.1</th><td><a id="4.06.1+multicore+bench:conf-which.1">OK</a></td><td>0.648</td></tr>
+  <tr><th id="configurator.v0.11.0">configurator.v0.11.0</th><td><a id="4.06.1+multicore+bench:configurator.v0.11.0">OK</a></td><td>1.332</td></tr>
+  <tr><th id="core.v0.11.2">core.v0.11.2</th><td><a id="4.06.1+multicore+bench:core.v0.11.2" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core-micro-bench.1.0">core-micro-bench.1.0</th><td><a id="4.06.1+multicore+bench:core-micro-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core-sequence-bench.1.0">core-sequence-bench.1.0</th><td><a id="4.06.1+multicore+bench:core-sequence-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_bench.v0.11.0">core_bench.v0.11.0</th><td><a id="4.06.1+multicore+bench:core_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_extended.v0.11.0">core_extended.v0.11.0</th><td><a id="4.06.1+multicore+bench:core_extended.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_kernel.v0.11.1">core_kernel.v0.11.1</th><td><a id="4.06.1+multicore+bench:core_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="cpdf.2.2.1">cpdf.2.2.1</th><td><a id="4.06.1+multicore+bench:cpdf.2.2.1">OK</a></td><td>7.929</td></tr>
+  <tr><th id="cpdf-bench.1.0">cpdf-bench.1.0</th><td><a id="4.06.1+multicore+bench:cpdf-bench.1.0">OK</a></td><td>0.523</td></tr>
+  <tr><th id="cppo.1.6.4">cppo.1.6.4</th><td><a id="4.06.1+multicore+bench:cppo.1.6.4">OK</a></td><td>1.197</td></tr>
+  <tr><th id="dune.1.1.1">dune.1.1.1</th><td><a id="4.06.1+multicore+bench:dune.1.1.1">OK</a></td><td>11.652</td></tr>
+  <tr><th id="easy-format.1.3.1">easy-format.1.3.1</th><td><a id="4.06.1+multicore+bench:easy-format.1.3.1">OK</a></td><td>0.413</td></tr>
+  <tr><th id="expect_test_helpers.v0.11.0">expect_test_helpers.v0.11.0</th><td><a id="4.06.1+multicore+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="expect_test_helpers_kernel.v0.11.0">expect_test_helpers_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="fieldslib.v0.11.0">fieldslib.v0.11.0</th><td><a id="4.06.1+multicore+bench:fieldslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="frama-c.20170501">frama-c.20170501</th><td><a id="4.06.1+multicore+bench:frama-c.20170501" title="Failed dependencies: zarith.1.7">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="frama-c-bench.1.0">frama-c-bench.1.0</th><td><a id="4.06.1+multicore+bench:frama-c-bench.1.0" title="Failed dependencies: zarith.1.7">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="jane-street-headers.v0.11.0">jane-street-headers.v0.11.0</th><td><a id="4.06.1+multicore+bench:jane-street-headers.v0.11.0">OK</a></td><td>0.274</td></tr>
+  <tr><th id="jbuilder.transition">jbuilder.transition</th><td><a id="4.06.1+multicore+bench:jbuilder.transition">OK</a></td><td>0.000</td></tr>
+  <tr><th id="json-bench-data.1.0">json-bench-data.1.0</th><td><a id="4.06.1+multicore+bench:json-bench-data.1.0">OK</a></td><td>0.033</td></tr>
+  <tr><th id="jsonm.1.0.1">jsonm.1.0.1</th><td><a id="4.06.1+multicore+bench:jsonm.1.0.1">OK</a></td><td>14.497</td></tr>
+  <tr><th id="jsonm-bench.1.0">jsonm-bench.1.0</th><td><a id="4.06.1+multicore+bench:jsonm-bench.1.0">OK</a></td><td>0.039</td></tr>
+  <tr><th id="kb-bench.1.0">kb-bench.1.0</th><td><a id="4.06.1+multicore+bench:kb-bench.1.0">OK</a></td><td>0.575</td></tr>
+  <tr><th id="lexifi-g2pp-bench.1.0">lexifi-g2pp-bench.1.0</th><td><a id="4.06.1+multicore+bench:lexifi-g2pp-bench.1.0">OK</a></td><td>0.985</td></tr>
+  <tr><th id="lwt.4.1.0">lwt.4.1.0</th><td><a id="4.06.1+multicore+bench:lwt.4.1.0" href="#log-4.06.1+multicore+bench-lwt-4.1.0">Failure (1)</a></td><td>8.418</td></tr>
+  <tr><th id="menhir.20180905">menhir.20180905</th><td><a id="4.06.1+multicore+bench:menhir.20180905">OK</a></td><td>19.520</td></tr>
+  <tr><th id="menhir-bench.1.0">menhir-bench.1.0</th><td><a id="4.06.1+multicore+bench:menhir-bench.1.0">OK</a></td><td>0.331</td></tr>
+  <tr><th id="minilight.1.6">minilight.1.6</th><td><a id="4.06.1+multicore+bench:minilight.1.6">OK</a></td><td>0.964</td></tr>
+  <tr><th id="minilight-bench.1.0">minilight-bench.1.0</th><td><a id="4.06.1+multicore+bench:minilight-bench.1.0">OK</a></td><td>0.124</td></tr>
+  <tr><th id="nbcodec.1.0">nbcodec.1.0</th><td><a id="4.06.1+multicore+bench:nbcodec.1.0">OK</a></td><td>0.662</td></tr>
+  <tr><th id="nbcodec-bench.1.0">nbcodec-bench.1.0</th><td><a id="4.06.1+multicore+bench:nbcodec-bench.1.0">OK</a></td><td>0.109</td></tr>
+  <tr><th id="num.1.1">num.1.1</th><td><a id="4.06.1+multicore+bench:num.1.1">OK</a></td><td>2.732</td></tr>
+  <tr><th id="numerical-analysis-bench.1.0">numerical-analysis-bench.1.0</th><td><a id="4.06.1+multicore+bench:numerical-analysis-bench.1.0">OK</a></td><td>35.020</td></tr>
+  <tr><th id="ocaml.4.06.1">ocaml.4.06.1</th><td><a id="4.06.1+multicore+bench:ocaml.4.06.1">OK</a></td><td>0.164</td></tr>
+  <tr><th id="ocaml-compiler-libs.v0.11.0">ocaml-compiler-libs.v0.11.0</th><td><a id="4.06.1+multicore+bench:ocaml-compiler-libs.v0.11.0">OK</a></td><td>1.150</td></tr>
+  <tr><th id="ocaml-migrate-parsetree.1.0.11">ocaml-migrate-parsetree.1.0.11</th><td><a id="4.06.1+multicore+bench:ocaml-migrate-parsetree.1.0.11" href="#log-4.06.1+multicore+bench-ocaml-migrate-parsetree-1.0.11">Failure (1)</a></td><td>6.684</td></tr>
+  <tr><th id="ocaml-variants.4.06.1+multicore">ocaml-variants.4.06.1+multicore</th><td><a id="4.06.1+multicore+bench:ocaml-variants.4.06.1+multicore">OK</a></td><td>209.194</td></tr>
+  <tr><th id="ocamlbuild.0.12.0">ocamlbuild.0.12.0</th><td><a id="4.06.1+multicore+bench:ocamlbuild.0.12.0">OK</a></td><td>5.964</td></tr>
+  <tr><th id="ocamlfind.1.8.0">ocamlfind.1.8.0</th><td><a id="4.06.1+multicore+bench:ocamlfind.1.8.0">OK</a></td><td>3.172</td></tr>
+  <tr><th id="ocamlgraph.1.8.8">ocamlgraph.1.8.8</th><td><a id="4.06.1+multicore+bench:ocamlgraph.1.8.8">OK</a></td><td>16.456</td></tr>
+  <tr><th id="ocplib-simplex.0.4">ocplib-simplex.0.4</th><td><a id="4.06.1+multicore+bench:ocplib-simplex.0.4">OK</a></td><td>12.554</td></tr>
+  <tr><th id="octavius.1.2.0">octavius.1.2.0</th><td><a id="4.06.1+multicore+bench:octavius.1.2.0">OK</a></td><td>1.769</td></tr>
+  <tr><th id="parsexp.v0.11.0">parsexp.v0.11.0</th><td><a id="4.06.1+multicore+bench:parsexp.v0.11.0">OK</a></td><td>5.010</td></tr>
+  <tr><th id="patdiff.v0.11.0">patdiff.v0.11.0</th><td><a id="4.06.1+multicore+bench:patdiff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="patdiff-bench.1.0">patdiff-bench.1.0</th><td><a id="4.06.1+multicore+bench:patdiff-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="patience_diff.v0.11.0">patience_diff.v0.11.0</th><td><a id="4.06.1+multicore+bench:patience_diff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="pcre.7.3.4">pcre.7.3.4</th><td><a id="4.06.1+multicore+bench:pcre.7.3.4" href="#log-4.06.1+multicore+bench-pcre-7.3.4">Failure (1)</a></td><td>0.537</td></tr>
+  <tr><th id="ppx_assert.v0.11.0">ppx_assert.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_assert.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_base.v0.11.0">ppx_base.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_base.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_bench.v0.11.0">ppx_bench.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_bin_prot.v0.11.1">ppx_bin_prot.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_compare.v0.11.1">ppx_compare.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_compare.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_custom_printf.v0.11.0">ppx_custom_printf.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_derivers.1.0">ppx_derivers.1.0</th><td><a id="4.06.1+multicore+bench:ppx_derivers.1.0">OK</a></td><td>0.512</td></tr>
+  <tr><th id="ppx_enumerate.v0.11.1">ppx_enumerate.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_expect.v0.11.0">ppx_expect.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_expect.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_fail.v0.11.0">ppx_fail.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_fail.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_fields_conv.v0.11.0">ppx_fields_conv.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_hash.v0.11.1">ppx_hash.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_hash.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_here.v0.11.0">ppx_here.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_here.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_inline_test.v0.11.0">ppx_inline_test.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_jane.v0.11.0">ppx_jane.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_jane.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_js_style.v0.11.0">ppx_js_style.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_js_style.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_let.v0.11.0">ppx_let.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_let.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_optcomp.v0.11.0">ppx_optcomp.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_optional.v0.11.0">ppx_optional.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_optional.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_pipebang.v0.11.0">ppx_pipebang.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_conv.v0.11.2">ppx_sexp_conv.v0.11.2</th><td><a id="4.06.1+multicore+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_message.v0.11.0">ppx_sexp_message.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_value.v0.11.0">ppx_sexp_value.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_typerep_conv.v0.11.1">ppx_typerep_conv.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_variants_conv.v0.11.1">ppx_variants_conv.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppxlib.0.3.0">ppxlib.0.3.0</th><td><a id="4.06.1+multicore+bench:ppxlib.0.3.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="protocol_version_header.v0.11.0">protocol_version_header.v0.11.0</th><td><a id="4.06.1+multicore+bench:protocol_version_header.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="psmt2-frontend.0.1">psmt2-frontend.0.1</th><td><a id="4.06.1+multicore+bench:psmt2-frontend.0.1">OK</a></td><td>14.024</td></tr>
+  <tr><th id="re.1.7.3">re.1.7.3</th><td><a id="4.06.1+multicore+bench:re.1.7.3">OK</a></td><td>1.589</td></tr>
+  <tr><th id="re2.v0.11.0">re2.v0.11.0</th><td><a id="4.06.1+multicore+bench:re2.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="result.1.3">result.1.3</th><td><a id="4.06.1+multicore+bench:result.1.3">OK</a></td><td>0.472</td></tr>
+  <tr><th id="sauvola-bench.1.0">sauvola-bench.1.0</th><td><a id="4.06.1+multicore+bench:sauvola-bench.1.0" title="Failed dependencies: camlimages.5.0.1">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="sequence-bench.1.0">sequence-bench.1.0</th><td><a id="4.06.1+multicore+bench:sequence-bench.1.0">OK</a></td><td>0.670</td></tr>
+  <tr><th id="sexp_pretty.v0.11.0">sexp_pretty.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexp_pretty.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="sexplib.v0.11.0">sexplib.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexplib.v0.11.0">OK</a></td><td>1.062</td></tr>
+  <tr><th id="sexplib0.v0.11.0">sexplib0.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexplib0.v0.11.0">OK</a></td><td>0.833</td></tr>
+  <tr><th id="spawn.v0.12.0">spawn.v0.12.0</th><td><a id="4.06.1+multicore+bench:spawn.v0.12.0" href="#log-4.06.1+multicore+bench-spawn-v0.12.0">Failure (1)</a></td><td>0.343</td></tr>
+  <tr><th id="splittable_random.v0.11.0">splittable_random.v0.11.0</th><td><a id="4.06.1+multicore+bench:splittable_random.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="stdio.v0.11.0">stdio.v0.11.0</th><td><a id="4.06.1+multicore+bench:stdio.v0.11.0">OK</a></td><td>0.679</td></tr>
+  <tr><th id="stringext.1.5.0">stringext.1.5.0</th><td><a id="4.06.1+multicore+bench:stringext.1.5.0">OK</a></td><td>0.713</td></tr>
+  <tr><th id="textutils.v0.11.0">textutils.v0.11.0</th><td><a id="4.06.1+multicore+bench:textutils.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="textutils_kernel.v0.11.0">textutils_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:textutils_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="thread-bench.1.0">thread-bench.1.0</th><td><a id="4.06.1+multicore+bench:thread-bench.1.0" title="Failed dependencies: lwt.4.1.0, ocaml-migrate-parsetree.1.0.11, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="topkg.0.9.1">topkg.0.9.1</th><td><a id="4.06.1+multicore+bench:topkg.0.9.1">OK</a></td><td>6.642</td></tr>
+  <tr><th id="typerep.v0.11.0">typerep.v0.11.0</th><td><a id="4.06.1+multicore+bench:typerep.v0.11.0">OK</a></td><td>1.320</td></tr>
+  <tr><th id="uchar.0.0.2">uchar.0.0.2</th><td><a id="4.06.1+multicore+bench:uchar.0.0.2">OK</a></td><td>0.995</td></tr>
+  <tr><th id="uri.1.9.7">uri.1.9.7</th><td><a id="4.06.1+multicore+bench:uri.1.9.7" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="uutf.1.0.1">uutf.1.0.1</th><td><a id="4.06.1+multicore+bench:uutf.1.0.1">OK</a></td><td>1.551</td></tr>
+  <tr><th id="variantslib.v0.11.0">variantslib.v0.11.0</th><td><a id="4.06.1+multicore+bench:variantslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.0.11">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="yojson.1.4.1">yojson.1.4.1</th><td><a id="4.06.1+multicore+bench:yojson.1.4.1">OK</a></td><td>4.903</td></tr>
+  <tr><th id="yojson-bench.1.0">yojson-bench.1.0</th><td><a id="4.06.1+multicore+bench:yojson-bench.1.0" href="#log-4.06.1+multicore+bench-yojson-bench-1.0">Failure (2)</a></td><td>3.379</td></tr>
+  <tr><th id="zarith.1.7">zarith.1.7</th><td><a id="4.06.1+multicore+bench:zarith.1.7" href="#log-4.06.1+multicore+bench-zarith-1.7">Failure (2)</a></td><td>2.628</td></tr>
+</tbody>
+</table></div><div class="logs" id="log-4.06.1+multicore+bench-zarith-1.7">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on zarith.1.7 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make</pre></p>
+  <h4>Output</h4><pre>project.mak:138: depend: No such file or directory
+./z_pp.pl x86_64
+Name "main::extra" used only once: possible typo at ./z_pp.pl line 29.
+found assembly file caml_z_x86_64.S
+  found abs
+  found add
+  found div
+  found divexact
+  found logand
+  found lognot
+  found logor
+  found logxor
+  found mul
+  found neg
+  found pred
+  found rem
+  found shift_left
+  found shift_right
+  found sub
+  found succ
+ocamldep -native  z.ml q.ml big_int_Z.ml z.mli q.mli big_int_Z.mli > depend
+ocamlc   -c z.mli
+ocamlc   -c z.ml
+ocamlc   -c q.mli
+ocamlc   -c q.ml
+ocamlc   -c big_int_Z.mli
+ocamlc   -c big_int_Z.ml
+ocamlmklib -failsafe -o zarith z.cmo q.cmo big_int_Z.cmo -lgmp
+gcc -DZ_OCAML_HASH -DZ_OCAML_COMPARE_EXT -DHAS_GMP -DZ_ELF -DZ_DOT_LABEL_PREFIX     -c -o caml_z_x86_64.o caml_z_x86_64.S
+ocamlc -ccopt "-I/root/.opam/4.06.1+multicore+bench/lib/ocaml  -DZ_OCAML_HASH -DZ_OCAML_COMPARE_EXT -DHAS_GMP -DZ_ELF -DZ_DOT_LABEL_PREFIX  -O3 -Wall -Wextra " -c caml_z.c
+caml_z.c: In function ‘ml_z_raise_overflow’:
+caml_z.c:413:24: warning: implicit declaration of function ‘caml_named_value’; did you mean ‘caml_named_root’? [-Wimplicit-function-declaration]
+   caml_raise_constant(*caml_named_value("ml_z_overflow"));
+                        ^~~~~~~~~~~~~~~~
+                        caml_named_root
+caml_z.c:413:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+   caml_raise_constant(*caml_named_value("ml_z_overflow"));
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+caml_z.c: In function ‘ml_z_tdiv_qr’:
+caml_z.c:1465:14: error: lvalue required as left operand of assignment
+   Field(p,0) = q;
+              ^
+caml_z.c:1466:14: error: lvalue required as left operand of assignment
+   Field(p,1) = r;
+              ^
+caml_z.c: In function ‘ml_z_div_rem’:
+caml_z.c:1485:18: error: lvalue required as left operand of assignment
+       Field(p,0) = Val_long(q);
+                  ^
+caml_z.c:1486:18: error: lvalue required as left operand of assignment
+       Field(p,1) = Val_long(r);
+                  ^
+caml_z.c: In function ‘ml_z_sqrt_rem’:
+caml_z.c:1727:14: error: lvalue required as left operand of assignment
+   Field(p,0) = r;
+              ^
+caml_z.c:1728:14: error: lvalue required as left operand of assignment
+   Field(p,1) = s;
+              ^
+caml_z.c: In function ‘ml_z_gcdext_intern’:
+caml_z.c:1840:16: error: lvalue required as left operand of assignment
+     Field(p,2) = Val_true;
+                ^
+caml_z.c:1848:16: error: lvalue required as left operand of assignment
+     Field(p,2) = Val_false;
+                ^
+caml_z.c:1857:14: error: lvalue required as left operand of assignment
+   Field(p,0) = r;
+              ^
+caml_z.c:1858:14: error: lvalue required as left operand of assignment
+   Field(p,1) = s;
+              ^
+caml_z.c: At top level:
+caml_z.c:2995:3: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   ml_z_custom_deserialize,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+caml_z.c:2995:3: note: (near initialization for ‘ml_z_custom_ops.deserialize’)
+project.mak:129: recipe for target 'caml_z.o' failed
+make: *** [caml_z.o] Error 2</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-spawn-v0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on spawn.v0.12.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/spawn_stubs.o (exit 2)
+(cd _build/default/src &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+spawn_stubs.c: In function ‘spawn_pipe’:
+spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+   Field(res, 0) = Val_int(fd[0]);
+                 ^
+spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+   Field(res, 1) = Val_int(fd[1]);
+                 ^
+spawn_stubs.c: In function ‘subprocess_failure’:
+spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(failure_fd, &amp;failure, sizeof(failure));
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-pcre-7.3.4">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on pcre.7.3.4 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7</pre></p>
+  <h4>Output</h4><pre>    ocamlopt src/config/discover.exe (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore+bench/lib/base -I /root/.opam/4.06.1+multicore+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+bench/lib/configurator -I /root/.opam/4.06.1+multicore+bench/lib/sexplib0 -I /root/.opam/4.06.1+multicore+bench/lib/stdio /root/.opam/4.06.1+multicore+bench/lib/base/caml/caml.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib/shadow_stdlib.cmxa /root/.opam/4.06.1+multicore+bench/lib/sexplib0/sexplib0.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/base.cmxa /root/.opam/4.06.1+multicore+bench/lib/stdio/stdio.cmxa /root/.opam/4.06.1+multicore+bench/lib/ocaml/unix.cmxa /root/.opam/4.06.1+multicore+bench/lib/configurator/configurator.cmxa src/config/.discover.eobjs/discover.cmx)
+/root/.opam/4.06.1+multicore+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+/root/.opam/4.06.1+multicore+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-ocaml-migrate-parsetree-1.0.11">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocaml-migrate-parsetree.1.0.11 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/.migrate_parsetree.objs/ast_406.{cmi,cmo,cmt} (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -w -40 -open Result -g -bin-annot -I src/.migrate_parsetree.objs -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/compiler-libs -I /root/.opam/4.06.1+multicore+bench/lib/result -no-alias-deps -o src/.migrate_parsetree.objs/ast_406.cmo -c -impl src/ast_406.pp.ml)
+File "src/ast_406.ml", line 237, characters 2-1773:
+Error: This variant or record definition does not match that of type
+         Parsetree.pattern_desc
+       Fields number 17 have different names, Ppat_effect and Ppat_extension.</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-lwt-4.1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on lwt.4.1.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p lwt -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/unix/.lwt_unix.objs/lwt_fmt.{cmi,cmti}
+File "src/unix/lwt_fmt.mli", line 42, characters 23-69:
+Warning 50: ambiguous documentation comment
+    discover src/unix/lwt_config.{h,ml},src/unix/unix_c_flags.sexp,src/unix/unix_c_library_flags.sexp
+found config var ext_obj: ...................... .o
+found config var default_executable_name: ...... a.out
+found config var ccomp_type: ................... cc
+found config var system: ....................... linux
+found config var os_type: ...................... Unix
+found config var use_libev: .................... false
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... unavailable
+testing for reentrant gethost*: ................ available
+testing for nanosecond stat support: ........... *tim.tv_nsec
+testing for BSD mincore: ....................... unavailable
+      ocamlc src/unix/lwt_unix_stubs.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o lwt_unix_stubs.o lwt_unix_stubs.c)
+lwt_unix_stubs.c: In function ‘lwt_unix_not_available’:
+lwt_unix_stubs.c:107:24: warning: implicit declaration of function ‘caml_named_value’; did you mean ‘caml_named_root’? [-Wimplicit-function-declaration]
+   caml_raise_with_arg(*caml_named_value("lwt:not-available"),
+                        ^~~~~~~~~~~~~~~~
+                        caml_named_root
+lwt_unix_stubs.c:107:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+   caml_raise_with_arg(*caml_named_value("lwt:not-available"),
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwt_unix_stubs.c: In function ‘lwt_unix_recv_notifications’:
+lwt_unix_stubs.c:573:22: error: lvalue required as left operand of assignment
+     Field(result, i) = Val_long(notifications[i]);
+                      ^
+lwt_unix_stubs.c: In function ‘lwt_unix_not_available’:
+lwt_unix_stubs.c:109:1: warning: ‘noreturn’ function does return
+ }
+ ^
+      ocamlc src/unix/unix_bytes_recvfrom.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_bytes_recvfrom.o unix_bytes_recvfrom.c)
+unix_bytes_recvfrom.c: In function ‘lwt_unix_bytes_recvfrom’:
+unix_bytes_recvfrom.c:36:22: error: lvalue required as left operand of assignment
+     Field(result, 0) = Val_int(ret);
+                      ^
+unix_bytes_recvfrom.c:37:22: error: lvalue required as left operand of assignment
+     Field(result, 1) = address;
+                      ^
+      ocamlc src/unix/unix_get_affinity.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_get_affinity.o unix_get_affinity.c)
+unix_get_affinity.c: In function ‘lwt_unix_get_affinity’:
+unix_get_affinity.c:34:28: error: lvalue required as left operand of assignment
+             Field(node, 0) = Val_int(i);
+                            ^
+unix_get_affinity.c:35:28: error: lvalue required as left operand of assignment
+             Field(node, 1) = list;
+                            ^
+      ocamlc src/unix/unix_get_network_information_utils.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_get_network_information_utils.o unix_get_network_information_utils.c)
+unix_get_network_information_utils.c: In function ‘alloc_host_entry’:
+unix_get_network_information_utils.c:143:19: error: lvalue required as left operand of assignment
+     Field(res, 0) = name;
+                   ^
+unix_get_network_information_utils.c:144:19: error: lvalue required as left operand of assignment
+     Field(res, 1) = aliases;
+                   ^
+unix_get_network_information_utils.c:147:27: error: lvalue required as left operand of assignment
+             Field(res, 2) = Val_int(0);
+                           ^
+unix_get_network_information_utils.c:150:27: error: lvalue required as left operand of assignment
+             Field(res, 2) = Val_int(1);
+                           ^
+unix_get_network_information_utils.c:153:27: error: lvalue required as left operand of assignment
+             Field(res, 2) = Val_int(2);
+                           ^
+unix_get_network_information_utils.c:156:19: error: lvalue required as left operand of assignment
+     Field(res, 3) = addr_list;
+                   ^
+      ocamlc src/unix/unix_get_pw_gr_nam_id_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_get_pw_gr_nam_id_job.o unix_get_pw_gr_nam_id_job.c)
+unix_get_pw_gr_nam_id_job.c: In function ‘alloc_passwd_entry’:
+unix_get_pw_gr_nam_id_job.c:41:19: error: lvalue required as left operand of assignment
+     Field(res, 0) = name;
+                   ^
+unix_get_pw_gr_nam_id_job.c:42:19: error: lvalue required as left operand of assignment
+     Field(res, 1) = passwd;
+                   ^
+unix_get_pw_gr_nam_id_job.c:43:19: error: lvalue required as left operand of assignment
+     Field(res, 2) = Val_int(entry->pw_uid);
+                   ^
+unix_get_pw_gr_nam_id_job.c:44:19: error: lvalue required as left operand of assignment
+     Field(res, 3) = Val_int(entry->pw_gid);
+                   ^
+unix_get_pw_gr_nam_id_job.c:45:19: error: lvalue required as left operand of assignment
+     Field(res, 4) = gecos;
+                   ^
+unix_get_pw_gr_nam_id_job.c:46:19: error: lvalue required as left operand of assignment
+     Field(res, 5) = dir;
+                   ^
+unix_get_pw_gr_nam_id_job.c:47:19: error: lvalue required as left operand of assignment
+     Field(res, 6) = shell;
+                   ^
+unix_get_pw_gr_nam_id_job.c: In function ‘alloc_group_entry’:
+unix_get_pw_gr_nam_id_job.c:62:19: error: lvalue required as left operand of assignment
+     Field(res, 0) = name;
+                   ^
+unix_get_pw_gr_nam_id_job.c:63:19: error: lvalue required as left operand of assignment
+     Field(res, 1) = pass;
+                   ^
+unix_get_pw_gr_nam_id_job.c:64:19: error: lvalue required as left operand of assignment
+     Field(res, 2) = Val_int(entry->gr_gid);
+                   ^
+unix_get_pw_gr_nam_id_job.c:65:19: error: lvalue required as left operand of assignment
+     Field(res, 3) = mem;
+                   ^
+      ocamlc src/unix/unix_getaddrinfo_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_getaddrinfo_job.o unix_getaddrinfo_job.c)
+unix_getaddrinfo_job.c: In function ‘convert_addrinfo’:
+unix_getaddrinfo_job.c:54:20: error: lvalue required as left operand of assignment
+     Field(vres, 0) = cst_to_constr(a->ai_family, socket_domain_table, 3, 0);
+                    ^
+unix_getaddrinfo_job.c:55:20: error: lvalue required as left operand of assignment
+     Field(vres, 1) = cst_to_constr(a->ai_socktype, socket_type_table, 4, 0);
+                    ^
+unix_getaddrinfo_job.c:56:20: error: lvalue required as left operand of assignment
+     Field(vres, 2) = Val_int(a->ai_protocol);
+                    ^
+unix_getaddrinfo_job.c:57:20: error: lvalue required as left operand of assignment
+     Field(vres, 3) = vaddr;
+                    ^
+unix_getaddrinfo_job.c:58:20: error: lvalue required as left operand of assignment
+     Field(vres, 4) = vcanonname;
+                    ^
+unix_getaddrinfo_job.c: In function ‘result_getaddrinfo’:
+unix_getaddrinfo_job.c:79:25: error: lvalue required as left operand of assignment
+             Field(v, 0) = e;
+                         ^
+unix_getaddrinfo_job.c:80:25: error: lvalue required as left operand of assignment
+             Field(v, 1) = vres;
+                         ^
+      ocamlc src/unix/unix_getnameinfo_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_getnameinfo_job.o unix_getnameinfo_job.c)
+unix_getnameinfo_job.c: In function ‘result_getnameinfo’:
+unix_getnameinfo_job.c:52:24: error: lvalue required as left operand of assignment
+         Field(vres, 0) = vhost;
+                        ^
+unix_getnameinfo_job.c:53:24: error: lvalue required as left operand of assignment
+         Field(vres, 1) = vserv;
+                        ^
+      ocamlc src/unix/unix_getprotoby_getservby_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_getprotoby_getservby_job.o unix_getprotoby_getservby_job.c)
+unix_getprotoby_getservby_job.c: In function ‘alloc_protoent’:
+unix_getprotoby_getservby_job.c:31:19: error: lvalue required as left operand of assignment
+     Field(res, 0) = name;
+                   ^
+unix_getprotoby_getservby_job.c:32:19: error: lvalue required as left operand of assignment
+     Field(res, 1) = aliases;
+                   ^
+unix_getprotoby_getservby_job.c:33:19: error: lvalue required as left operand of assignment
+     Field(res, 2) = Val_int(entry->p_proto);
+                   ^
+unix_getprotoby_getservby_job.c: In function ‘alloc_servent’:
+unix_getprotoby_getservby_job.c:48:19: error: lvalue required as left operand of assignment
+     Field(res, 0) = name;
+                   ^
+unix_getprotoby_getservby_job.c:49:19: error: lvalue required as left operand of assignment
+     Field(res, 1) = aliases;
+                   ^
+unix_getprotoby_getservby_job.c:50:19: error: lvalue required as left operand of assignment
+     Field(res, 2) = Val_int(ntohs(entry->s_port));
+                   ^
+unix_getprotoby_getservby_job.c:51:19: error: lvalue required as left operand of assignment
+     Field(res, 3) = proto;
+                   ^
+      ocamlc src/unix/unix_mincore.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_mincore.o unix_mincore.c)
+unix_mincore.c: In function ‘lwt_unix_mincore’:
+unix_mincore.c:36:52: error: lvalue required as left operand of assignment
+     for (i = 0; i &lt; len; i++) Field(val_states, i) = Val_bool(vec[i] &amp; 1);
+                                                    ^
+      ocamlc src/unix/unix_open_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_open_job.o unix_open_job.c)
+unix_open_job.c: In function ‘result_open’:
+unix_open_job.c:106:22: error: lvalue required as left operand of assignment
+     Field(result, 0) = Val_int(fd);
+                      ^
+unix_open_job.c:107:22: error: lvalue required as left operand of assignment
+     Field(result, 1) = Val_bool(job->blocking);
+                      ^
+      ocamlc src/unix/unix_read_job.o
+unix_read_job.c: In function ‘result_read’:
+unix_read_job.c:48:9: warning: implicit declaration of function ‘caml_remove_generational_global_root’; did you mean ‘remove_global_root’? [-Wimplicit-function-declaration]
+         caml_remove_generational_global_root(&amp;(job->string));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         remove_global_root
+unix_read_job.c: In function ‘lwt_unix_read_job’:
+unix_read_job.c:68:5: warning: implicit declaration of function ‘caml_register_generational_global_root’; did you mean ‘register_global_root’? [-Wimplicit-function-declaration]
+     caml_register_generational_global_root(&amp;(job->string));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     register_global_root
+      ocamlc src/unix/unix_readv_job.o
+unix_readv_job.c: In function ‘result_readv’:
+unix_readv_job.c:59:9: warning: implicit declaration of function ‘caml_remove_generational_global_root’; did you mean ‘remove_global_root’? [-Wimplicit-function-declaration]
+         caml_remove_generational_global_root(&amp;read_buffer->caml_buffer);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         remove_global_root
+      ocamlc src/unix/unix_readv_writev_utils.o
+unix_readv_writev_utils.c: In function ‘flatten_io_vectors’:
+unix_readv_writev_utils.c:54:17: warning: implicit declaration of function ‘caml_register_generational_global_root’; did you mean ‘register_global_root’? [-Wimplicit-function-declaration]
+                 caml_register_generational_global_root(
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 register_global_root
+      ocamlc src/unix/unix_recvfrom.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_recvfrom.o unix_recvfrom.c)
+unix_recvfrom.c: In function ‘lwt_unix_recvfrom’:
+unix_recvfrom.c:34:22: error: lvalue required as left operand of assignment
+     Field(result, 0) = Val_int(ret);
+                      ^
+unix_recvfrom.c:35:22: error: lvalue required as left operand of assignment
+     Field(result, 1) = address;
+                      ^
+      ocamlc src/unix/unix_stat_job_utils.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_stat_job_utils.o unix_stat_job_utils.c)
+unix_stat_job_utils.c: In function ‘copy_stat’:
+unix_stat_job_utils.c:29:17: error: lvalue required as left operand of assignment
+     Field(v, 0) = Val_int(buf->st_dev);
+                 ^
+unix_stat_job_utils.c:30:17: error: lvalue required as left operand of assignment
+     Field(v, 1) = Val_int(buf->st_ino);
+                 ^
+unix_stat_job_utils.c:33:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(0);
+                         ^
+unix_stat_job_utils.c:36:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(1);
+                         ^
+unix_stat_job_utils.c:39:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(2);
+                         ^
+unix_stat_job_utils.c:42:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(3);
+                         ^
+unix_stat_job_utils.c:45:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(4);
+                         ^
+unix_stat_job_utils.c:48:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(5);
+                         ^
+unix_stat_job_utils.c:51:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(6);
+                         ^
+unix_stat_job_utils.c:54:25: error: lvalue required as left operand of assignment
+             Field(v, 2) = Val_int(0);
+                         ^
+unix_stat_job_utils.c:57:17: error: lvalue required as left operand of assignment
+     Field(v, 3) = Val_int(buf->st_mode &amp; 07777);
+                 ^
+unix_stat_job_utils.c:58:17: error: lvalue required as left operand of assignment
+     Field(v, 4) = Val_int(buf->st_nlink);
+                 ^
+unix_stat_job_utils.c:59:17: error: lvalue required as left operand of assignment
+     Field(v, 5) = Val_int(buf->st_uid);
+                 ^
+unix_stat_job_utils.c:60:17: error: lvalue required as left operand of assignment
+     Field(v, 6) = Val_int(buf->st_gid);
+                 ^
+unix_stat_job_utils.c:61:17: error: lvalue required as left operand of assignment
+     Field(v, 7) = Val_int(buf->st_rdev);
+                 ^
+unix_stat_job_utils.c:62:17: error: lvalue required as left operand of assignment
+     Field(v, 8) = offset;
+                 ^
+unix_stat_job_utils.c:63:17: error: lvalue required as left operand of assignment
+     Field(v, 9) = atime;
+                 ^
+unix_stat_job_utils.c:64:18: error: lvalue required as left operand of assignment
+     Field(v, 10) = mtime;
+                  ^
+unix_stat_job_utils.c:65:18: error: lvalue required as left operand of assignment
+     Field(v, 11) = ctime;
+                  ^
+      ocamlc src/unix/unix_tcgetattr_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_tcgetattr_job.o unix_tcgetattr_job.c)
+unix_tcgetattr_job.c: In function ‘result_tcgetattr’:
+unix_tcgetattr_job.c:37:43: error: lvalue required as unary ‘&amp;’ operand
+     encode_terminal_status(&amp;job->termios, &amp;Field(res, 0));
+                                           ^
+      ocamlc src/unix/unix_tcsetattr_job.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_tcsetattr_job.o unix_tcsetattr_job.c)
+unix_tcsetattr_job.c: In function ‘lwt_unix_tcsetattr_job’:
+unix_tcsetattr_job.c:55:27: error: lvalue required as unary ‘&amp;’ operand
+     memcpy(&amp;job->termios, &amp;Field(termios, 0), NFIELDS * sizeof(value));
+                           ^
+      ocamlc src/unix/unix_wait4.o (exit 2)
+(cd _build/default/src/unix &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/bytes -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -I /root/.opam/4.06.1+multicore+bench/lib/result -I ../core -ccopt -I. -o unix_wait4.o unix_wait4.c)
+unix_wait4.c: In function ‘alloc_process_status’:
+unix_wait4.c:48:22: error: lvalue required as left operand of assignment
+         Field(st, 0) = Val_int(WEXITSTATUS(status));
+                      ^
+unix_wait4.c:51:22: error: lvalue required as left operand of assignment
+         Field(st, 0) =
+                      ^
+unix_wait4.c:55:22: error: lvalue required as left operand of assignment
+         Field(st, 0) =
+                      ^</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-camlimages-5.0.1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on camlimages.5.0.1 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p camlimages -j 7</pre></p>
+  <h4>Output</h4><pre>       ocaml (internal)
+ocamlfind: Package `graphics' not found
+    ocamlopt config/.ciconfig.eobjs/xConfigurator.{cmx,o}
+File "config/xConfigurator.ml", line 23, characters 16-25:
+Warning 3: deprecated: Not_found
+[2016-09] this element comes from the stdlib distributed with OCaml.
+Instead of raising [Not_found], consider using [raise_s] with an informative error
+message.  If code needs to distinguish [Not_found] from other exceptions, please change
+it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+raise [Not_found_s] with an informative error message.
+    ocamlopt config/ciconfig.exe (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlopt.opt -w -40 -w -6 -g -o config/ciconfig.exe -I /root/.opam/4.06.1+multicore+bench/lib/base -I /root/.opam/4.06.1+multicore+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+bench/lib/configurator -I /root/.opam/4.06.1+multicore+bench/lib/findlib -I /root/.opam/4.06.1+multicore+bench/lib/sexplib0 -I /root/.opam/4.06.1+multicore+bench/lib/stdio /root/.opam/4.06.1+multicore+bench/lib/base/caml/caml.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib/shadow_stdlib.cmxa /root/.opam/4.06.1+multicore+bench/lib/sexplib0/sexplib0.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/base.cmxa /root/.opam/4.06.1+multicore+bench/lib/stdio/stdio.cmxa /root/.opam/4.06.1+multicore+bench/lib/ocaml/unix.cmxa /root/.opam/4.06.1+multicore+bench/lib/configurator/configurator.cmxa /root/.opam/4.06.1+multicore+bench/lib/findlib/findlib.cmxa config/.ciconfig.eobjs/xConfigurator.cmx config/.ciconfig.eobjs/ciconfig.cmx)
+/root/.opam/4.06.1+multicore+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+/root/.opam/4.06.1+multicore+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking</pre>
+</div>
+</body></html>
