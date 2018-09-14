@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bench build results</title>
+  <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <style type="text/css"><!--
+     div {padding:3ex;}
+     pre {padding:1ex;border:1px solid grey;background-color:#eee;}
+     table {border-collapse:collapse;margin:auto;}
+     thead {position:-webkit-sticky;position:-moz-sticky;position:sticky;top:0;}
+     tfoot {position:-webkit-sticky;position:-moz-sticky;position:sticky;bottom:0;}
+     thead th {background-color:#dde;}
+         td {text-align: right;}
+     tr:nth-child(odd) {background-color:#eef;}
+     th, td {padding:2ex; border:1px solid #e0e0e0;}
+     .logs {display:none;}
+     .logs:target {display:block;position:fixed;top:5%;left:5%;right:5%;bottom:5%;border:1px solid black;background-color:white;overflow:scroll;z-index:10;}
+     .close {display:block;position:fixed;top:7%;right:7%;}
+     a:target {background-color:#e0e000;}
+  --></style>
+</head><body>
+<div>
+<table class="sortable">
+<thead>
+  <tr><th>Package</th><th>4.06.1+scheduling+bench</th><th>4.06.1+scheduling+bench time (s)</th></tr>
+</thead>
+<tbody>
+  <tr><th id="almabench-bench.1.0">almabench-bench.1.0</th><td><a id="4.06.1+scheduling+bench:almabench-bench.1.0">OK</a></td><td>0.245</td></tr>
+  <tr><th id="alt-ergo.2.2.0">alt-ergo.2.2.0</th><td><a id="4.06.1+scheduling+bench:alt-ergo.2.2.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async.v0.11.0">async.v0.11.0</th><td><a id="4.06.1+scheduling+bench:async.v0.11.0">OK</a></td><td>0.729</td></tr>
+  <tr><th id="async-echo-bench.1.0">async-echo-bench.1.0</th><td><a id="4.06.1+scheduling+bench:async-echo-bench.1.0" href="#log-4.06.1+scheduling+bench-async-echo-bench-1.0">Failure (2)</a></td><td>0.556</td></tr>
+  <tr><th id="async-rpc-bench.1.0">async-rpc-bench.1.0</th><td><a id="4.06.1+scheduling+bench:async-rpc-bench.1.0" href="#log-4.06.1+scheduling+bench-async-rpc-bench-1.0">Failure (2)</a></td><td>0.489</td></tr>
+  <tr><th id="async_extra.v0.11.1">async_extra.v0.11.1</th><td><a id="4.06.1+scheduling+bench:async_extra.v0.11.1">OK</a></td><td>3.261</td></tr>
+  <tr><th id="async_kernel.v0.11.1">async_kernel.v0.11.1</th><td><a id="4.06.1+scheduling+bench:async_kernel.v0.11.1">OK</a></td><td>9.722</td></tr>
+  <tr><th id="async_rpc_kernel.v0.11.0">async_rpc_kernel.v0.11.0</th><td><a id="4.06.1+scheduling+bench:async_rpc_kernel.v0.11.0">OK</a></td><td>7.558</td></tr>
+  <tr><th id="async_unix.v0.11.0">async_unix.v0.11.0</th><td><a id="4.06.1+scheduling+bench:async_unix.v0.11.0">OK</a></td><td>8.050</td></tr>
+  <tr><th id="base.v0.11.1">base.v0.11.1</th><td><a id="4.06.1+scheduling+bench:base.v0.11.1">OK</a></td><td>10.059</td></tr>
+  <tr><th id="base-bytes.base">base-bytes.base</th><td><a id="4.06.1+scheduling+bench:base-bytes.base">OK</a></td><td>0.000</td></tr>
+  <tr><th id="base64.2.2.0">base64.2.2.0</th><td><a id="4.06.1+scheduling+bench:base64.2.2.0">OK</a></td><td>0.251</td></tr>
+  <tr><th id="bdd-bench.1.0">bdd-bench.1.0</th><td><a id="4.06.1+scheduling+bench:bdd-bench.1.0">OK</a></td><td>0.233</td></tr>
+  <tr><th id="bin_prot.v0.11.0">bin_prot.v0.11.0</th><td><a id="4.06.1+scheduling+bench:bin_prot.v0.11.0">OK</a></td><td>4.159</td></tr>
+  <tr><th id="biniou.1.2.0">biniou.1.2.0</th><td><a id="4.06.1+scheduling+bench:biniou.1.2.0">OK</a></td><td>0.517</td></tr>
+  <tr><th id="camlimages.5.0.1">camlimages.5.0.1</th><td><a id="4.06.1+scheduling+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="camlpdf.2.2.1">camlpdf.2.2.1</th><td><a id="4.06.1+scheduling+bench:camlpdf.2.2.1">OK</a></td><td>13.146</td></tr>
+  <tr><th id="camlzip.1.07">camlzip.1.07</th><td><a id="4.06.1+scheduling+bench:camlzip.1.07">OK</a></td><td>1.506</td></tr>
+  <tr><th id="chameneos-bench.1.0">chameneos-bench.1.0</th><td><a id="4.06.1+scheduling+bench:chameneos-bench.1.0" href="#log-4.06.1+scheduling+bench-chameneos-bench-1.0">Failure (2)</a></td><td>0.643</td></tr>
+  <tr><th id="cohttp.1.0.0">cohttp.1.0.0</th><td><a id="4.06.1+scheduling+bench:cohttp.1.0.0">OK</a></td><td>2.077</td></tr>
+  <tr><th id="cohttp-bench.1.0">cohttp-bench.1.0</th><td><a id="4.06.1+scheduling+bench:cohttp-bench.1.0" href="#log-4.06.1+scheduling+bench-cohttp-bench-1.0">Failure (2)</a></td><td>0.301</td></tr>
+  <tr><th id="conf-autoconf.0.1">conf-autoconf.0.1</th><td><a id="4.06.1+scheduling+bench:conf-autoconf.0.1">OK</a></td><td>1.018</td></tr>
+  <tr><th id="conf-gmp.1">conf-gmp.1</th><td><a id="4.06.1+scheduling+bench:conf-gmp.1">OK</a></td><td>0.285</td></tr>
+  <tr><th id="conf-gnomecanvas.2">conf-gnomecanvas.2</th><td><a id="4.06.1+scheduling+bench:conf-gnomecanvas.2" href="#log-4.06.1+scheduling+bench-conf-gnomecanvas-2">Failure (1)</a></td><td>0.337</td></tr>
+  <tr><th id="conf-gtksourceview.2">conf-gtksourceview.2</th><td><a id="4.06.1+scheduling+bench:conf-gtksourceview.2" href="#log-4.06.1+scheduling+bench-conf-gtksourceview-2">Failure (1)</a></td><td>1.066</td></tr>
+  <tr><th id="conf-libpcre.1">conf-libpcre.1</th><td><a id="4.06.1+scheduling+bench:conf-libpcre.1">OK</a></td><td>0.093</td></tr>
+  <tr><th id="conf-m4.1">conf-m4.1</th><td><a id="4.06.1+scheduling+bench:conf-m4.1">OK</a></td><td>0.366</td></tr>
+  <tr><th id="conf-perl.1">conf-perl.1</th><td><a id="4.06.1+scheduling+bench:conf-perl.1">OK</a></td><td>0.077</td></tr>
+  <tr><th id="conf-pkg-config.1.1">conf-pkg-config.1.1</th><td><a id="4.06.1+scheduling+bench:conf-pkg-config.1.1">OK</a></td><td>0.612</td></tr>
+  <tr><th id="conf-which.1">conf-which.1</th><td><a id="4.06.1+scheduling+bench:conf-which.1">OK</a></td><td>0.582</td></tr>
+  <tr><th id="configurator.v0.11.0">configurator.v0.11.0</th><td><a id="4.06.1+scheduling+bench:configurator.v0.11.0">OK</a></td><td>2.479</td></tr>
+  <tr><th id="core.v0.11.3">core.v0.11.3</th><td><a id="4.06.1+scheduling+bench:core.v0.11.3">OK</a></td><td>21.257</td></tr>
+  <tr><th id="core-micro-bench.1.0">core-micro-bench.1.0</th><td><a id="4.06.1+scheduling+bench:core-micro-bench.1.0" href="#log-4.06.1+scheduling+bench-core-micro-bench-1.0">Failure (2)</a></td><td>1.767</td></tr>
+  <tr><th id="core-sequence-bench.1.0">core-sequence-bench.1.0</th><td><a id="4.06.1+scheduling+bench:core-sequence-bench.1.0">OK</a></td><td>0.053</td></tr>
+  <tr><th id="core_bench.v0.11.0">core_bench.v0.11.0</th><td><a id="4.06.1+scheduling+bench:core_bench.v0.11.0">OK</a></td><td>2.545</td></tr>
+  <tr><th id="core_extended.v0.11.0">core_extended.v0.11.0</th><td><a id="4.06.1+scheduling+bench:core_extended.v0.11.0">OK</a></td><td>13.511</td></tr>
+  <tr><th id="core_kernel.v0.11.1">core_kernel.v0.11.1</th><td><a id="4.06.1+scheduling+bench:core_kernel.v0.11.1">OK</a></td><td>18.786</td></tr>
+  <tr><th id="cpdf.2.2.1">cpdf.2.2.1</th><td><a id="4.06.1+scheduling+bench:cpdf.2.2.1">OK</a></td><td>3.755</td></tr>
+  <tr><th id="cpdf-bench.1.0">cpdf-bench.1.0</th><td><a id="4.06.1+scheduling+bench:cpdf-bench.1.0">OK</a></td><td>0.158</td></tr>
+  <tr><th id="cppo.1.6.5">cppo.1.6.5</th><td><a id="4.06.1+scheduling+bench:cppo.1.6.5">OK</a></td><td>0.827</td></tr>
+  <tr><th id="dune.1.1.1">dune.1.1.1</th><td><a id="4.06.1+scheduling+bench:dune.1.1.1">OK</a></td><td>8.428</td></tr>
+  <tr><th id="easy-format.1.3.1">easy-format.1.3.1</th><td><a id="4.06.1+scheduling+bench:easy-format.1.3.1">OK</a></td><td>0.341</td></tr>
+  <tr><th id="expect_test_helpers.v0.11.0">expect_test_helpers.v0.11.0</th><td><a id="4.06.1+scheduling+bench:expect_test_helpers.v0.11.0">OK</a></td><td>1.259</td></tr>
+  <tr><th id="expect_test_helpers_kernel.v0.11.0">expect_test_helpers_kernel.v0.11.0</th><td><a id="4.06.1+scheduling+bench:expect_test_helpers_kernel.v0.11.0">OK</a></td><td>4.337</td></tr>
+  <tr><th id="fieldslib.v0.11.0">fieldslib.v0.11.0</th><td><a id="4.06.1+scheduling+bench:fieldslib.v0.11.0">OK</a></td><td>1.153</td></tr>
+  <tr><th id="frama-c.20180502">frama-c.20180502</th><td><a id="4.06.1+scheduling+bench:frama-c.20180502" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="frama-c-bench.1.0">frama-c-bench.1.0</th><td><a id="4.06.1+scheduling+bench:frama-c-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="jane-street-headers.v0.11.0">jane-street-headers.v0.11.0</th><td><a id="4.06.1+scheduling+bench:jane-street-headers.v0.11.0">OK</a></td><td>0.246</td></tr>
+  <tr><th id="jbuilder.transition">jbuilder.transition</th><td><a id="4.06.1+scheduling+bench:jbuilder.transition">OK</a></td><td>0.000</td></tr>
+  <tr><th id="json-bench-data.1.0">json-bench-data.1.0</th><td><a id="4.06.1+scheduling+bench:json-bench-data.1.0">OK</a></td><td>0.036</td></tr>
+  <tr><th id="jsonm.1.0.1">jsonm.1.0.1</th><td><a id="4.06.1+scheduling+bench:jsonm.1.0.1">OK</a></td><td>2.747</td></tr>
+  <tr><th id="jsonm-bench.1.0">jsonm-bench.1.0</th><td><a id="4.06.1+scheduling+bench:jsonm-bench.1.0">OK</a></td><td>0.035</td></tr>
+  <tr><th id="kb-bench.1.0">kb-bench.1.0</th><td><a id="4.06.1+scheduling+bench:kb-bench.1.0">OK</a></td><td>0.585</td></tr>
+  <tr><th id="lablgtk.2.18.6">lablgtk.2.18.6</th><td><a id="4.06.1+scheduling+bench:lablgtk.2.18.6" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="lexifi-g2pp-bench.1.0">lexifi-g2pp-bench.1.0</th><td><a id="4.06.1+scheduling+bench:lexifi-g2pp-bench.1.0">OK</a></td><td>0.945</td></tr>
+  <tr><th id="lwt.4.1.0">lwt.4.1.0</th><td><a id="4.06.1+scheduling+bench:lwt.4.1.0">OK</a></td><td>22.896</td></tr>
+  <tr><th id="menhir.20180905">menhir.20180905</th><td><a id="4.06.1+scheduling+bench:menhir.20180905">OK</a></td><td>13.360</td></tr>
+  <tr><th id="menhir-bench.1.0">menhir-bench.1.0</th><td><a id="4.06.1+scheduling+bench:menhir-bench.1.0">OK</a></td><td>0.201</td></tr>
+  <tr><th id="minilight.1.6">minilight.1.6</th><td><a id="4.06.1+scheduling+bench:minilight.1.6">OK</a></td><td>0.917</td></tr>
+  <tr><th id="minilight-bench.1.0">minilight-bench.1.0</th><td><a id="4.06.1+scheduling+bench:minilight-bench.1.0">OK</a></td><td>0.105</td></tr>
+  <tr><th id="nbcodec.1.0">nbcodec.1.0</th><td><a id="4.06.1+scheduling+bench:nbcodec.1.0">OK</a></td><td>0.640</td></tr>
+  <tr><th id="nbcodec-bench.1.0">nbcodec-bench.1.0</th><td><a id="4.06.1+scheduling+bench:nbcodec-bench.1.0">OK</a></td><td>0.099</td></tr>
+  <tr><th id="num.1.1">num.1.1</th><td><a id="4.06.1+scheduling+bench:num.1.1">OK</a></td><td>2.341</td></tr>
+  <tr><th id="numerical-analysis-bench.1.0">numerical-analysis-bench.1.0</th><td><a id="4.06.1+scheduling+bench:numerical-analysis-bench.1.0">OK</a></td><td>29.734</td></tr>
+  <tr><th id="ocaml.4.06.1">ocaml.4.06.1</th><td><a id="4.06.1+scheduling+bench:ocaml.4.06.1">OK</a></td><td>0.155</td></tr>
+  <tr><th id="ocaml-compiler-libs.v0.11.0">ocaml-compiler-libs.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ocaml-compiler-libs.v0.11.0">OK</a></td><td>1.000</td></tr>
+  <tr><th id="ocaml-migrate-parsetree.1.0.11">ocaml-migrate-parsetree.1.0.11</th><td><a id="4.06.1+scheduling+bench:ocaml-migrate-parsetree.1.0.11">OK</a></td><td>5.306</td></tr>
+  <tr><th id="ocaml-variants.4.06.1+scheduling">ocaml-variants.4.06.1+scheduling</th><td><a id="4.06.1+scheduling+bench:ocaml-variants.4.06.1+scheduling">OK</a></td><td>161.324</td></tr>
+  <tr><th id="ocamlbuild.0.12.0">ocamlbuild.0.12.0</th><td><a id="4.06.1+scheduling+bench:ocamlbuild.0.12.0">OK</a></td><td>4.461</td></tr>
+  <tr><th id="ocamlfind.1.8.0">ocamlfind.1.8.0</th><td><a id="4.06.1+scheduling+bench:ocamlfind.1.8.0">OK</a></td><td>2.972</td></tr>
+  <tr><th id="ocamlgraph.1.8.8">ocamlgraph.1.8.8</th><td><a id="4.06.1+scheduling+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ocplib-simplex.0.4">ocplib-simplex.0.4</th><td><a id="4.06.1+scheduling+bench:ocplib-simplex.0.4">OK</a></td><td>11.613</td></tr>
+  <tr><th id="octavius.1.2.0">octavius.1.2.0</th><td><a id="4.06.1+scheduling+bench:octavius.1.2.0">OK</a></td><td>1.020</td></tr>
+  <tr><th id="parsexp.v0.11.0">parsexp.v0.11.0</th><td><a id="4.06.1+scheduling+bench:parsexp.v0.11.0">OK</a></td><td>4.336</td></tr>
+  <tr><th id="patdiff.v0.11.0">patdiff.v0.11.0</th><td><a id="4.06.1+scheduling+bench:patdiff.v0.11.0">OK</a></td><td>5.583</td></tr>
+  <tr><th id="patdiff-bench.1.0">patdiff-bench.1.0</th><td><a id="4.06.1+scheduling+bench:patdiff-bench.1.0">OK</a></td><td>0.148</td></tr>
+  <tr><th id="patience_diff.v0.11.0">patience_diff.v0.11.0</th><td><a id="4.06.1+scheduling+bench:patience_diff.v0.11.0">OK</a></td><td>6.249</td></tr>
+  <tr><th id="pcre.7.3.4">pcre.7.3.4</th><td><a id="4.06.1+scheduling+bench:pcre.7.3.4">OK</a></td><td>0.760</td></tr>
+  <tr><th id="ppx_assert.v0.11.0">ppx_assert.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_assert.v0.11.0">OK</a></td><td>3.573</td></tr>
+  <tr><th id="ppx_base.v0.11.0">ppx_base.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_base.v0.11.0">OK</a></td><td>2.195</td></tr>
+  <tr><th id="ppx_bench.v0.11.0">ppx_bench.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_bench.v0.11.0">OK</a></td><td>3.096</td></tr>
+  <tr><th id="ppx_bin_prot.v0.11.1">ppx_bin_prot.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_bin_prot.v0.11.1">OK</a></td><td>3.376</td></tr>
+  <tr><th id="ppx_compare.v0.11.1">ppx_compare.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_compare.v0.11.1">OK</a></td><td>1.386</td></tr>
+  <tr><th id="ppx_custom_printf.v0.11.0">ppx_custom_printf.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_custom_printf.v0.11.0">OK</a></td><td>4.245</td></tr>
+  <tr><th id="ppx_derivers.1.0">ppx_derivers.1.0</th><td><a id="4.06.1+scheduling+bench:ppx_derivers.1.0">OK</a></td><td>0.416</td></tr>
+  <tr><th id="ppx_enumerate.v0.11.1">ppx_enumerate.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_enumerate.v0.11.1">OK</a></td><td>1.408</td></tr>
+  <tr><th id="ppx_expect.v0.11.0">ppx_expect.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_expect.v0.11.0">OK</a></td><td>5.949</td></tr>
+  <tr><th id="ppx_fail.v0.11.0">ppx_fail.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_fail.v0.11.0">OK</a></td><td>4.682</td></tr>
+  <tr><th id="ppx_fields_conv.v0.11.0">ppx_fields_conv.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_fields_conv.v0.11.0">OK</a></td><td>6.281</td></tr>
+  <tr><th id="ppx_hash.v0.11.1">ppx_hash.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_hash.v0.11.1">OK</a></td><td>4.704</td></tr>
+  <tr><th id="ppx_here.v0.11.0">ppx_here.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_here.v0.11.0">OK</a></td><td>1.414</td></tr>
+  <tr><th id="ppx_inline_test.v0.11.0">ppx_inline_test.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_inline_test.v0.11.0">OK</a></td><td>2.795</td></tr>
+  <tr><th id="ppx_jane.v0.11.0">ppx_jane.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_jane.v0.11.0">OK</a></td><td>0.928</td></tr>
+  <tr><th id="ppx_js_style.v0.11.0">ppx_js_style.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_js_style.v0.11.0">OK</a></td><td>2.217</td></tr>
+  <tr><th id="ppx_let.v0.11.0">ppx_let.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_let.v0.11.0">OK</a></td><td>1.375</td></tr>
+  <tr><th id="ppx_optcomp.v0.11.0">ppx_optcomp.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_optcomp.v0.11.0">OK</a></td><td>1.144</td></tr>
+  <tr><th id="ppx_optional.v0.11.0">ppx_optional.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_optional.v0.11.0">OK</a></td><td>3.092</td></tr>
+  <tr><th id="ppx_pipebang.v0.11.0">ppx_pipebang.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_pipebang.v0.11.0">OK</a></td><td>4.677</td></tr>
+  <tr><th id="ppx_sexp_conv.v0.11.2">ppx_sexp_conv.v0.11.2</th><td><a id="4.06.1+scheduling+bench:ppx_sexp_conv.v0.11.2">OK</a></td><td>6.812</td></tr>
+  <tr><th id="ppx_sexp_message.v0.11.0">ppx_sexp_message.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_sexp_message.v0.11.0">OK</a></td><td>5.314</td></tr>
+  <tr><th id="ppx_sexp_value.v0.11.0">ppx_sexp_value.v0.11.0</th><td><a id="4.06.1+scheduling+bench:ppx_sexp_value.v0.11.0">OK</a></td><td>5.691</td></tr>
+  <tr><th id="ppx_typerep_conv.v0.11.1">ppx_typerep_conv.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_typerep_conv.v0.11.1">OK</a></td><td>7.553</td></tr>
+  <tr><th id="ppx_variants_conv.v0.11.1">ppx_variants_conv.v0.11.1</th><td><a id="4.06.1+scheduling+bench:ppx_variants_conv.v0.11.1">OK</a></td><td>3.563</td></tr>
+  <tr><th id="ppxlib.0.3.0">ppxlib.0.3.0</th><td><a id="4.06.1+scheduling+bench:ppxlib.0.3.0">OK</a></td><td>7.011</td></tr>
+  <tr><th id="protocol_version_header.v0.11.0">protocol_version_header.v0.11.0</th><td><a id="4.06.1+scheduling+bench:protocol_version_header.v0.11.0">OK</a></td><td>8.362</td></tr>
+  <tr><th id="psmt2-frontend.0.1">psmt2-frontend.0.1</th><td><a id="4.06.1+scheduling+bench:psmt2-frontend.0.1">OK</a></td><td>13.004</td></tr>
+  <tr><th id="re.1.7.3">re.1.7.3</th><td><a id="4.06.1+scheduling+bench:re.1.7.3">OK</a></td><td>1.168</td></tr>
+  <tr><th id="re2.v0.11.0">re2.v0.11.0</th><td><a id="4.06.1+scheduling+bench:re2.v0.11.0">OK</a></td><td>58.706</td></tr>
+  <tr><th id="result.1.3">result.1.3</th><td><a id="4.06.1+scheduling+bench:result.1.3">OK</a></td><td>0.444</td></tr>
+  <tr><th id="sauvola-bench.1.0">sauvola-bench.1.0</th><td><a id="4.06.1+scheduling+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="sequence-bench.1.0">sequence-bench.1.0</th><td><a id="4.06.1+scheduling+bench:sequence-bench.1.0">OK</a></td><td>0.595</td></tr>
+  <tr><th id="sexp_pretty.v0.11.0">sexp_pretty.v0.11.0</th><td><a id="4.06.1+scheduling+bench:sexp_pretty.v0.11.0">OK</a></td><td>7.778</td></tr>
+  <tr><th id="sexplib.v0.11.0">sexplib.v0.11.0</th><td><a id="4.06.1+scheduling+bench:sexplib.v0.11.0">OK</a></td><td>15.552</td></tr>
+  <tr><th id="sexplib0.v0.11.0">sexplib0.v0.11.0</th><td><a id="4.06.1+scheduling+bench:sexplib0.v0.11.0">OK</a></td><td>0.725</td></tr>
+  <tr><th id="spawn.v0.12.0">spawn.v0.12.0</th><td><a id="4.06.1+scheduling+bench:spawn.v0.12.0">OK</a></td><td>0.677</td></tr>
+  <tr><th id="splittable_random.v0.11.0">splittable_random.v0.11.0</th><td><a id="4.06.1+scheduling+bench:splittable_random.v0.11.0">OK</a></td><td>0.733</td></tr>
+  <tr><th id="stdio.v0.11.0">stdio.v0.11.0</th><td><a id="4.06.1+scheduling+bench:stdio.v0.11.0">OK</a></td><td>5.220</td></tr>
+  <tr><th id="stringext.1.5.0">stringext.1.5.0</th><td><a id="4.06.1+scheduling+bench:stringext.1.5.0">OK</a></td><td>0.633</td></tr>
+  <tr><th id="textutils.v0.11.0">textutils.v0.11.0</th><td><a id="4.06.1+scheduling+bench:textutils.v0.11.0">OK</a></td><td>4.871</td></tr>
+  <tr><th id="textutils_kernel.v0.11.0">textutils_kernel.v0.11.0</th><td><a id="4.06.1+scheduling+bench:textutils_kernel.v0.11.0">OK</a></td><td>2.335</td></tr>
+  <tr><th id="thread-bench.1.0">thread-bench.1.0</th><td><a id="4.06.1+scheduling+bench:thread-bench.1.0" href="#log-4.06.1+scheduling+bench-thread-bench-1.0">Failure (2)</a></td><td>0.660</td></tr>
+  <tr><th id="topkg.0.9.1">topkg.0.9.1</th><td><a id="4.06.1+scheduling+bench:topkg.0.9.1">OK</a></td><td>5.282</td></tr>
+  <tr><th id="typerep.v0.11.0">typerep.v0.11.0</th><td><a id="4.06.1+scheduling+bench:typerep.v0.11.0">OK</a></td><td>5.982</td></tr>
+  <tr><th id="uchar.0.0.2">uchar.0.0.2</th><td><a id="4.06.1+scheduling+bench:uchar.0.0.2">OK</a></td><td>0.914</td></tr>
+  <tr><th id="uri.1.9.7">uri.1.9.7</th><td><a id="4.06.1+scheduling+bench:uri.1.9.7">OK</a></td><td>6.074</td></tr>
+  <tr><th id="uutf.1.0.1">uutf.1.0.1</th><td><a id="4.06.1+scheduling+bench:uutf.1.0.1">OK</a></td><td>16.895</td></tr>
+  <tr><th id="variantslib.v0.11.0">variantslib.v0.11.0</th><td><a id="4.06.1+scheduling+bench:variantslib.v0.11.0">OK</a></td><td>6.809</td></tr>
+  <tr><th id="yojson.1.4.1">yojson.1.4.1</th><td><a id="4.06.1+scheduling+bench:yojson.1.4.1">OK</a></td><td>1.299</td></tr>
+  <tr><th id="yojson-bench.1.0">yojson-bench.1.0</th><td><a id="4.06.1+scheduling+bench:yojson-bench.1.0" href="#log-4.06.1+scheduling+bench-yojson-bench-1.0">Failure (2)</a></td><td>17.695</td></tr>
+  <tr><th id="zarith.1.7">zarith.1.7</th><td><a id="4.06.1+scheduling+bench:zarith.1.7">OK</a></td><td>3.143</td></tr>
+</tbody>
+</table></div><div class="logs" id="log-4.06.1+scheduling+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+scheduling+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+scheduling+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-thread-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on thread-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C thread</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/thread-bench.1.0/thread'
+ocamlfind ocamlopt -package lwt.unix -linkpkg -o thread_sleep_lwt thread_sleep_lwt.ml
+ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+ocamlfind ocamlopt -package lwt.unix -linkpkg -o thread_ring_lwt_mvar thread_ring_lwt_mvar.ml
+ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+ocamlfind ocamlopt -package lwt.unix -linkpkg -o thread_ring_lwt_stream thread_ring_lwt_stream.ml
+ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+ocamlfind ocamlopt -thread -package async -linkpkg -o thread_sleep_async thread_sleep_async.ml
+File "thread_sleep_async.ml", line 1, characters 5-13:
+Warning 3: deprecated: module Core.Std
+[since 2017-02] Use Core. The Std sub-module is no longer needed
+File "thread_sleep_async.ml", line 2, characters 5-14:
+Error: Unbound module Async.Std
+Makefile:10: recipe for target 'thread_sleep_async' failed
+make: *** [thread_sleep_async] Error 2
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/thread-bench.1.0/thread'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-core-micro-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on core-micro-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C core_micro</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/core-micro-bench.1.0/core_micro'
+ocamlbuild -use-ocamlfind runner.native
+ocamlfind ocamldep -package str -package core -package core_bench.inline_benchmarks -modules runner.ml > runner.ml.depends
+ocamlfind ocamlc -c -thread -package str -package core -package core_bench.inline_benchmarks -o runner.cmo runner.ml
++ ocamlfind ocamlc -c -thread -package str -package core -package core_bench.inline_benchmarks -o runner.cmo runner.ml
+File "runner.ml", line 1, characters 5-13:
+Warning 3: deprecated: module Core.Std
+[since 2017-02] Use Core. The Std sub-module is no longer needed
+File "runner.ml", line 3, characters 15-55:
+Error: Unbound module Pa_bench_lib
+Command exited with code 2.
+Makefile:4: recipe for target 'all' failed
+make: *** [all] Error 10
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/core-micro-bench.1.0/core_micro'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-cohttp-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on cohttp-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C cohttp</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/cohttp-bench.1.0/cohttp'
+ocamlbuild -use-ocamlfind cohttp_lwt_bench.native cohttp_async_bench.native
+ocamlfind ocamldep -package lwt.unix -package cohttp.lwt -modules cohttp_lwt_bench.ml > cohttp_lwt_bench.ml.depends
++ ocamlfind ocamldep -package lwt.unix -package cohttp.lwt -modules cohttp_lwt_bench.ml > cohttp_lwt_bench.ml.depends
+ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+Command exited with code 2.
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 10
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/cohttp-bench.1.0/cohttp'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-chameneos-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on chameneos-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C chameneos-redux</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/chameneos-bench.1.0/chameneos-redux'
+ocamlopt -bin-annot -thread unix.cmxa threads.cmxa chameneos_redux_th.ml -o chameneos_redux_th
+ocamlopt -bin-annot -thread unix.cmxa threads.cmxa chameneos_redux_evtchn.ml -o chameneos_redux_evtchn
+ocamlfind ocamlopt -bin-annot -package lwt.unix -linkpkg chameneos_redux_lwt.ml -o chameneos_redux_lwt
+ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+ocamlfind ocamlopt -bin-annot  -thread -package async -linkpkg chameneos_redux_async.ml -o chameneos_redux_async
+File "chameneos_redux_async.ml", line 7, characters 5-13:
+Warning 3: deprecated: module Core.Std
+[since 2017-02] Use Core. The Std sub-module is no longer needed
+File "chameneos_redux_async.ml", line 8, characters 5-14:
+Error: Unbound module Async.Std
+Makefile:9: recipe for target 'chameneos_redux_async' failed
+make: *** [chameneos_redux_async] Error 2
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/chameneos-bench.1.0/chameneos-redux'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-async-rpc-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on async-rpc-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C async_rpc</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/async-rpc-bench.1.0/async_rpc'
+ocamlfind ocamlopt -thread -syntax camlp4o -package async -package bin_prot.syntax -package core -c rpc_common.ml
+ocamlfind: Package `bin_prot.syntax' not found
+Makefile:12: recipe for target 'rpc_common.cmx' failed
+make: *** [rpc_common.cmx] Error 2
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/async-rpc-bench.1.0/async_rpc'</pre>
+</div>
+<div class="logs" id="log-4.06.1+scheduling+bench-async-echo-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on async-echo-bench.1.0 (4.06.1+scheduling+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C async_echo</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/async-echo-bench.1.0/async_echo'
+ocamlfind ocamlopt -thread -syntax camlp4o -package async -package bin_prot.syntax -package core -c echo_common.ml
+ocamlfind: Package `bin_prot.syntax' not found
+Makefile:20: recipe for target 'echo_common.cmx' failed
+make: *** [echo_common.cmx] Error 2
+make: Leaving directory '/root/.opam/4.06.1+scheduling+bench/.opam-switch/build/async-echo-bench.1.0/async_echo'</pre>
+</div>
+</body></html>
