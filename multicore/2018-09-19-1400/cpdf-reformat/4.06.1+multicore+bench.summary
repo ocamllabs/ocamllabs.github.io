@@ -1,0 +1,46 @@
+((success false) (name cpdf-reformat) (context_id 4.06.1+multicore+bench)
+ (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 7671342517) (stddev -NAN) (mini 7671342517)
+     (maxi 7671342517) (runs 1)))
+   (Size
+    ((success true) (mean 5425968) (stddev 0) (mini 5425968) (maxi 5425968)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 3570136) (stddev 0) (mini 3570136) (maxi 3570136)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 1855832) (stddev 0) (mini 1855832) (maxi 1855832)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 444797318) (stddev -NAN) (mini 444797318)
+     (maxi 444797318) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 75226891) (stddev -NAN) (mini 75226891)
+     (maxi 75226891) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 64637397) (stddev -NAN) (mini 64637397)
+     (maxi 64637397) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 30748513) (stddev -NAN) (mini 30748513)
+     (maxi 30748513) (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 1694) (stddev -NAN) (mini 1694) (maxi 1694)
+     (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 29) (stddev -NAN) (mini 29) (maxi 29) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 30609141) (stddev -NAN) (mini 30609141)
+     (maxi 30609141) (runs 1)))))
+ (error
+  ((""
+     "allocated_words: 455386812\
+    \nminor_words: 444797318\
+    \npromoted_words: 64637397\
+    \nmajor_words: 75226891\
+    \nminor_collections: 1694\
+    \nmajor_collections: 29\
+    \nheap_words: 30609141\
+    \ntop_heap_words: 30748513\
+    \n"))))
