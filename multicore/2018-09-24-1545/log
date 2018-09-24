@@ -1,0 +1,1367 @@
+=== SETTING UP BENCH SWITCHES AT 2018-09-24-1545 ===
++opam update --check benches
+[WARNING] Running as root is not recommended
+
+<><> Updating package repositories ><><><><><><><><><><><><><><><><><><><><><><>
+[benches] synchronised from git+https://github.com/kayceesrk/ocamlbench-repo#multicore
++opam list --no-switch --has-flag compiler --repo=benches --all-versions --short
+[WARNING] Running as root is not recommended
+++Compilers++
+ocaml-variants.4.06.1+multicore
++opam switch list -s
+[WARNING] Running as root is not recommended
++opam pin add ocaml-variants 4.06.1+multicore --switch 4.06.1+multicore+bench --yes --no-action
+[WARNING] Running as root is not recommended
+[NOTE] Pinning unchanged
+ocaml-variants is now pinned to version 4.06.1+multicore
++opam switch set-base ocaml-variants --switch 4.06.1+multicore+bench --yes
+[WARNING] Running as root is not recommended
++opam pin add ocaml-variants 4.06.1+multicore+no-effect-syntax --switch 4.06.1+multicore+no-effect-syntax+bench --yes --no-action
+[WARNING] Running as root is not recommended
+[NOTE] Pinning unchanged
+ocaml-variants is now pinned to version 4.06.1+multicore+no-effect-syntax
++opam switch set-base ocaml-variants --switch 4.06.1+multicore+no-effect-syntax+bench --yes
+[WARNING] Running as root is not recommended
++opam pin add ocaml-variants 4.06.1+trunk --switch 4.06.1+trunk+bench --yes --no-action
+[WARNING] Running as root is not recommended
+[NOTE] Pinning unchanged
+ocaml-variants is now pinned to version 4.06.1+trunk
++opam switch set-base ocaml-variants --switch 4.06.1+trunk+bench --yes
+[WARNING] Running as root is not recommended
++opam switch list -s
+[WARNING] Running as root is not recommended
++opam remote add multicore https://github.com/ocamllabs/multicore-opam.git#bench --on-switches=4.06.1+multicore+bench,4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
+[multicore] synchronised from git+https://github.com/ocamllabs/multicore-opam.git#bench
+[NOTE] Repository at git+https://github.com/ocamllabs/multicore-opam.git#bench doesn't define its version, assuming it's 1.2.
+
+<><> Upgrading repositories from older opam format ><><><><><><><><><><><><><><>
+Upgrading repository "multicore"...
+Updated /root/.opam/repo/multicore/packages/camlpdf/camlpdf.2.2.1+multicore/opam
+
+=== UPGRADING operf-macro at 2018-09-24-1545 ===
++opam update --check --switch operf
+[WARNING] Running as root is not recommended
+
+<><> Updating package repositories ><><><><><><><><><><><><><><><><><><><><><><>
+[benches] no changes from git+https://github.com/kayceesrk/ocamlbench-repo#multicore
+[default] synchronised from https://opam.ocaml.org/
+
+<><> Upgrading repositories from older opam format ><><><><><><><><><><><><><><>
+Upgrading repository "default"...
+Updated /root/.opam/repo/default/packages/bamboo/bamboo.0.0.02/opam
+Updated /root/.opam/repo/default/packages/beluga/beluga.0.5/opam
+Updated /root/.opam/repo/default/packages/beluga/beluga.0.8/opam
+Updated /root/.opam/repo/default/packages/beluga/beluga.0.8.1/opam
+Updated /root/.opam/repo/default/packages/beluga/beluga.0.8.2/opam
+Updated /root/.opam/repo/default/packages/bes/bes.0.9.3/opam
+Updated /root/.opam/repo/default/packages/bes/bes.0.9.4.2/opam
+Updated /root/.opam/repo/default/packages/color/color.0.2.0/opam
+Updated /root/.opam/repo/default/packages/conf-git/conf-git.1.0/opam
+Updated /root/.opam/repo/default/packages/core/core.v0.9.0/opam
+Updated /root/.opam/repo/default/packages/core/core.v0.9.1/opam
+Updated /root/.opam/repo/default/packages/core/core.v0.9.2/opam
+Updated /root/.opam/repo/default/packages/core/core.v0.10.0/opam
+Updated /root/.opam/repo/default/packages/core_kernel/core_kernel.v0.9.0/opam
+Updated /root/.opam/repo/default/packages/core_kernel/core_kernel.v0.9.1/opam
+Updated /root/.opam/repo/default/packages/ctypes/ctypes.0.1.1/opam
+Updated /root/.opam/repo/default/packages/cudf/cudf.0.6.3/opam
+Updated /root/.opam/repo/default/packages/cudf/cudf.0.7/opam
+Updated /root/.opam/repo/default/packages/cudf/cudf.0.8/opam
+Updated /root/.opam/repo/default/packages/cudf/cudf.0.9/opam
+Updated /root/.opam/repo/default/packages/datakit/datakit.0.10.0/opam
+Updated /root/.opam/repo/default/packages/debian-formats/debian-formats.0.1.1/opam
+Updated /root/.opam/repo/default/packages/devkit/devkit.0.3/opam
+Updated /root/.opam/repo/default/packages/devkit/devkit.0.4/opam
+Updated /root/.opam/repo/default/packages/devkit/devkit.0.5/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.1.2/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.2.2/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.2.2+opam/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.3/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.4.1/opam
+Updated /root/.opam/repo/default/packages/dose/dose.3.4.2/opam
+Updated /root/.opam/repo/default/packages/dose3/dose3.4.3/opam
+Updated /root/.opam/repo/default/packages/dose3/dose3.5.0/opam
+Updated /root/.opam/repo/default/packages/dose3/dose3.5.0.1/opam
+Updated /root/.opam/repo/default/packages/eliom/eliom.5.0.0/opam
+Updated /root/.opam/repo/default/packages/eliom/eliom.6.0.0/opam
+Updated /root/.opam/repo/default/packages/eliom/eliom.6.1.0/opam
+Updated /root/.opam/repo/default/packages/eliom/eliom.6.2.0/opam
+Updated /root/.opam/repo/default/packages/extprot/extprot.1.1.1/opam
+Updated /root/.opam/repo/default/packages/extprot/extprot.1.1.2/opam
+Updated /root/.opam/repo/default/packages/extprot/extprot.1.2.0/opam
+Updated /root/.opam/repo/default/packages/extprot/extprot.1.5.0/opam
+Updated /root/.opam/repo/default/packages/gapi-ocaml/gapi-ocaml.0.3.5/opam
+Updated /root/.opam/repo/default/packages/gapi-ocaml/gapi-ocaml.0.3.6/opam
+Updated /root/.opam/repo/default/packages/gdbprofiler/gdbprofiler.0.1/opam
+Updated /root/.opam/repo/default/packages/google-drive-ocamlfuse/google-drive-ocamlfuse.0.5.25/opam
+Updated /root/.opam/repo/default/packages/gpr/gpr.1.2.2/opam
+Updated /root/.opam/repo/default/packages/javalib/javalib.2.2.2/opam
+Updated /root/.opam/repo/default/packages/javalib/javalib.2.3/opam
+Updated /root/.opam/repo/default/packages/javalib/javalib.2.3a/opam
+Updated /root/.opam/repo/default/packages/jemalloc/jemalloc.0.1/opam
+Updated /root/.opam/repo/default/packages/jingoo/jingoo.1.2.19/opam
+Updated /root/.opam/repo/default/packages/json_decoder/json_decoder.0.1.1/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.4.6/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.4.7/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.4.8/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.5.0/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.5.1/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.5.2/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.6.0/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.2.7.0/opam
+Updated /root/.opam/repo/default/packages/lwt/lwt.3.0.0/opam
+Updated /root/.opam/repo/default/packages/markup-lwt/markup-lwt.0.5.0/opam
+Updated /root/.opam/repo/default/packages/minilight/minilight.1.6/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.1/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.2/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.3/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.4/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.5/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.6/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.7/opam
+Updated /root/.opam/repo/default/packages/mirage/mirage.0.9.8/opam
+Updated /root/.opam/repo/default/packages/mirage-block-unix/mirage-block-unix.1.2.1/opam
+Updated /root/.opam/repo/default/packages/mirage-block-unix/mirage-block-unix.1.2.2/opam
+Updated /root/.opam/repo/default/packages/mirage-net/mirage-net.0.9.1/opam
+Updated /root/.opam/repo/default/packages/mirage-net/mirage-net.0.9.2/opam
+Updated /root/.opam/repo/default/packages/mirage-net/mirage-net.0.9.3/opam
+Updated /root/.opam/repo/default/packages/mirage-net/mirage-net.0.9.4/opam
+Updated /root/.opam/repo/default/packages/mld/mld.0.1/opam
+Updated /root/.opam/repo/default/packages/mld/mld.0.2/opam
+Updated /root/.opam/repo/default/packages/msgpack/msgpack.1.0.0/opam
+Updated /root/.opam/repo/default/packages/nocrypto/nocrypto.0.4.0/opam
+Updated /root/.opam/repo/default/packages/nocrypto/nocrypto.0.5.0/opam
+Updated /root/.opam/repo/default/packages/nocrypto/nocrypto.0.5.1/opam
+Updated /root/.opam/repo/default/packages/nocrypto/nocrypto.0.5.2/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.1/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.1/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.2/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.3/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.4/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.5/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.6/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.2.7/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.0/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.1/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.2/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.3/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.4/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.5/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.3.6/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.7/opam
+Updated /root/.opam/repo/default/packages/oasis2opam/oasis2opam.0.8/opam
+Updated /root/.opam/repo/default/packages/ocaml-migrate-parsetree/ocaml-migrate-parsetree.1.1.0/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.2.0/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.3.1/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.4.0/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.5/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.6/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.7/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.8/opam
+Updated /root/.opam/repo/default/packages/ocsigenserver/ocsigenserver.2.9/opam
+Updated /root/.opam/repo/default/packages/ocveralls/ocveralls.0.3.2/opam
+Updated /root/.opam/repo/default/packages/ocveralls/ocveralls.0.3.3/opam
+Updated /root/.opam/repo/default/packages/ocveralls/ocveralls.0.3.4/opam
+Updated /root/.opam/repo/default/packages/opam-lock/opam-lock.0.1/opam
+Updated /root/.opam/repo/default/packages/opam-publish/opam-publish.0.3.5/opam
+Updated /root/.opam/repo/default/packages/opam-publish/opam-publish.2.0.0~beta/opam
+Updated /root/.opam/repo/default/packages/opam-publish/opam-publish.2.0.0/opam
+Updated /root/.opam/repo/default/packages/pgsolver/pgsolver.4.1/opam
+Updated /root/.opam/repo/default/packages/ppxlib/ppxlib.0.3.1/opam
+Updated /root/.opam/repo/default/packages/qcheck/qcheck.0.9/opam
+Updated /root/.opam/repo/default/packages/qcheck-alcotest/qcheck-alcotest.0.9/opam
+Updated /root/.opam/repo/default/packages/qcheck-core/qcheck-core.0.9/opam
+Updated /root/.opam/repo/default/packages/qcheck-ounit/qcheck-ounit.0.9/opam
+Updated /root/.opam/repo/default/packages/qfs/qfs.0.5/opam
+Updated /root/.opam/repo/default/packages/qfs/qfs.0.6/opam
+Updated /root/.opam/repo/default/packages/radare2/radare2.0.0.1/opam
+Updated /root/.opam/repo/default/packages/solo5-kernel-virtio/solo5-kernel-virtio.0.2.1/opam
+Updated /root/.opam/repo/default/packages/solo5-kernel-virtio/solo5-kernel-virtio.0.2.2/opam
+Updated /root/.opam/repo/default/packages/solo5-kernel-virtio/solo5-kernel-virtio.0.2.2-1/opam
+Updated /root/.opam/repo/default/packages/sqlexpr/sqlexpr.0.3.0/opam
+Updated /root/.opam/repo/default/packages/sqlexpr/sqlexpr.0.5.5/opam
+Updated /root/.opam/repo/default/packages/sqlexpr/sqlexpr.0.6.1/opam
+Updated /root/.opam/repo/default/packages/sqlexpr/sqlexpr.0.7.1/opam
+Updated /root/.opam/repo/default/packages/sqlexpr/sqlexpr.0.8.0/opam
+Updated /root/.opam/repo/default/packages/sqlgg/sqlgg.0.2.4/opam
+Updated /root/.opam/repo/default/packages/sqlgg/sqlgg.0.2.5/opam
+Updated /root/.opam/repo/default/packages/sqlgg/sqlgg.0.3.0/opam
+Updated /root/.opam/repo/default/packages/sqlgg/sqlgg.0.4.3/opam
+Updated /root/.opam/repo/default/packages/sqlgg/sqlgg.0.4.4/opam
+Updated /root/.opam/repo/default/packages/TCSLib/TCSLib.0.2/opam
+Updated /root/.opam/repo/default/packages/TCSLib/TCSLib.0.3/opam
+Updated /root/.opam/repo/default/packages/touist/touist.3.4.0/opam
+Updated /root/.opam/repo/default/packages/touist/touist.3.4.1/opam
+Updated /root/.opam/repo/default/packages/zeit/zeit.0.1.0/opam
+Updated /root/.opam/repo/default/packages/zephyrus/zephyrus.0.1/opam
+Updated /root/.opam/repo/default/packages/zstd/zstd.0.1/opam
+Updated /root/.opam/repo/default/packages/zstd/zstd.0.2/opam
+
+<><> Synchronising development packages <><><><><><><><><><><><><><><><><><><><>
+[nbcodec.1.0] no changes from git://github.com/dbuenzli/nbcodec
+[operf-macro.0.2] no changes from git://github.com/kayceesrk/operf-macro#opam2
+[perf.0.1] no changes from git://github.com/kayceesrk/ocaml-perf
+[frama-c.20170501] no changes from git+https://github.com/kayceesrk/Frama-C-snapshot
++opam upgrade --check --yes operf-macro --switch operf --json /root/logs/operf/2018-09-24-1545/operf.json
+[WARNING] Running as root is not recommended
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[operf-macro.0.2] no changes from git://github.com/kayceesrk/operf-macro#opam2
+
++opam list --required-by all-bench --short --column name
+[WARNING] Running as root is not recommended
+++Benches++
+almabench-bench
++opam list --no-switch --short --column name *-bench
+[WARNING] Running as root is not recommended
+++All Benches++
+
++opam update --check --dev --switch 4.06.1+multicore+bench
+[WARNING] Running as root is not recommended
+
+<><> Synchronising development packages <><><><><><><><><><><><><><><><><><><><>
+[almabench-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[bdd-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[frama-c.20170501] no changes from git+https://github.com/kayceesrk/Frama-C-snapshot
+[nbcodec.1.0] no changes from git://github.com/dbuenzli/nbcodec
+[kb-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[lexifi-g2pp-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[ocaml-variants.4.06.1+multicore] no changes from git://github.com/ocamllabs/ocaml-multicore
+[sequence-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
++opam update --check --dev --switch 4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
+
+<><> Synchronising development packages <><><><><><><><><><><><><><><><><><><><>
+[kb-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[bdd-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[almabench-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[nbcodec.1.0] no changes from git://github.com/dbuenzli/nbcodec
+[ocaml-variants.4.06.1+multicore+no-effect-syntax] no changes from git://github.com/ocamllabs/ocaml-multicore#no-effect-syntax
+[lexifi-g2pp-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[sequence-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
++opam update --check --dev --switch 4.06.1+trunk+bench
+[WARNING] Running as root is not recommended
+
+<><> Synchronising development packages <><><><><><><><><><><><><><><><><><><><>
+[almabench-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[bdd-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[frama-c.20170501] no changes from git+https://github.com/kayceesrk/Frama-C-snapshot
+[nbcodec.1.0] no changes from git://github.com/dbuenzli/nbcodec
+[kb-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[lexifi-g2pp-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[sauvola-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[sequence-bench.1.0] no changes from git+https://github.com/AltGr/ocaml-benchs
+[ocaml-variants.4.06.1+trunk] no changes from git://github.com/ocaml/ocaml#81dc8e8
+
+=== UPGRADING SWITCH 4.06.1+multicore+bench ==
++opam remove --yes --switch 4.06.1+multicore+bench
+[WARNING] Running as root is not recommended
+Nothing to do.
++opam list --base --short --switch 4.06.1+multicore+bench
+[WARNING] Running as root is not recommended
++opam upgrade --ignore-constraints-on=ocaml --all almabench-bench async-echo-bench async-rpc-bench bdd-bench chameneos-bench cohttp-bench compcert-bench coq-bench core-micro-bench core-sequence-bench cpdf-bench frama-c-bench js_of_ocaml-bench jsonm-bench kb-bench lexifi-g2pp-bench menhir-bench minilight-bench nbcodec-bench numerical-analysis-bench patdiff-bench sauvola-bench sequence-bench thread-bench valet-bench yojson-bench --best-effort --yes --switch 4.06.1+multicore+bench --json /root/logs/operf/2018-09-24-1545/4.06.1+multicore+bench.json
+[WARNING] Running as root is not recommended
+async-echo-bench, async-rpc-bench, chameneos-bench, cohttp-bench, compcert-bench, coq-bench, core-micro-bench, core-sequence-bench, frama-c-bench, js_of_ocaml-bench, patdiff-bench, sauvola-bench, thread-bench, valet-bench and yojson-bench are not installed. Install them? [Y/n] y
+The following actions will be performed:
+  ∗ install ocaml-migrate-parsetree    1.1.0     [required by core_bench, async, lwt, patdiff]
+  ∗ install camlp4                     4.07+1    [required by lwt, js_of_ocaml]
+  ∗ install spawn                      v0.12.0   [required by core]
+  ∗ install re                         1.8.0     [required by cohttp, core_bench]
+  ∗ install yojson-bench               1.0
+  ∗ install pcre                       7.3.4     [required by patdiff]
+  ∗ install camlimages                 5.0.1     [required by sauvola-bench]
+  ∗ install zarith                     1.7       [required by frama-c]
+  ∗ install ppxlib                     0.3.1     [required by core]
+  ∗ install ppx_tools_versioned        5.2.1     [required by lwt]
+  ∗ install sauvola-bench              1.0
+  ∗ install frama-c                    20170501* [required by frama-c-bench]                                                            Why3 can be used by the WP plug-in for running additional automatic solvers
+                                                                                                                                        Coq can be used with the WP plug-in for proving interactively proof obligations
+  ∗ install variantslib                v0.11.0   [required by core_kernel]
+  ∗ install ppx_typerep_conv           v0.11.1   [required by ppx_jane]
+  ∗ install ppx_sexp_conv              v0.11.2   [required by cohttp]
+  ∗ install ppx_pipebang               v0.11.0   [required by ppx_jane]
+  ∗ install ppx_optional               v0.11.0   [required by ppx_jane]
+  ∗ install ppx_optcomp                v0.11.0   [required by ppx_jane]
+  ∗ install ppx_let                    v0.11.0   [required by ppx_jane]
+  ∗ install ppx_js_style               v0.11.0   [required by ppx_base]
+  ∗ install ppx_inline_test            v0.11.0   [required by core_kernel]
+  ∗ install ppx_here                   v0.11.0   [required by ppx_assert, ppx_jane]
+  ∗ install ppx_enumerate              v0.11.1   [required by ppx_base]
+  ∗ install ppx_compare                v0.11.1   [required by ppx_assert, bin_prot, ppx_base]
+  ∗ install fieldslib                  v0.11.0   [required by cohttp]
+  ∗ install lwt                        3.3.0     [required by thread-bench, chameneos-bench, cohttp-bench, valet-bench]                 For the PPX, please install package lwt_ppx
+                                                                                                                                        For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                                                        For Lwt_log and Lwt_daemon, please install package lwt_log
+  ∗ install frama-c-bench              1.0
+  ∗ install ppx_variants_conv          v0.11.1   [required by bin_prot, ppx_jane]
+  ∗ install uri                        1.9.7     [required by cohttp]
+  ∗ install ppx_custom_printf          v0.11.0   [required by bin_prot, ppx_jane]
+  ∗ install ppx_bench                  v0.11.0   [required by ppx_jane]
+  ∗ install ppx_sexp_value             v0.11.0   [required by ppx_jane]
+  ∗ install ppx_sexp_message           v0.11.0   [required by core_kernel]
+  ∗ install ppx_fail                   v0.11.0   [required by ppx_jane]
+  ∗ install ppx_hash                   v0.11.1   [required by core_kernel]
+  ∗ install ppx_assert                 v0.11.0   [required by core_kernel, core]
+  ∗ install ppx_fields_conv            v0.11.0   [required by cohttp]
+  ∗ install js_of_ocaml                2.5       [required by js_of_ocaml-bench]
+  ∗ install ppx_base                   v0.11.0   [required by core_kernel, sexp_pretty]
+  ∗ install ppx_expect                 v0.11.0   [required by ppx_jane]
+  ∗ install cohttp                     1.1.1     [required by cohttp-bench]
+  ∗ install bin_prot                   v0.11.0   [required by core_extended]
+  ∗ install js_of_ocaml-bench          1.0
+  ∗ install sexp_pretty                v0.11.0   [required by expect_test_helpers]
+  ∗ install ppx_bin_prot               v0.11.1   [required by ppx_jane]
+  ∗ install ppx_jane                   v0.11.0   [required by core_bench, async, patdiff]
+  ∗ install splittable_random          v0.11.0   [required by core_kernel]
+  ∗ install core_kernel                v0.11.1   [required by core_extended, patience_diff]
+  ∗ install textutils_kernel           v0.11.0   [required by textutils]
+  ∗ install re2                        v0.11.0   [required by patdiff]
+  ∗ install protocol_version_header    v0.11.0   [required by async_rpc_kernel]
+  ∗ install patience_diff              v0.11.0   [required by patdiff]
+  ∗ install expect_test_helpers_kernel v0.11.0   [required by expect_test_helpers]
+  ∗ install core                       v0.11.3   [required by core-micro-bench, async-echo-bench, async-rpc-bench, core-sequence-bench]
+  ∗ install async_kernel               v0.11.1   [required by async]
+  ∗ install textutils                  v0.11.0   [required by core_bench]
+  ∗ install core-sequence-bench        1.0
+  ∗ install async_unix                 v0.11.0   [required by async]
+  ∗ install async_rpc_kernel           v0.11.0   [required by async_extra]
+  ∗ install core_extended              v0.11.0   [required by core_bench, patdiff]
+  ∗ install async_extra                v0.11.1   [required by async]
+  ∗ install core_bench                 v0.11.0   [required by core-micro-bench]
+  ∗ install async                      v0.11.0   [required by thread-bench, chameneos-bench, async-echo-bench, etc.]
+  ∗ install core-micro-bench           1.0
+  ∗ install valet-bench                1.0
+  ∗ install thread-bench               1.0
+  ∗ install expect_test_helpers        v0.11.0   [required by patdiff]
+  ∗ install cohttp-bench               1.0
+  ∗ install chameneos-bench            1.0
+  ∗ install async-rpc-bench            1.0
+  ∗ install async-echo-bench           1.0
+  ∗ install patdiff                    v0.11.0   [required by patdiff-bench]
+  ∗ install patdiff-bench              1.0
+===== ∗ 73 =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.11.0] found in cache
+[async_extra.v0.11.1] found in cache
+[async_kernel.v0.11.1] found in cache
+[async_rpc_kernel.v0.11.0] found in cache
+[async_unix.v0.11.0] found in cache
+[bin_prot.v0.11.0] found in cache
+[camlimages.5.0.1] found in cache
+[camlp4.4.07+1] found in cache
+[async-echo-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[async-rpc-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[chameneos-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[core.v0.11.3] found in cache
+[cohttp-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[core_bench.v0.11.0] found in cache
+[core_extended.v0.11.0] found in cache
+[cohttp.1.1.1] downloaded from cache at https://opam.ocaml.org/cache
+[core_kernel.v0.11.1] found in cache
+[expect_test_helpers.v0.11.0] found in cache
+[expect_test_helpers_kernel.v0.11.0] found in cache
+[fieldslib.v0.11.0] found in cache
+[js_of_ocaml.2.5] found in cache
+[lwt.3.3.0] found in cache
+[patdiff.v0.11.0] found in cache
+[patience_diff.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[core-micro-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.1.0] downloaded from cache at https://opam.ocaml.org/cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[protocol_version_header.v0.11.0] found in cache
+[re.1.8.0] found in cache
+[re2.v0.11.0] found in cache
+[sexp_pretty.v0.11.0] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[textutils.v0.11.0] found in cache
+[textutils_kernel.v0.11.0] found in cache
+[ppxlib.0.3.1] downloaded from cache at https://opam.ocaml.org/cache
+[sauvola-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[uri.1.9.7] found in cache
+[variantslib.v0.11.0] found in cache
+[thread-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[zarith.1.7] found in cache
+[valet-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[yojson-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of camlp4 failed at "/root/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore+bench/bin --libdir=/root/.opam/4.06.1+multicore+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore+bench/lib".
+[ERROR] The compilation of spawn failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7".
+[ERROR] The compilation of yojson-bench failed at "/root/.opam/opam-init/hooks/sandbox.sh build make -C yojson".
+[ERROR] The compilation of re failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7".
+[ERROR] The compilation of pcre failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7".
+[ERROR] The compilation of camlimages failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p camlimages -j 7".
+[ERROR] The compilation of zarith failed at "/root/.opam/opam-init/hooks/sandbox.sh build make".
+[ERROR] The compilation of ocaml-migrate-parsetree failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7".
+
+#=== ERROR while compiling zarith.1.7 =========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/zarith.1.7
+# command              ~/.opam/opam-init/hooks/sandbox.sh build make
+# exit-code            2
+# env-file             ~/.opam/log/zarith-3704-49156e.env
+# output-file          ~/.opam/log/zarith-3704-49156e.out
+### output ###
+# caml_z.c:1857:14: error: lvalue required as left operand of assignment
+# [...]
+#               ^
+# caml_z.c:1858:14: error: lvalue required as left operand of assignment
+#    Field(p,1) = s;
+#               ^
+# caml_z.c: At top level:
+# caml_z.c:2995:3: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+#    ml_z_custom_deserialize,
+#    ^~~~~~~~~~~~~~~~~~~~~~~
+# caml_z.c:2995:3: note: (near initialization for ‘ml_z_custom_ops.deserialize’)
+# project.mak:129: recipe for target 'caml_z.o' failed
+# make: *** [caml_z.o] Error 2
+
+
+#=== ERROR while compiling yojson-bench.1.0 ===================================#
+# context              2.0.0 | linux/x86_64 |  | git+https://github.com/kayceesrk/ocamlbench-repo#multicore
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build make -C yojson
+# exit-code            2
+# env-file             ~/.opam/log/yojson-bench-3704-163344.env
+# output-file          ~/.opam/log/yojson-bench-3704-163344.out
+### output ###
+# make: Entering directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+# ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+# gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson_biniou.o: No such file or directory
+# gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson.o: No such file or directory
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+# make: Leaving directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+
+
+#=== ERROR while compiling spawn.v0.12.0 ======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/spawn.v0.12.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7
+# exit-code            1
+# env-file             ~/.opam/log/spawn-3704-8edb65.env
+# output-file          ~/.opam/log/spawn-3704-8edb65.out
+### output ###
+# [...]
+# (cd _build/default/src && /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+# spawn_stubs.c: In function ‘spawn_pipe’:
+# spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+#    Field(res, 0) = Val_int(fd[0]);
+#                  ^
+# spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+#    Field(res, 1) = Val_int(fd[1]);
+#                  ^
+# spawn_stubs.c: In function ‘subprocess_failure’:
+# spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+#    write(failure_fd, &failure, sizeof(failure));
+#    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+#=== ERROR while compiling re.1.8.0 ===========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/re.1.8.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7
+# exit-code            1
+# env-file             ~/.opam/log/re-3704-b33cad.env
+# output-file          ~/.opam/log/re-3704-b33cad.out
+### output ###
+#       ocamlc lib/.re.objs/re__Core.{cmi,cmti} (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.re.objs -I lib/.re.objs/.private -I /root/.opam/4.06.1+multicore+bench/lib/seq -no-alias-deps -open Re__ -o lib/.re.objs/re__Core.cmi -c -intf lib/core.mli)
+# File "lib/core.mli", line 145, characters 26-31:
+# Error: Unbound module Seq
+# Hint: Did you mean Set?
+
+
+#=== ERROR while compiling pcre.7.3.4 =========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/pcre.7.3.4
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7
+# exit-code            1
+# env-file             ~/.opam/log/pcre-3704-ebead7.env
+# output-file          ~/.opam/log/pcre-3704-ebead7.out
+### output ###
+#     ocamlopt src/config/discover.exe (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore+bench/lib/base -I /root/.opam/4.06.1+multicore+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+bench/lib/configurator -I /root/.opam/4.06.1+[...]
+# /root/.opam/4.06.1+multicore+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+# /root/.opam/4.06.1+multicore+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+#=== ERROR while compiling ocaml-migrate-parsetree.1.1.0 ======================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/ocaml-migrate-parsetree.1.1.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7
+# exit-code            1
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-3704-b406db.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-3704-b406db.out
+### output ###
+#       ocamlc src/.migrate_parsetree.objs/ast_406.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -w -40 -open Result -g -bin-annot -I src/.migrate_parsetree.objs -I src/.migrate_parsetree.objs/.private -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/compiler-libs -I /root/.opam/4.06.1+multicore+bench/lib/result -no-alias-deps -o src/.migrate_parsetree.objs/ast_406.cmo -c -impl src/ast_406.pp.ml)
+# File "src/ast_406.ml", line 237, characters 2-1773:
+# Error: This variant or record definition does not match that of type
+#          Parsetree.pattern_desc
+#        Fields number 17 have different names, Ppat_effect and Ppat_extension.
+
+
+#=== ERROR while compiling camlp4.4.07+1 ======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/camlp4.4.07+1
+# command              ~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore+bench/bin --libdir=/root/.opam/4.06.1+multicore+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore+bench/lib
+# exit-code            2
+# env-file             ~/.opam/log/camlp4-3704-9f7fc9.env
+# output-file          ~/.opam/log/camlp4-3704-9f7fc9.out
+### output ###
+# This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1+multicore-dev0.
+
+
+#=== ERROR while compiling camlimages.5.0.1 ===================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+bench/.opam-switch/build/camlimages.5.0.1
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p camlimages -j 7
+# exit-code            1
+# env-file             ~/.opam/log/camlimages-3704-396524.env
+# output-file          ~/.opam/log/camlimages-3704-396524.out
+### output ###
+# [...]
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Instead of raising [Not_found], consider using [raise_s] with an informative error
+# message.  If code needs to distinguish [Not_found] from other exceptions, please change
+# it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+# raise [Not_found_s] with an informative error message.
+#     ocamlopt config/ciconfig.exe (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+bench/bin/ocamlopt.opt -w -40 -w -6 -g -o config/ciconfig.exe -I /root/.opam/4.06.1+multicore+bench/lib/base -I /root/.opam/4.06.1+multicore+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+bench/lib/configurator -I /root/.opam/4.06.1+multicore+bench/lib/findlib -I /root/.opam/4.[...]
+# /root/.opam/4.06.1+multicore+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+# /root/.opam/4.06.1+multicore+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build camlimages              5.0.1
+│ λ build camlp4                  4.07+1
+│ λ build ocaml-migrate-parsetree 1.1.0
+│ λ build pcre                    7.3.4
+│ λ build re                      1.8.0
+│ λ build spawn                   v0.12.0
+│ λ build yojson-bench            1.0
+│ λ build zarith                  1.7
+└─ 
+╶─ No changes have been performed
+
+=== UPGRADING SWITCH 4.06.1+multicore+no-effect-syntax+bench ==
++opam remove --yes --switch 4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
+Nothing to do.
++opam list --base --short --switch 4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
++opam upgrade --ignore-constraints-on=ocaml --all almabench-bench async-echo-bench async-rpc-bench bdd-bench chameneos-bench cohttp-bench compcert-bench coq-bench core-micro-bench core-sequence-bench cpdf-bench frama-c-bench js_of_ocaml-bench jsonm-bench kb-bench lexifi-g2pp-bench menhir-bench minilight-bench nbcodec-bench numerical-analysis-bench patdiff-bench sauvola-bench sequence-bench thread-bench valet-bench yojson-bench --best-effort --yes --switch 4.06.1+multicore+no-effect-syntax+bench --json /root/logs/operf/2018-09-24-1545/4.06.1+multicore+no-effect-syntax+bench.json
+[WARNING] Running as root is not recommended
+async-echo-bench, async-rpc-bench, chameneos-bench, cohttp-bench, compcert-bench, coq-bench, core-micro-bench, core-sequence-bench, frama-c-bench, js_of_ocaml-bench, patdiff-bench, sauvola-bench, thread-bench, valet-bench and yojson-bench are not installed. Install them? [Y/n] y
+The following actions will be performed:
+  ∗ install   camlp4                     4.07+1          [required by frama-c, lwt, coq, js_of_ocaml]
+  ∗ install   spawn                      v0.12.0         [required by core]
+  ∗ install   re                         1.8.0           [required by cohttp, core_bench]
+  ∗ install   yojson-bench               1.0
+  ↗ upgrade   ocaml-migrate-parsetree    1.0.11 to 1.1.0 [required by core_bench, async, lwt, patdiff]
+  ∗ install   pcre                       7.3.4           [required by patdiff]
+  ∗ install   conf-gtksourceview         2               [required by frama-c]
+  ∗ install   conf-gnomecanvas           2               [required by frama-c]
+  ∗ install   coq                        8.4.6~camlp4    [required by coq-bench]
+  ∗ install   ppxlib                     0.3.1           [required by core]
+  ↻ recompile ppx_tools_versioned        5.2.1           [uses ocaml-migrate-parsetree]
+  ∗ install   lablgtk                    2.18.6          [required by frama-c, camlimages]
+  ∗ install   coq-bench                  1.0
+  ∗ install   variantslib                v0.11.0         [required by core_kernel]
+  ∗ install   ppx_typerep_conv           v0.11.1         [required by ppx_jane]
+  ∗ install   ppx_sexp_conv              v0.11.2         [required by cohttp]
+  ∗ install   ppx_pipebang               v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_optional               v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_optcomp                v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_let                    v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_js_style               v0.11.0         [required by ppx_base]
+  ∗ install   ppx_inline_test            v0.11.0         [required by core_kernel]
+  ∗ install   ppx_here                   v0.11.0         [required by ppx_assert, ppx_jane]
+  ∗ install   ppx_enumerate              v0.11.1         [required by ppx_base]
+  ∗ install   ppx_compare                v0.11.1         [required by ppx_assert, bin_prot, ppx_base]
+  ∗ install   fieldslib                  v0.11.0         [required by cohttp]
+  ∗ install   lwt                        3.3.0           [required by thread-bench, chameneos-bench, cohttp-bench, valet-bench]                 For the PPX, please install package lwt_ppx
+                                                                                                                                                For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                                                                For Lwt_log and Lwt_daemon, please install package lwt_log
+  ∗ install   ocamlgraph                 1.8.8           [required by frama-c]
+  ∗ install   camlimages                 5.0.1           [required by sauvola-bench]
+  ∗ install   ppx_variants_conv          v0.11.1         [required by bin_prot, ppx_jane]
+  ∗ install   uri                        1.9.7           [required by cohttp]
+  ∗ install   ppx_custom_printf          v0.11.0         [required by bin_prot, ppx_jane]
+  ∗ install   ppx_bench                  v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_sexp_value             v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_sexp_message           v0.11.0         [required by core_kernel]
+  ∗ install   ppx_fail                   v0.11.0         [required by ppx_jane]
+  ∗ install   ppx_hash                   v0.11.1         [required by core_kernel]
+  ∗ install   ppx_assert                 v0.11.0         [required by core_kernel, core]
+  ∗ install   ppx_fields_conv            v0.11.0         [required by cohttp]
+  ∗ install   js_of_ocaml                2.5             [required by js_of_ocaml-bench]
+  ∗ install   frama-c                    20130601        [required by frama-c-bench]
+  ∗ install   sauvola-bench              1.0
+  ∗ install   ppx_base                   v0.11.0         [required by core_kernel, sexp_pretty]
+  ∗ install   ppx_expect                 v0.11.0         [required by ppx_jane]
+  ∗ install   cohttp                     1.1.1           [required by cohttp-bench]
+  ∗ install   bin_prot                   v0.11.0         [required by core_extended]
+  ∗ install   js_of_ocaml-bench          1.0
+  ∗ install   frama-c-bench              1.0
+  ∗ install   sexp_pretty                v0.11.0         [required by expect_test_helpers]
+  ∗ install   ppx_bin_prot               v0.11.1         [required by ppx_jane]
+  ∗ install   ppx_jane                   v0.11.0         [required by core_bench, async, patdiff]
+  ∗ install   splittable_random          v0.11.0         [required by core_kernel]
+  ∗ install   core_kernel                v0.11.1         [required by core_extended, patience_diff]
+  ∗ install   textutils_kernel           v0.11.0         [required by textutils]
+  ∗ install   re2                        v0.11.0         [required by patdiff]
+  ∗ install   protocol_version_header    v0.11.0         [required by async_rpc_kernel]
+  ∗ install   patience_diff              v0.11.0         [required by patdiff]
+  ∗ install   expect_test_helpers_kernel v0.11.0         [required by expect_test_helpers]
+  ∗ install   core                       v0.11.3         [required by core-micro-bench, async-echo-bench, async-rpc-bench, core-sequence-bench]
+  ∗ install   async_kernel               v0.11.1         [required by async]
+  ∗ install   textutils                  v0.11.0         [required by core_bench]
+  ∗ install   core-sequence-bench        1.0
+  ∗ install   async_unix                 v0.11.0         [required by async]
+  ∗ install   async_rpc_kernel           v0.11.0         [required by async_extra]
+  ∗ install   core_extended              v0.11.0         [required by core_bench, patdiff]
+  ∗ install   async_extra                v0.11.1         [required by async]
+  ∗ install   core_bench                 v0.11.0         [required by core-micro-bench]
+  ∗ install   async                      v0.11.0         [required by thread-bench, chameneos-bench, async-echo-bench, etc.]
+  ∗ install   core-micro-bench           1.0
+  ∗ install   valet-bench                1.0
+  ∗ install   thread-bench               1.0
+  ∗ install   expect_test_helpers        v0.11.0         [required by patdiff]
+  ∗ install   cohttp-bench               1.0
+  ∗ install   chameneos-bench            1.0
+  ∗ install   async-rpc-bench            1.0
+  ∗ install   async-echo-bench           1.0
+  ∗ install   patdiff                    v0.11.0         [required by patdiff-bench]
+  ∗ install   patdiff-bench              1.0
+===== ∗ 76   ↻ 1   ↗ 1 =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.11.0] found in cache
+[async_extra.v0.11.1] found in cache
+[async_kernel.v0.11.1] found in cache
+[async_rpc_kernel.v0.11.0] found in cache
+[async_unix.v0.11.0] found in cache
+[bin_prot.v0.11.0] found in cache
+[camlimages.5.0.1] found in cache
+[camlp4.4.07+1] found in cache
+[async-echo-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[cohttp.1.1.1] found in cache
+[async-rpc-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[coq.8.4.6~camlp4] found in cache
+[core.v0.11.3] found in cache
+[chameneos-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[core_bench.v0.11.0] found in cache
+[core_extended.v0.11.0] found in cache
+[core_kernel.v0.11.1] found in cache
+[expect_test_helpers.v0.11.0] found in cache
+[cohttp-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[expect_test_helpers_kernel.v0.11.0] found in cache
+[fieldslib.v0.11.0] found in cache
+[frama-c.20130601] found in cache
+[js_of_ocaml.2.5] found in cache
+[lablgtk.2.18.6] found in cache
+[lwt.3.3.0] found in cache
+[ocaml-migrate-parsetree.1.1.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[patdiff.v0.11.0] found in cache
+[patience_diff.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[core-micro-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.1] found in cache
+[protocol_version_header.v0.11.0] found in cache
+[re.1.8.0] found in cache
+[re2.v0.11.0] found in cache
+[sexp_pretty.v0.11.0] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[textutils.v0.11.0] found in cache
+[textutils_kernel.v0.11.0] found in cache
+[uri.1.9.7] found in cache
+[thread-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[variantslib.v0.11.0] found in cache
+[valet-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[sauvola-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[yojson-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of camlp4 failed at "/root/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin --libdir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib".
+[ERROR] The compilation of conf-gnomecanvas failed at "/root/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0".
+[ERROR] The compilation of conf-gtksourceview failed at "/root/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0".
+[ERROR] The compilation of yojson-bench failed at "/root/.opam/opam-init/hooks/sandbox.sh build make -C yojson".
+[ERROR] The compilation of spawn failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7".
+[ERROR] The compilation of re failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7".
+[ERROR] The compilation of pcre failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7".
+⊘ removed   ppx_tools_versioned.5.2.1
+⊘ removed   ocaml-migrate-parsetree.1.0.11
+∗ installed ocaml-migrate-parsetree.1.1.0
+∗ installed ppx_tools_versioned.5.2.1
+[ERROR] The compilation of ppxlib failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ppxlib -j 7".
+
+#=== ERROR while compiling yojson-bench.1.0 ===================================#
+# context              2.0.0 | linux/x86_64 |  | git+https://github.com/kayceesrk/ocamlbench-repo#multicore
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/yojson-bench.1.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build make -C yojson
+# exit-code            2
+# env-file             ~/.opam/log/yojson-bench-5145-e50ab3.env
+# output-file          ~/.opam/log/yojson-bench-5145-e50ab3.out
+### output ###
+# make: Entering directory '/root/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+# ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+# gcc: error: /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/yojson/yojson_biniou.o: No such file or directory
+# gcc: error: /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/yojson/yojson.o: No such file or directory
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+# make: Leaving directory '/root/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+
+
+#=== ERROR while compiling spawn.v0.12.0 ======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/spawn.v0.12.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7
+# exit-code            1
+# env-file             ~/.opam/log/spawn-5145-0482ff.env
+# output-file          ~/.opam/log/spawn-5145-0482ff.out
+### output ###
+# [...]
+# (cd _build/default/src && /root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+# spawn_stubs.c: In function ‘spawn_pipe’:
+# spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+#    Field(res, 0) = Val_int(fd[0]);
+#                  ^
+# spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+#    Field(res, 1) = Val_int(fd[1]);
+#                  ^
+# spawn_stubs.c: In function ‘subprocess_failure’:
+# spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+#    write(failure_fd, &failure, sizeof(failure));
+#    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+#=== ERROR while compiling re.1.8.0 ===========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/re.1.8.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7
+# exit-code            1
+# env-file             ~/.opam/log/re-5145-eee391.env
+# output-file          ~/.opam/log/re-5145-eee391.out
+### output ###
+#       ocamlc lib/.re.objs/re__Core.{cmi,cmti} (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.re.objs -I lib/.re.objs/.private -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/seq -no-alias-deps -open Re__ -o lib/.re.objs/re__Core.cmi -c -intf lib/core.mli)
+# File "lib/core.mli", line 145, characters 26-31:
+# Error: Unbound module Seq
+# Hint: Did you mean Set?
+
+
+#=== ERROR while compiling ppxlib.0.3.1 =======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/ppxlib.0.3.1
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ppxlib -j 7
+# exit-code            1
+# env-file             ~/.opam/log/ppxlib-5145-eb9dcc.env
+# output-file          ~/.opam/log/ppxlib-5145-eb9dcc.out
+### output ###
+#     ocamlopt .ppx/jbuild/ppxlib.metaquot+ppxlib.runner/ppx.exe (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin/ocamlopt.opt -o .ppx/jbuild/ppxlib.metaquot+ppxlib.runner/ppx.exe -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+no-effec[...]
+# /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+# /root/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+#=== ERROR while compiling pcre.7.3.4 =========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/pcre.7.3.4
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7
+# exit-code            1
+# env-file             ~/.opam/log/pcre-5145-51cb9c.env
+# output-file          ~/.opam/log/pcre-5145-51cb9c.out
+### output ###
+#     ocamlopt src/config/discover.exe (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/shadow_stdlib -I /root/[...]
+# /root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+# /root/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+#=== ERROR while compiling conf-gtksourceview.2 ===============================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/conf-gtksourceview.2
+# command              ~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-gtksourceview-5145-58975f.env
+# output-file          ~/.opam/log/conf-gtksourceview-5145-58975f.out
+### output ###
+# No package 'gtksourceview-2.0' found
+
+
+#=== ERROR while compiling conf-gnomecanvas.2 =================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/conf-gnomecanvas.2
+# command              ~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-gnomecanvas-5145-08c610.env
+# output-file          ~/.opam/log/conf-gnomecanvas-5145-08c610.out
+
+
+#=== ERROR while compiling camlp4.4.07+1 ======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/build/camlp4.4.07+1
+# command              ~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/bin --libdir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore+no-effect-syntax+bench/lib
+# exit-code            2
+# env-file             ~/.opam/log/camlp4-5145-1bb2ab.env
+# output-file          ~/.opam/log/camlp4-5145-1bb2ab.out
+### output ###
+# This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1+multicore-dev0.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build camlp4             4.07+1
+│ λ build conf-gnomecanvas   2
+│ λ build conf-gtksourceview 2
+│ λ build pcre               7.3.4
+│ λ build ppxlib             0.3.1
+│ λ build re                 1.8.0
+│ λ build spawn              v0.12.0
+│ λ build yojson-bench       1.0
+└─ 
+┌─ The following changes have been performed (the rest was aborted)
+│ ↻ recompile ppx_tools_versioned     5.2.1
+│ ↗ upgrade   ocaml-migrate-parsetree 1.0.11 to 1.1.0
+└─ 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libgnomecanvas2-dev libgtksourceview2.0-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    /usr/local/bin/opam switch import "/root/.opam/4.06.1+multicore+no-effect-syntax+bench/.opam-switch/backup/state-20180924154545.export"
+
+=== UPGRADING SWITCH 4.06.1+trunk+bench ==
++opam remove --yes --switch 4.06.1+trunk+bench
+[WARNING] Running as root is not recommended
+Nothing to do.
++opam list --base --short --switch 4.06.1+trunk+bench
+[WARNING] Running as root is not recommended
++opam upgrade --ignore-constraints-on=ocaml --all almabench-bench async-echo-bench async-rpc-bench bdd-bench chameneos-bench cohttp-bench compcert-bench coq-bench core-micro-bench core-sequence-bench cpdf-bench frama-c-bench js_of_ocaml-bench jsonm-bench kb-bench lexifi-g2pp-bench menhir-bench minilight-bench nbcodec-bench numerical-analysis-bench patdiff-bench sauvola-bench sequence-bench thread-bench valet-bench yojson-bench --best-effort --yes --switch 4.06.1+trunk+bench --json /root/logs/operf/2018-09-24-1545/4.06.1+trunk+bench.json
+[WARNING] Running as root is not recommended
+async-echo-bench, async-rpc-bench, chameneos-bench, cohttp-bench, compcert-bench, coq-bench, core-micro-bench, core-sequence-bench, js_of_ocaml-bench, patdiff-bench, thread-bench, valet-bench and yojson-bench are not installed. Install them? [Y/n] y
+The following actions will be performed:
+  ∗ install   camlp4                     4.07+1          [required by js_of_ocaml]
+  ∗ install   re                         1.8.0           [required by cohttp, core_bench]
+  ∗ install   yojson-bench               1.0
+  ↗ upgrade   ocaml-migrate-parsetree    1.0.11 to 1.1.0 [required by core_bench, async, patdiff]
+  ↻ recompile frama-c-bench              1.0
+  ↗ upgrade   ppxlib                     0.3.0 to 0.3.1  [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_tools_versioned        5.2.1           [uses ocaml-migrate-parsetree]
+  ↻ recompile variantslib                v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_typerep_conv           v0.11.1         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_sexp_conv              v0.11.2         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_pipebang               v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_optional               v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_optcomp                v0.11.0         [uses ppxlib]
+  ↻ recompile ppx_let                    v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_js_style               v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_inline_test            v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_here                   v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_enumerate              v0.11.1         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_compare                v0.11.1         [uses ocaml-migrate-parsetree]
+  ↻ recompile fieldslib                  v0.11.0         [uses ocaml-migrate-parsetree]
+  ↘ downgrade lwt                        4.1.0 to 3.3.0  [required by thread-bench, chameneos-bench, cohttp-bench, valet-bench]                 For the PPX, please install package lwt_ppx
+                                                                                                                                                For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                                                                For Lwt_log and Lwt_daemon, please install package lwt_log
+  ↻ recompile ppx_variants_conv          v0.11.1         [uses ocaml-migrate-parsetree]
+  ∗ install   uri                        1.9.7           [required by cohttp]
+  ↻ recompile ppx_custom_printf          v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_bench                  v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_sexp_value             v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_sexp_message           v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_fail                   v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_hash                   v0.11.1         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_assert                 v0.11.0         [uses ocaml-migrate-parsetree]
+  ↻ recompile ppx_fields_conv            v0.11.0         [uses ocaml-migrate-parsetree]
+  ∗ install   js_of_ocaml                2.5             [required by js_of_ocaml-bench]
+  ↻ recompile ppx_base                   v0.11.0         [uses ocaml-migrate-parsetree]
+  ∗ install   ppx_expect                 v0.11.0         [required by ppx_jane]
+  ∗ install   cohttp                     1.1.1           [required by cohttp-bench]
+  ↻ recompile bin_prot                   v0.11.0         [uses ocaml-migrate-parsetree]
+  ∗ install   js_of_ocaml-bench          1.0
+  ∗ install   sexp_pretty                v0.11.0         [required by expect_test_helpers]
+  ↻ recompile ppx_bin_prot               v0.11.1         [uses ocaml-migrate-parsetree]
+  ∗ install   ppx_jane                   v0.11.0         [required by core_bench, async, patdiff]
+  ∗ install   splittable_random          v0.11.0         [required by core_kernel]
+  ∗ install   core_kernel                v0.11.1         [required by core_extended, patience_diff]
+  ∗ install   textutils_kernel           v0.11.0         [required by textutils]
+  ∗ install   re2                        v0.11.0         [required by patdiff]
+  ∗ install   protocol_version_header    v0.11.0         [required by async_rpc_kernel]
+  ∗ install   patience_diff              v0.11.0         [required by patdiff]
+  ∗ install   expect_test_helpers_kernel v0.11.0         [required by expect_test_helpers]
+  ∗ install   core                       v0.11.3         [required by core-micro-bench, async-echo-bench, async-rpc-bench, core-sequence-bench]
+  ∗ install   async_kernel               v0.11.1         [required by async]
+  ∗ install   textutils                  v0.11.0         [required by core_bench]
+  ∗ install   core-sequence-bench        1.0
+  ∗ install   async_unix                 v0.11.0         [required by async]
+  ∗ install   async_rpc_kernel           v0.11.0         [required by async_extra]
+  ∗ install   core_extended              v0.11.0         [required by core_bench, patdiff]
+  ∗ install   async_extra                v0.11.1         [required by async]
+  ∗ install   core_bench                 v0.11.0         [required by core-micro-bench]
+  ∗ install   async                      v0.11.0         [required by thread-bench, chameneos-bench, async-echo-bench, etc.]
+  ∗ install   core-micro-bench           1.0
+  ∗ install   valet-bench                1.0
+  ∗ install   thread-bench               1.0
+  ∗ install   expect_test_helpers        v0.11.0         [required by patdiff]
+  ∗ install   cohttp-bench               1.0
+  ∗ install   chameneos-bench            1.0
+  ∗ install   async-rpc-bench            1.0
+  ∗ install   async-echo-bench           1.0
+  ∗ install   patdiff                    v0.11.0         [required by patdiff-bench]
+  ∗ install   patdiff-bench              1.0
+===== ∗ 37   ↻ 27   ↗ 2   ↘ 1 =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.11.0] found in cache
+[async_extra.v0.11.1] found in cache
+[async_kernel.v0.11.1] found in cache
+[async_rpc_kernel.v0.11.0] found in cache
+[async_unix.v0.11.0] found in cache
+[bin_prot.v0.11.0] found in cache
+[camlp4.4.07+1] found in cache
+[async-echo-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[cohttp.1.1.1] found in cache
+[async-rpc-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[core.v0.11.3] found in cache
+[chameneos-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[core_bench.v0.11.0] found in cache
+[core_extended.v0.11.0] found in cache
+[core_kernel.v0.11.1] found in cache
+[expect_test_helpers.v0.11.0] found in cache
+[expect_test_helpers_kernel.v0.11.0] found in cache
+[fieldslib.v0.11.0] found in cache
+[js_of_ocaml.2.5] found in cache
+[cohttp-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[lwt.3.3.0] found in cache
+[ocaml-migrate-parsetree.1.1.0] found in cache
+[patdiff.v0.11.0] found in cache
+[patience_diff.v0.11.0] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[core-micro-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.1] found in cache
+[protocol_version_header.v0.11.0] found in cache
+[re.1.8.0] found in cache
+[re2.v0.11.0] found in cache
+[sexp_pretty.v0.11.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[textutils.v0.11.0] found in cache
+[textutils_kernel.v0.11.0] found in cache
+[uri.1.9.7] found in cache
+[variantslib.v0.11.0] found in cache
+[thread-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[valet-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+[yojson-bench.1.0] synchronised from git+https://github.com/AltGr/ocaml-benchs
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⊘ removed   frama-c-bench.1.0
+∗ installed frama-c-bench.1.0
+[ERROR] The compilation of camlp4 failed at "/root/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+trunk+bench/bin --libdir=/root/.opam/4.06.1+trunk+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+trunk+bench/lib".
+[ERROR] The compilation of re failed at "/root/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7".
+[ERROR] The compilation of yojson-bench failed at "/root/.opam/opam-init/hooks/sandbox.sh build make -C yojson".
+⊘ removed   ppx_assert.v0.11.0
+⊘ removed   ppx_base.v0.11.0
+⊘ removed   ppx_bench.v0.11.0
+⊘ removed   ppx_bin_prot.v0.11.1
+⊘ removed   bin_prot.v0.11.0
+⊘ removed   ppx_custom_printf.v0.11.0
+⊘ removed   ppx_enumerate.v0.11.1
+⊘ removed   ppx_fail.v0.11.0
+⊘ removed   ppx_fields_conv.v0.11.0
+⊘ removed   fieldslib.v0.11.0
+⊘ removed   ppx_hash.v0.11.1
+⊘ removed   ppx_compare.v0.11.1
+⊘ removed   ppx_inline_test.v0.11.0
+⊘ removed   ppx_js_style.v0.11.0
+⊘ removed   ppx_let.v0.11.0
+⊘ removed   ppx_optcomp.v0.11.0
+⊘ removed   ppx_optional.v0.11.0
+⊘ removed   ppx_pipebang.v0.11.0
+⊘ removed   ppx_sexp_message.v0.11.0
+⊘ removed   ppx_sexp_value.v0.11.0
+⊘ removed   ppx_here.v0.11.0
+⊘ removed   ppx_sexp_conv.v0.11.2
+⊘ removed   ppx_tools_versioned.5.2.1
+⊘ removed   ppx_typerep_conv.v0.11.1
+⊘ removed   ppx_variants_conv.v0.11.1
+⊘ removed   variantslib.v0.11.0
+⊘ removed   ppxlib.0.3.0
+⊘ removed   ocaml-migrate-parsetree.1.0.11
+∗ installed ocaml-migrate-parsetree.1.1.0
+∗ installed ppx_tools_versioned.5.2.1
+∗ installed ppxlib.0.3.1
+∗ installed fieldslib.v0.11.0
+∗ installed ppx_compare.v0.11.1
+∗ installed ppx_enumerate.v0.11.1
+∗ installed ppx_here.v0.11.0
+∗ installed ppx_inline_test.v0.11.0
+∗ installed ppx_js_style.v0.11.0
+∗ installed ppx_let.v0.11.0
+∗ installed ppx_optcomp.v0.11.0
+∗ installed ppx_optional.v0.11.0
+∗ installed ppx_pipebang.v0.11.0
+∗ installed ppx_sexp_conv.v0.11.2
+∗ installed ppx_fail.v0.11.0
+∗ installed ppx_fields_conv.v0.11.0
+∗ installed ppx_typerep_conv.v0.11.1
+∗ installed variantslib.v0.11.0
+∗ installed ppx_bench.v0.11.0
+∗ installed ppx_assert.v0.11.0
+∗ installed ppx_custom_printf.v0.11.0
+∗ installed ppx_hash.v0.11.1
+∗ installed ppx_sexp_message.v0.11.0
+∗ installed ppx_sexp_value.v0.11.0
+∗ installed ppx_variants_conv.v0.11.1
+∗ installed ppx_base.v0.11.0
+∗ installed bin_prot.v0.11.0
+∗ installed ppx_bin_prot.v0.11.1
+
+#=== ERROR while compiling yojson-bench.1.0 ===================================#
+# context              2.0.0 | linux/x86_64 |  | git+https://github.com/kayceesrk/ocamlbench-repo#multicore
+# path                 ~/.opam/4.06.1+trunk+bench/.opam-switch/build/yojson-bench.1.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build make -C yojson
+# exit-code            2
+# env-file             ~/.opam/log/yojson-bench-7749-0da7aa.env
+# output-file          ~/.opam/log/yojson-bench-7749-0da7aa.out
+### output ###
+# make: Entering directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+# ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+# gcc: error: /root/.opam/4.06.1+trunk+bench/lib/yojson/yojson_biniou.o: No such file or directory
+# gcc: error: /root/.opam/4.06.1+trunk+bench/lib/yojson/yojson.o: No such file or directory
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+# make: Leaving directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+
+
+#=== ERROR while compiling re.1.8.0 ===========================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+trunk+bench/.opam-switch/build/re.1.8.0
+# command              ~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7
+# exit-code            1
+# env-file             ~/.opam/log/re-7749-fed2e6.env
+# output-file          ~/.opam/log/re-7749-fed2e6.out
+### output ###
+#       ocamlc lib/.re.objs/re__Core.{cmi,cmti} (exit 2)
+# (cd _build/default && /root/.opam/4.06.1+trunk+bench/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.re.objs -I lib/.re.objs/.private -I /root/.opam/4.06.1+trunk+bench/lib/seq -no-alias-deps -open Re__ -o lib/.re.objs/re__Core.cmi -c -intf lib/core.mli)
+# File "lib/core.mli", line 145, characters 26-31:
+# Error: Unbound module Seq
+# Hint: Did you mean Set?
+
+
+#=== ERROR while compiling camlp4.4.07+1 ======================================#
+# context              2.0.0 | linux/x86_64 |  | https://opam.ocaml.org/#8fb2e5c6
+# path                 ~/.opam/4.06.1+trunk+bench/.opam-switch/build/camlp4.4.07+1
+# command              ~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+trunk+bench/bin --libdir=/root/.opam/4.06.1+trunk+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+trunk+bench/lib
+# exit-code            2
+# env-file             ~/.opam/log/camlp4-7749-8b2204.env
+# output-file          ~/.opam/log/camlp4-7749-8b2204.out
+### output ###
+# This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build camlp4       4.07+1
+│ λ build re           1.8.0
+│ λ build yojson-bench 1.0
+└─ 
+┌─ The following changes have been performed (the rest was aborted)
+│ ↻ recompile bin_prot                v0.11.0
+│ ↻ recompile fieldslib               v0.11.0
+│ ↻ recompile frama-c-bench           1.0
+│ ↻ recompile ppx_assert              v0.11.0
+│ ↻ recompile ppx_base                v0.11.0
+│ ↻ recompile ppx_bench               v0.11.0
+│ ↻ recompile ppx_bin_prot            v0.11.1
+│ ↻ recompile ppx_compare             v0.11.1
+│ ↻ recompile ppx_custom_printf       v0.11.0
+│ ↻ recompile ppx_enumerate           v0.11.1
+│ ↻ recompile ppx_fail                v0.11.0
+│ ↻ recompile ppx_fields_conv         v0.11.0
+│ ↻ recompile ppx_hash                v0.11.1
+│ ↻ recompile ppx_here                v0.11.0
+│ ↻ recompile ppx_inline_test         v0.11.0
+│ ↻ recompile ppx_js_style            v0.11.0
+│ ↻ recompile ppx_let                 v0.11.0
+│ ↻ recompile ppx_optcomp             v0.11.0
+│ ↻ recompile ppx_optional            v0.11.0
+│ ↻ recompile ppx_pipebang            v0.11.0
+│ ↻ recompile ppx_sexp_conv           v0.11.2
+│ ↻ recompile ppx_sexp_message        v0.11.0
+│ ↻ recompile ppx_sexp_value          v0.11.0
+│ ↻ recompile ppx_tools_versioned     5.2.1
+│ ↻ recompile ppx_typerep_conv        v0.11.1
+│ ↻ recompile ppx_variants_conv       v0.11.1
+│ ↻ recompile variantslib             v0.11.0
+│ ↗ upgrade   ocaml-migrate-parsetree 1.0.11 to 1.1.0
+│ ↗ upgrade   ppxlib                  0.3.0 to 0.3.1
+└─ 
+
+The former state can be restored with:
+    /usr/local/bin/opam switch import "/root/.opam/4.06.1+trunk+bench/.opam-switch/backup/state-20180924154621.export"
+Or you can retry to install your package selection with:
+    /usr/local/bin/opam install --restore
+
+===== OPAM UPGRADE DONE in 141s =====
+
++opam config env --switch operf
+[WARNING] Running as root is not recommended
+[NOTE] To make opam select the switch operf in the current shell, add --set-switch or set OPAMSWITCH
+System load detected, waiting to run bench (retrying in 5 minutes)
+wall: cannot get tty name: Inappropriate ioctl for device
++opam show ocaml-variants --switch 4.06.1+multicore+bench --field source-hash
+[WARNING] Running as root is not recommended
++opam config env --switch 4.06.1+multicore+bench
+[WARNING] Running as root is not recommended
+[NOTE] To make opam select the switch 4.06.1+multicore+bench in the current shell, add --set-switch or set OPAMSWITCH
++opam pin --switch 4.06.1+multicore+bench
+[WARNING] Running as root is not recommended
++opam show ocaml-variants --switch 4.06.1+multicore+no-effect-syntax+bench --field source-hash
+[WARNING] Running as root is not recommended
++opam config env --switch 4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
++opam pin --switch 4.06.1+multicore+no-effect-syntax+bench
+[WARNING] Running as root is not recommended
++opam show ocaml-variants --switch 4.06.1+trunk+bench --field source-hash
+[WARNING] Running as root is not recommended
++opam config env --switch 4.06.1+trunk+bench
+[WARNING] Running as root is not recommended
+[NOTE] To make opam select the switch 4.06.1+trunk+bench in the current shell, add --set-switch or set OPAMSWITCH
++opam pin --switch 4.06.1+trunk+bench
+[WARNING] Running as root is not recommended
+wall: cannot get tty name: Inappropriate ioctl for device
+
+=== BENCH START ===
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+Running benchmarks installed in 4.06.1+multicore+bench...
+Running benchmark sequence (compiled with OCaml 4.06.1+multicore+bench)... 6 times.
+Running benchmark sequence-cps (compiled with OCaml 4.06.1+multicore+bench)... 4 times.
+Running benchmark cpdf-reformat (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark cpdf-squeeze (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+Running benchmark cpdf-merge (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark cpdf-transform (compiled with OCaml 4.06.1+multicore+bench)... 2 times.
+Running benchmark almabench (compiled with OCaml 4.06.1+multicore+bench)... 6 times.
+[WARNING] Running as root is not recommended
+diff: /root/.cache/operf/macro/almabench/4.06.1+multicore+no-effect-syntax+bench.output: No such file or directory
+Command return code 2:
+  diff -q /root/.opam/4.06.1+multicore+bench/share/almabench-bench/almabench-bench.output /root/.cache/operf/macro/almabench/4.06.1+multicore+no-effect-syntax+bench.output 
+Running benchmark kb (compiled with OCaml 4.06.1+multicore+bench)... 10 times.
+Running benchmark kb-no-exc (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark bdd (compiled with OCaml 4.06.1+multicore+bench)... 21 times.
+Running benchmark numal-k-means (compiled with OCaml 4.06.1+multicore+bench)... 46 times.
+Running benchmark numal-simple_access (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+Running benchmark numal-naive-multilayer (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+Running benchmark numal-qr-decomposition (compiled with OCaml 4.06.1+multicore+bench)... 4 times.
+Running benchmark numal-rnd_access (compiled with OCaml 4.06.1+multicore+bench)... 2 times.
+Running benchmark numal-fft (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+Running benchmark numal-durand-kerner-aberth (compiled with OCaml 4.06.1+multicore+bench)... 50 times.
+Running benchmark numal-lu-decomposition (compiled with OCaml 4.06.1+multicore+bench)... 6 times.
+Running benchmark numal-levinson-durbin (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+Running benchmark minilight (compiled with OCaml 4.06.1+multicore+bench)... 3 times.
+[WARNING] Running as root is not recommended
+Running benchmark menhir-sysver (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark menhir-standard (compiled with OCaml 4.06.1+multicore+bench)... 344 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+multicore+bench/share/menhir-bench/yacc-output.ml /root/.opam/4.06.1+multicore+bench/share/menhir-bench/yacc-parser.ml 
+Running benchmark menhir-sql (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark menhir-fancy (compiled with OCaml 4.06.1+multicore+bench)... 261 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+multicore+bench/share/menhir-bench/fancy-output.ml /root/.opam/4.06.1+multicore+bench/share/menhir-bench/fancy-parser.ml 
+Running benchmark menhir-list-errors (compiled with OCaml 4.06.1+multicore+bench)... Running benchmark jsontrip-sample (compiled with OCaml 4.06.1+multicore+bench)... 225 times.
+Running benchmark setrip-smallbuf (compiled with OCaml 4.06.1+multicore+bench)... 6 times.
+Running benchmark setrip (compiled with OCaml 4.06.1+multicore+bench)... 6 times.
+Running benchmark lexifi-g2pp (compiled with OCaml 4.06.1+multicore+bench)... 2 times.
+[WARNING] Running as root is not recommended
+diff: /root/.cache/operf/macro/lexifi-g2pp/4.06.1+multicore+no-effect-syntax+bench.output: No such file or directory
+Command return code 2:
+  diff -q /root/.opam/4.06.1+multicore+bench/share/lexifi-g2pp-bench/lexifi-g2pp-bench.output /root/.cache/operf/macro/lexifi-g2pp/4.06.1+multicore+no-effect-syntax+bench.output 
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+Running benchmarks installed in 4.06.1+multicore+no-effect-syntax+bench...
+Running benchmark sequence (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 6 times.
+Running benchmark sequence-cps (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 4 times.
+Running benchmark cpdf-reformat (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark cpdf-squeeze (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark cpdf-merge (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark cpdf-transform (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark almabench (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+multicore+no-effect-syntax+bench/share/almabench-bench/almabench-bench.output /root/.cache/operf/macro/almabench/4.06.1+multicore+no-effect-syntax+bench.output 
+Running benchmark kb (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 10 times.
+Running benchmark kb-no-exc (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark bdd (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 21 times.
+Running benchmark numal-k-means (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 46 times.
+Running benchmark numal-simple_access (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark numal-naive-multilayer (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark numal-qr-decomposition (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 4 times.
+Running benchmark numal-rnd_access (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 2 times.
+Running benchmark numal-fft (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark numal-durand-kerner-aberth (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 50 times.
+Running benchmark numal-lu-decomposition (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 6 times.
+Running benchmark numal-levinson-durbin (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 3 times.
+Running benchmark minilight (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 2 times.
+[WARNING] Running as root is not recommended
+Running benchmark menhir-sysver (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark menhir-standard (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 349 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+multicore+no-effect-syntax+bench/share/menhir-bench/yacc-output.ml /root/.opam/4.06.1+multicore+no-effect-syntax+bench/share/menhir-bench/yacc-parser.ml 
+Running benchmark menhir-sql (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark menhir-fancy (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 256 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+multicore+no-effect-syntax+bench/share/menhir-bench/fancy-output.ml /root/.opam/4.06.1+multicore+no-effect-syntax+bench/share/menhir-bench/fancy-parser.ml 
+Running benchmark menhir-list-errors (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... Running benchmark jsontrip-sample (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 224 times.
+Running benchmark setrip-smallbuf (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 6 times.
+Running benchmark setrip (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 6 times.
+Running benchmark lexifi-g2pp (compiled with OCaml 4.06.1+multicore+no-effect-syntax+bench)... 2 times.
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+[WARNING] Running as root is not recommended
+Running benchmarks installed in 4.06.1+trunk+bench...
+Running benchmark sequence (compiled with OCaml 4.06.1+trunk+bench)... 6 times.
+Running benchmark sequence-cps (compiled with OCaml 4.06.1+trunk+bench)... 6 times.
+Running benchmark cpdf-reformat (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark cpdf-squeeze (compiled with OCaml 4.06.1+trunk+bench)... 2 times.
+Running benchmark cpdf-merge (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark cpdf-transform (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark almabench (compiled with OCaml 4.06.1+trunk+bench)... 6 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+trunk+bench/share/almabench-bench/almabench-bench.output /root/.cache/operf/macro/almabench/4.06.1+multicore+no-effect-syntax+bench.output 
+Running benchmark kb (compiled with OCaml 4.06.1+trunk+bench)... 11 times.
+Running benchmark kb-no-exc (compiled with OCaml 4.06.1+trunk+bench)... 15 times.
+Running benchmark bdd (compiled with OCaml 4.06.1+trunk+bench)... 23 times.
+Running benchmark numal-k-means (compiled with OCaml 4.06.1+trunk+bench)... 53 times.
+Running benchmark numal-simple_access (compiled with OCaml 4.06.1+trunk+bench)... 2 times.
+Running benchmark numal-naive-multilayer (compiled with OCaml 4.06.1+trunk+bench)... 2 times.
+Running benchmark numal-qr-decomposition (compiled with OCaml 4.06.1+trunk+bench)... 4 times.
+Running benchmark numal-rnd_access (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark numal-fft (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark numal-durand-kerner-aberth (compiled with OCaml 4.06.1+trunk+bench)... 53 times.
+Running benchmark numal-lu-decomposition (compiled with OCaml 4.06.1+trunk+bench)... 7 times.
+Running benchmark numal-levinson-durbin (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark sauvola-contrast (compiled with OCaml 4.06.1+trunk+bench)... Running benchmark minilight (compiled with OCaml 4.06.1+trunk+bench)... 2 times.
+[WARNING] Running as root is not recommended
+Running benchmark frama-c-deflate (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark frama-c-monocypher (compiled with OCaml 4.06.1+trunk+bench)... Running benchmark frama-c-idct (compiled with OCaml 4.06.1+trunk+bench)... Running benchmark menhir-sysver (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark menhir-standard (compiled with OCaml 4.06.1+trunk+bench)... 513 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+trunk+bench/share/menhir-bench/yacc-output.ml /root/.opam/4.06.1+trunk+bench/share/menhir-bench/yacc-parser.ml 
+Running benchmark menhir-sql (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+Running benchmark menhir-fancy (compiled with OCaml 4.06.1+trunk+bench)... 384 times.
+[WARNING] Running as root is not recommended
+Command return code 1:
+  diff -q /root/.opam/4.06.1+trunk+bench/share/menhir-bench/fancy-output.ml /root/.opam/4.06.1+trunk+bench/share/menhir-bench/fancy-parser.ml 
+Running benchmark menhir-list-errors (compiled with OCaml 4.06.1+trunk+bench)... 2 times.
+Running benchmark jsontrip-sample (compiled with OCaml 4.06.1+trunk+bench)... 278 times.
+Running benchmark setrip-smallbuf (compiled with OCaml 4.06.1+trunk+bench)... 6 times.
+Running benchmark setrip (compiled with OCaml 4.06.1+trunk+bench)... 6 times.
+Running benchmark lexifi-g2pp (compiled with OCaml 4.06.1+trunk+bench)... 3 times.
+[WARNING] Running as root is not recommended
++opam config exec --switch operf -- operf-macro summarize --no-normalize -b csv
+[WARNING] Running as root is not recommended
