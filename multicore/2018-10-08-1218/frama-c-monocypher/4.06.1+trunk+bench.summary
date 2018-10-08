@@ -1,0 +1,54 @@
+((success false) (name frama-c-monocypher) (context_id 4.06.1+trunk+bench)
+ (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 88318963) (stddev -NAN) (mini 88318963)
+     (maxi 88318963) (runs 1)))
+   (Size
+    ((success true) (mean 14161081) (stddev 0) (mini 14161081)
+     (maxi 14161081) (runs 1)))
+   ((Size Code)
+    ((success true) (mean 10199177) (stddev 0) (mini 10199177)
+     (maxi 10199177) (runs 1)))
+   ((Size Data)
+    ((success true) (mean 3961904) (stddev 0) (mini 3961904) (maxi 3961904)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 8673237) (stddev -NAN) (mini 8673237)
+     (maxi 8673237) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 2158730) (stddev -NAN) (mini 2158730)
+     (maxi 2158730) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 1851684) (stddev -NAN) (mini 1851684)
+     (maxi 1851684) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 4685824) (stddev -NAN) (mini 4685824)
+     (maxi 4685824) (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 35) (stddev -NAN) (mini 35) (maxi 35) (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 4) (stddev -NAN) (mini 4) (maxi 4) (runs 1)))
+   ((Gc Compactions)
+    ((success false) (mean 0) (stddev -NAN) (mini 0) (maxi 0) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 4685824) (stddev -NAN) (mini 4685824)
+     (maxi 4685824) (runs 1)))
+   ((Gc Heap_chunks)
+    ((success false) (mean 2) (stddev -NAN) (mini 2) (maxi 2) (runs 1)))))
+ (error
+  (( "[kernel] user error: option `-value-warn-key=-alarm' is unknown.\
+    \n                     use `/root/.opam/4.06.1+trunk+bench/bin/frama-c -help' for more information.\
+    \n[kernel] Frama-C aborted: invalid user input.\
+    \n"
+     "allocated_words: 8980283\
+    \nminor_words: 8673237\
+    \npromoted_words: 1851684\
+    \nmajor_words: 2158730\
+    \nminor_collections: 35\
+    \nmajor_collections: 4\
+    \nheap_words: 4685824\
+    \nheap_chunks: 2\
+    \ntop_heap_words: 4685824\
+    \ncompactions: 0\
+    \n"))))
