@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bench build results</title>
+  <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <style type="text/css"><!--
+     div {padding:3ex;}
+     pre {padding:1ex;border:1px solid grey;background-color:#eee;}
+     table {border-collapse:collapse;margin:auto;}
+     thead {position:-webkit-sticky;position:-moz-sticky;position:sticky;top:0;}
+     tfoot {position:-webkit-sticky;position:-moz-sticky;position:sticky;bottom:0;}
+     thead th {background-color:#dde;}
+         td {text-align: right;}
+     tr:nth-child(odd) {background-color:#eef;}
+     th, td {padding:2ex; border:1px solid #e0e0e0;}
+     .logs {display:none;}
+     .logs:target {display:block;position:fixed;top:5%;left:5%;right:5%;bottom:5%;border:1px solid black;background-color:white;overflow:scroll;z-index:10;}
+     .close {display:block;position:fixed;top:7%;right:7%;}
+     a:target {background-color:#e0e000;}
+  --></style>
+</head><body>
+<div>
+<table class="sortable">
+<thead>
+  <tr><th>Package</th><th>4.06.1+multicore-lazy+bench</th><th>4.06.1+multicore-lazy+bench time (s)</th></tr>
+</thead>
+<tbody>
+  <tr><th id="async.v0.11.0">async.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:async.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async-echo-bench.1.0">async-echo-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:async-echo-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async-rpc-bench.1.0">async-rpc-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:async-rpc-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_extra.v0.11.1">async_extra.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:async_extra.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_kernel.v0.11.1">async_kernel.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:async_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_rpc_kernel.v0.11.0">async_rpc_kernel.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="async_unix.v0.11.0">async_unix.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:async_unix.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="bin_prot.v0.11.0">bin_prot.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:bin_prot.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="camlimages.5.0.1">camlimages.5.0.1</th><td><a id="4.06.1+multicore-lazy+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="camlp4.4.07+1">camlp4.4.07+1</th><td><a id="4.06.1+multicore-lazy+bench:camlp4.4.07+1" href="#log-4.06.1+multicore-lazy+bench-camlp4-4.07+1">Failure (2)</a></td><td>0.220</td></tr>
+  <tr><th id="chameneos-bench.1.0">chameneos-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:chameneos-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="cohttp.1.1.1">cohttp.1.1.1</th><td><a id="4.06.1+multicore-lazy+bench:cohttp.1.1.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="cohttp-bench.1.0">cohttp-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:cohttp-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="conf-gnomecanvas.2">conf-gnomecanvas.2</th><td><a id="4.06.1+multicore-lazy+bench:conf-gnomecanvas.2" href="#log-4.06.1+multicore-lazy+bench-conf-gnomecanvas-2">Failure (1)</a></td><td>0.268</td></tr>
+  <tr><th id="conf-gtksourceview.2">conf-gtksourceview.2</th><td><a id="4.06.1+multicore-lazy+bench:conf-gtksourceview.2" href="#log-4.06.1+multicore-lazy+bench-conf-gtksourceview-2">Failure (1)</a></td><td>0.256</td></tr>
+  <tr><th id="coq.8.4.6~camlp4">coq.8.4.6~camlp4</th><td><a id="4.06.1+multicore-lazy+bench:coq.8.4.6~camlp4" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="coq-bench.1.0">coq-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:coq-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core.v0.11.3">core.v0.11.3</th><td><a id="4.06.1+multicore-lazy+bench:core.v0.11.3" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core-micro-bench.1.0">core-micro-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:core-micro-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core-sequence-bench.1.0">core-sequence-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:core-sequence-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_bench.v0.11.0">core_bench.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:core_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_extended.v0.11.0">core_extended.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:core_extended.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="core_kernel.v0.11.1">core_kernel.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:core_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="expect_test_helpers.v0.11.0">expect_test_helpers.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="expect_test_helpers_kernel.v0.11.0">expect_test_helpers_kernel.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="fieldslib.v0.11.0">fieldslib.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:fieldslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="frama-c.20130601">frama-c.20130601</th><td><a id="4.06.1+multicore-lazy+bench:frama-c.20130601" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="frama-c-bench.1.0">frama-c-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:frama-c-bench.1.0" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="js_of_ocaml.2.5">js_of_ocaml.2.5</th><td><a id="4.06.1+multicore-lazy+bench:js_of_ocaml.2.5" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="js_of_ocaml-bench.1.0">js_of_ocaml-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="lablgtk.2.18.6">lablgtk.2.18.6</th><td><a id="4.06.1+multicore-lazy+bench:lablgtk.2.18.6" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="lwt.3.3.0">lwt.3.3.0</th><td><a id="4.06.1+multicore-lazy+bench:lwt.3.3.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ocaml-migrate-parsetree.1.1.0">ocaml-migrate-parsetree.1.1.0</th><td><a id="4.06.1+multicore-lazy+bench:ocaml-migrate-parsetree.1.1.0" href="#log-4.06.1+multicore-lazy+bench-ocaml-migrate-parsetree-1.1.0">Failure (1)</a></td><td>1.839</td></tr>
+  <tr><th id="ocamlgraph.1.8.8">ocamlgraph.1.8.8</th><td><a id="4.06.1+multicore-lazy+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="patdiff.v0.11.0">patdiff.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:patdiff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="patdiff-bench.1.0">patdiff-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:patdiff-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="patience_diff.v0.11.0">patience_diff.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:patience_diff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="pcre.7.3.4">pcre.7.3.4</th><td><a id="4.06.1+multicore-lazy+bench:pcre.7.3.4" href="#log-4.06.1+multicore-lazy+bench-pcre-7.3.4">Failure (1)</a></td><td>0.564</td></tr>
+  <tr><th id="ppx_assert.v0.11.0">ppx_assert.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_assert.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_base.v0.11.0">ppx_base.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_base.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_bench.v0.11.0">ppx_bench.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_bin_prot.v0.11.1">ppx_bin_prot.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_compare.v0.11.1">ppx_compare.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_compare.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_custom_printf.v0.11.0">ppx_custom_printf.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_enumerate.v0.11.1">ppx_enumerate.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_expect.v0.11.1">ppx_expect.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_expect.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_fail.v0.11.0">ppx_fail.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_fail.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_fields_conv.v0.11.0">ppx_fields_conv.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_hash.v0.11.1">ppx_hash.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_hash.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_here.v0.11.0">ppx_here.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_here.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_inline_test.v0.11.0">ppx_inline_test.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_jane.v0.11.0">ppx_jane.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_jane.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_js_style.v0.11.0">ppx_js_style.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_js_style.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_let.v0.11.0">ppx_let.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_let.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_optcomp.v0.11.0">ppx_optcomp.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_optional.v0.11.0">ppx_optional.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_optional.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_pipebang.v0.11.0">ppx_pipebang.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_conv.v0.11.2">ppx_sexp_conv.v0.11.2</th><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_message.v0.11.0">ppx_sexp_message.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_value.v0.11.0">ppx_sexp_value.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_tools_versioned.5.2.1">ppx_tools_versioned.5.2.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_typerep_conv.v0.11.1">ppx_typerep_conv.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppx_variants_conv.v0.11.1">ppx_variants_conv.v0.11.1</th><td><a id="4.06.1+multicore-lazy+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="ppxlib.0.3.1">ppxlib.0.3.1</th><td><a id="4.06.1+multicore-lazy+bench:ppxlib.0.3.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="protocol_version_header.v0.11.0">protocol_version_header.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:protocol_version_header.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="re.1.8.0">re.1.8.0</th><td><a id="4.06.1+multicore-lazy+bench:re.1.8.0" href="#log-4.06.1+multicore-lazy+bench-re-1.8.0">Failure (1)</a></td><td>0.506</td></tr>
+  <tr><th id="re2.v0.11.0">re2.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:re2.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="sauvola-bench.1.0">sauvola-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="sexp_pretty.v0.11.0">sexp_pretty.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:sexp_pretty.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="spawn.v0.12.0">spawn.v0.12.0</th><td><a id="4.06.1+multicore-lazy+bench:spawn.v0.12.0" href="#log-4.06.1+multicore-lazy+bench-spawn-v0.12.0">Failure (1)</a></td><td>0.349</td></tr>
+  <tr><th id="splittable_random.v0.11.0">splittable_random.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:splittable_random.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="textutils.v0.11.0">textutils.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:textutils.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="textutils_kernel.v0.11.0">textutils_kernel.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:textutils_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="thread-bench.1.0">thread-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:thread-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="uri.1.9.7">uri.1.9.7</th><td><a id="4.06.1+multicore-lazy+bench:uri.1.9.7" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, re.1.8.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="valet-bench.1.0">valet-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:valet-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, re.1.8.0, spawn.v0.12.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="variantslib.v0.11.0">variantslib.v0.11.0</th><td><a id="4.06.1+multicore-lazy+bench:variantslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td>0.000</td></tr>
+  <tr><th id="yojson-bench.1.0">yojson-bench.1.0</th><td><a id="4.06.1+multicore-lazy+bench:yojson-bench.1.0" href="#log-4.06.1+multicore-lazy+bench-yojson-bench-1.0">Failure (2)</a></td><td>0.312</td></tr>
+</tbody>
+</table></div><div class="logs" id="log-4.06.1+multicore-lazy+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+multicore-lazy+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+multicore-lazy+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-spawn-v0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on spawn.v0.12.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/spawn_stubs.o (exit 2)
+(cd _build/default/src &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+spawn_stubs.c: In function ‘spawn_pipe’:
+spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+   Field(res, 0) = Val_int(fd[0]);
+                 ^
+spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+   Field(res, 1) = Val_int(fd[1]);
+                 ^
+spawn_stubs.c: In function ‘subprocess_failure’:
+spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(failure_fd, &amp;failure, sizeof(failure));
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-re-1.8.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on re.1.8.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p re -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc lib/.re.objs/re__Core.{cmi,cmti} (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.re.objs -I lib/.re.objs/.private -I /root/.opam/4.06.1+multicore-lazy+bench/lib/seq -no-alias-deps -open Re__ -o lib/.re.objs/re__Core.cmi -c -intf lib/core.mli)
+File "lib/core.mli", line 145, characters 26-31:
+Error: Unbound module Seq
+Hint: Did you mean Set?</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-pcre-7.3.4">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on pcre.7.3.4 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7</pre></p>
+  <h4>Output</h4><pre>    ocamlopt src/config/discover.exe (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base/caml -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore-lazy+bench/lib/configurator -I /root/.opam/4.06.1+multicore-lazy+bench/lib/sexplib0 -I /root/.opam/4.06.1+multicore-lazy+bench/lib/stdio /root/.opam/4.06.1+multicore-lazy+bench/lib/base/caml/caml.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/base/shadow_stdlib/shadow_stdlib.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/sexplib0/sexplib0.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/base/base.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/stdio/stdio.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/unix.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/configurator/configurator.cmxa src/config/.discover.eobjs/discover.cmx)
+/root/.opam/4.06.1+multicore-lazy+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-ocaml-migrate-parsetree-1.1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocaml-migrate-parsetree.1.1.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/.migrate_parsetree.objs/ast_406.{cmi,cmo,cmt} (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlc.opt -w -40 -open Result -g -bin-annot -I src/.migrate_parsetree.objs -I src/.migrate_parsetree.objs/.private -I /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/compiler-libs -I /root/.opam/4.06.1+multicore-lazy+bench/lib/result -no-alias-deps -o src/.migrate_parsetree.objs/ast_406.cmo -c -impl src/ast_406.pp.ml)
+File "src/ast_406.ml", line 237, characters 2-1773:
+Error: This variant or record definition does not match that of type
+         Parsetree.pattern_desc
+       Fields number 17 have different names, Ppat_effect and Ppat_extension.</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-camlp4-4.07+1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on camlp4.4.07+1 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore-lazy+bench/bin --libdir=/root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore-lazy+bench/lib</pre></p>
+  <h4>Output</h4><pre>This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1+multicore-dev0.</pre>
+</div>
+</body></html>
