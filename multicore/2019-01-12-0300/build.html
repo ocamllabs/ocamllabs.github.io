@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bench build results</title>
+  <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <style type="text/css"><!--
+     div {padding:3ex;}
+     pre {padding:1ex;border:1px solid grey;background-color:#eee;}
+     table {border-collapse:collapse;margin:auto;}
+     thead {position:-webkit-sticky;position:-moz-sticky;position:sticky;top:0;}
+     tfoot {position:-webkit-sticky;position:-moz-sticky;position:sticky;bottom:0;}
+     thead th {background-color:#dde;}
+         td {text-align: right;}
+     tr:nth-child(odd) {background-color:#eef;}
+     th, td {padding:2ex; border:1px solid #e0e0e0;}
+     .logs {display:none;}
+     .logs:target {display:block;position:fixed;top:5%;left:5%;right:5%;bottom:5%;border:1px solid black;background-color:white;overflow:scroll;z-index:10;}
+     .close {display:block;position:fixed;top:7%;right:7%;}
+     a:target {background-color:#e0e000;}
+  --></style>
+</head><body>
+<div>
+<table class="sortable">
+<thead>
+  <tr><th>Package</th><th>4.06.1+multicore+bench</th><th>4.06.1+multicore-lazy+bench</th><th>4.06.1+trunk+bench</th><th>4.08.0+optim_local_tailcalls+bench</th><th>4.08.0+optim_local_tailcalls+flambda+bench</th><th>4.08.0+trunk+bench</th><th>4.08.0+trunk+flambda+bench</th><th>4.06.1+multicore+bench time (s)</th><th>4.06.1+multicore-lazy+bench time (s)</th><th>4.06.1+trunk+bench time (s)</th><th>4.08.0+optim_local_tailcalls+bench time (s)</th><th>4.08.0+optim_local_tailcalls+flambda+bench time (s)</th><th>4.08.0+trunk+bench time (s)</th><th>4.08.0+trunk+flambda+bench time (s)</th></tr>
+</thead>
+<tbody>
+  <tr><th id="async.v0.11.0">async.v0.11.0</th><td><a id="4.06.1+multicore+bench:async.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async-echo-bench.1.0">async-echo-bench.1.0</th><td><a id="4.06.1+multicore+bench:async-echo-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async-echo-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async-echo-bench.1.0" href="#log-4.06.1+trunk+bench-async-echo-bench-1.0">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async-echo-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async-echo-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async-echo-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async-echo-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.353</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async-rpc-bench.1.0">async-rpc-bench.1.0</th><td><a id="4.06.1+multicore+bench:async-rpc-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async-rpc-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async-rpc-bench.1.0" href="#log-4.06.1+trunk+bench-async-rpc-bench-1.0">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async-rpc-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async-rpc-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async-rpc-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async-rpc-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.309</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async_extra.v0.11.1">async_extra.v0.11.1</th><td><a id="4.06.1+multicore+bench:async_extra.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async_extra.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async_extra.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async_extra.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async_extra.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async_extra.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async_extra.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async_kernel.v0.11.1">async_kernel.v0.11.1</th><td><a id="4.06.1+multicore+bench:async_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async_kernel.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async_rpc_kernel.v0.11.0">async_rpc_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async_rpc_kernel.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async_rpc_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="async_unix.v0.11.0">async_unix.v0.11.0</th><td><a id="4.06.1+multicore+bench:async_unix.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:async_unix.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:async_unix.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:async_unix.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:async_unix.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:async_unix.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:async_unix.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="base.v0.11.1">base.v0.11.1</th><td><a id="4.06.1+multicore+bench:base.v0.11.1">-</a></td><td><a id="4.06.1+multicore-lazy+bench:base.v0.11.1">-</a></td><td><a id="4.06.1+trunk+bench:base.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:base.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:base.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:base.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:base.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="base64.2.3.0">base64.2.3.0</th><td><a id="4.06.1+multicore+bench:base64.2.3.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:base64.2.3.0">-</a></td><td><a id="4.06.1+trunk+bench:base64.2.3.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:base64.2.3.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:base64.2.3.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:base64.2.3.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:base64.2.3.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="bin_prot.v0.11.0">bin_prot.v0.11.0</th><td><a id="4.06.1+multicore+bench:bin_prot.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:bin_prot.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:bin_prot.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:bin_prot.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:bin_prot.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:bin_prot.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:bin_prot.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="biniou.1.2.0">biniou.1.2.0</th><td><a id="4.06.1+multicore+bench:biniou.1.2.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:biniou.1.2.0">-</a></td><td><a id="4.06.1+trunk+bench:biniou.1.2.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:biniou.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:biniou.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:biniou.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:biniou.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="camlimages.5.0.1">camlimages.5.0.1</th><td><a id="4.06.1+multicore+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:camlimages.5.0.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="camlp4.4.07+1">camlp4.4.07+1</th><td><a id="4.06.1+multicore+bench:camlp4.4.07+1" href="#log-4.06.1+multicore+bench-camlp4-4.07+1">Failure (2)</a></td><td><a id="4.06.1+multicore-lazy+bench:camlp4.4.07+1" href="#log-4.06.1+multicore-lazy+bench-camlp4-4.07+1">Failure (2)</a></td><td><a id="4.06.1+trunk+bench:camlp4.4.07+1" href="#log-4.06.1+trunk+bench-camlp4-4.07+1">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:camlp4.4.07+1" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:camlp4.4.07+1" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:camlp4.4.07+1" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:camlp4.4.07+1" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>0.225</td><td>0.215</td><td>0.274</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="chameneos-bench.1.0">chameneos-bench.1.0</th><td><a id="4.06.1+multicore+bench:chameneos-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:chameneos-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:chameneos-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:chameneos-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:chameneos-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:chameneos-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:chameneos-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="cmdliner.1.0.3">cmdliner.1.0.3</th><td><a id="4.06.1+multicore+bench:cmdliner.1.0.3">-</a></td><td><a id="4.06.1+multicore-lazy+bench:cmdliner.1.0.3">-</a></td><td><a id="4.06.1+trunk+bench:cmdliner.1.0.3">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:cmdliner.1.0.3" href="#log-4.08.0+optim_local_tailcalls+bench-cmdliner-1.0.3">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:cmdliner.1.0.3" href="#log-4.08.0+optim_local_tailcalls+flambda+bench-cmdliner-1.0.3">Failure (2)</a></td><td><a id="4.08.0+trunk+bench:cmdliner.1.0.3" href="#log-4.08.0+trunk+bench-cmdliner-1.0.3">Failure (2)</a></td><td><a id="4.08.0+trunk+flambda+bench:cmdliner.1.0.3" href="#log-4.08.0+trunk+flambda+bench-cmdliner-1.0.3">Failure (2)</a></td><td>-</td><td>-</td><td>-</td><td>0.420</td><td>0.400</td><td>0.409</td><td>0.429</td></tr>
+  <tr><th id="cohttp.1.2.0">cohttp.1.2.0</th><td><a id="4.06.1+multicore+bench:cohttp.1.2.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:cohttp.1.2.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:cohttp.1.2.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:cohttp.1.2.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:cohttp.1.2.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:cohttp.1.2.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:cohttp.1.2.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="cohttp-bench.1.0">cohttp-bench.1.0</th><td><a id="4.06.1+multicore+bench:cohttp-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:cohttp-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:cohttp-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:cohttp-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:cohttp-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:cohttp-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:cohttp-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="conf-gnomecanvas.2">conf-gnomecanvas.2</th><td><a id="4.06.1+multicore+bench:conf-gnomecanvas.2" href="#log-4.06.1+multicore+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.06.1+multicore-lazy+bench:conf-gnomecanvas.2" href="#log-4.06.1+multicore-lazy+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.06.1+trunk+bench:conf-gnomecanvas.2" href="#log-4.06.1+trunk+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:conf-gnomecanvas.2" href="#log-4.08.0+optim_local_tailcalls+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:conf-gnomecanvas.2" href="#log-4.08.0+optim_local_tailcalls+flambda+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.08.0+trunk+bench:conf-gnomecanvas.2" href="#log-4.08.0+trunk+bench-conf-gnomecanvas-2">Failure (1)</a></td><td><a id="4.08.0+trunk+flambda+bench:conf-gnomecanvas.2" href="#log-4.08.0+trunk+flambda+bench-conf-gnomecanvas-2">Failure (1)</a></td><td>0.231</td><td>0.223</td><td>0.313</td><td>0.165</td><td>0.165</td><td>0.167</td><td>0.167</td></tr>
+  <tr><th id="conf-gtksourceview.2">conf-gtksourceview.2</th><td><a id="4.06.1+multicore+bench:conf-gtksourceview.2" href="#log-4.06.1+multicore+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.06.1+multicore-lazy+bench:conf-gtksourceview.2" href="#log-4.06.1+multicore-lazy+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.06.1+trunk+bench:conf-gtksourceview.2" href="#log-4.06.1+trunk+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:conf-gtksourceview.2" href="#log-4.08.0+optim_local_tailcalls+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:conf-gtksourceview.2" href="#log-4.08.0+optim_local_tailcalls+flambda+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.08.0+trunk+bench:conf-gtksourceview.2" href="#log-4.08.0+trunk+bench-conf-gtksourceview-2">Failure (1)</a></td><td><a id="4.08.0+trunk+flambda+bench:conf-gtksourceview.2" href="#log-4.08.0+trunk+flambda+bench-conf-gtksourceview-2">Failure (1)</a></td><td>0.281</td><td>0.280</td><td>0.298</td><td>0.153</td><td>0.150</td><td>0.153</td><td>0.153</td></tr>
+  <tr><th id="configurator.v0.11.0">configurator.v0.11.0</th><td><a id="4.06.1+multicore+bench:configurator.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:configurator.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:configurator.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:configurator.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:configurator.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:configurator.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:configurator.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="coq.8.4.6~camlp4">coq.8.4.6~camlp4</th><td><a id="4.06.1+multicore+bench:coq.8.4.6~camlp4" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:coq.8.4.6~camlp4" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.06.1+trunk+bench:coq.8.4.6~camlp4" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:coq.8.4.6~camlp4" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:coq.8.4.6~camlp4" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:coq.8.4.6~camlp4" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:coq.8.4.6~camlp4" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="coq-bench.1.0">coq-bench.1.0</th><td><a id="4.06.1+multicore+bench:coq-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:coq-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.06.1+trunk+bench:coq-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:coq-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:coq-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:coq-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:coq-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core.v0.11.3">core.v0.11.3</th><td><a id="4.06.1+multicore+bench:core.v0.11.3" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core.v0.11.3" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core.v0.11.3">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core.v0.11.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core.v0.11.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core.v0.11.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core.v0.11.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core-micro-bench.1.0">core-micro-bench.1.0</th><td><a id="4.06.1+multicore+bench:core-micro-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core-micro-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core-micro-bench.1.0" href="#log-4.06.1+trunk+bench-core-micro-bench-1.0">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core-micro-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core-micro-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core-micro-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core-micro-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.280</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core-sequence-bench.1.0">core-sequence-bench.1.0</th><td><a id="4.06.1+multicore+bench:core-sequence-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core-sequence-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core-sequence-bench.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core-sequence-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core-sequence-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core-sequence-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core-sequence-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core_bench.v0.11.0">core_bench.v0.11.0</th><td><a id="4.06.1+multicore+bench:core_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core_bench.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core_extended.v0.11.0">core_extended.v0.11.0</th><td><a id="4.06.1+multicore+bench:core_extended.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core_extended.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core_extended.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core_extended.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core_extended.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core_extended.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core_extended.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="core_kernel.v0.11.1">core_kernel.v0.11.1</th><td><a id="4.06.1+multicore+bench:core_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:core_kernel.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:core_kernel.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:core_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:core_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:core_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:core_kernel.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="cppo.1.6.5">cppo.1.6.5</th><td><a id="4.06.1+multicore+bench:cppo.1.6.5">-</a></td><td><a id="4.06.1+multicore-lazy+bench:cppo.1.6.5">-</a></td><td><a id="4.06.1+trunk+bench:cppo.1.6.5">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:cppo.1.6.5" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:cppo.1.6.5" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:cppo.1.6.5" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:cppo.1.6.5" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="dune.1.2.1">dune.1.2.1</th><td><a id="4.06.1+multicore+bench:dune.1.2.1">-</a></td><td><a id="4.06.1+multicore-lazy+bench:dune.1.2.1">-</a></td><td><a id="4.06.1+trunk+bench:dune.1.2.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:dune.1.2.1" href="#log-4.08.0+optim_local_tailcalls+bench-dune-1.2.1">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:dune.1.2.1" href="#log-4.08.0+optim_local_tailcalls+flambda+bench-dune-1.2.1">Failure (2)</a></td><td><a id="4.08.0+trunk+bench:dune.1.2.1" href="#log-4.08.0+trunk+bench-dune-1.2.1">Failure (2)</a></td><td><a id="4.08.0+trunk+flambda+bench:dune.1.2.1" href="#log-4.08.0+trunk+flambda+bench-dune-1.2.1">Failure (2)</a></td><td>-</td><td>-</td><td>-</td><td>0.749</td><td>0.721</td><td>0.854</td><td>0.716</td></tr>
+  <tr><th id="easy-format.1.3.1">easy-format.1.3.1</th><td><a id="4.06.1+multicore+bench:easy-format.1.3.1">-</a></td><td><a id="4.06.1+multicore-lazy+bench:easy-format.1.3.1">-</a></td><td><a id="4.06.1+trunk+bench:easy-format.1.3.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:easy-format.1.3.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:easy-format.1.3.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:easy-format.1.3.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:easy-format.1.3.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="expect_test_helpers.v0.11.0">expect_test_helpers.v0.11.0</th><td><a id="4.06.1+multicore+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:expect_test_helpers.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:expect_test_helpers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="expect_test_helpers_kernel.v0.11.0">expect_test_helpers_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:expect_test_helpers_kernel.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:expect_test_helpers_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="fieldslib.v0.11.0">fieldslib.v0.11.0</th><td><a id="4.06.1+multicore+bench:fieldslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:fieldslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:fieldslib.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:fieldslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:fieldslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:fieldslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:fieldslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="frama-c.9.1">frama-c.9.1</th><td><a id="4.06.1+multicore+bench:frama-c.9.1" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:frama-c.9.1" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:frama-c.9.1" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:frama-c.9.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:frama-c.9.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:frama-c.9.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:frama-c.9.1" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="frama-c-bench.1.0">frama-c-bench.1.0</th><td><a id="4.06.1+multicore+bench:frama-c-bench.1.0" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:frama-c-bench.1.0" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:frama-c-bench.1.0" title="Failed dependencies: camlp4.4.07+1, conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:frama-c-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:frama-c-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:frama-c-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:frama-c-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="jane-street-headers.v0.11.0">jane-street-headers.v0.11.0</th><td><a id="4.06.1+multicore+bench:jane-street-headers.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:jane-street-headers.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:jane-street-headers.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:jane-street-headers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:jane-street-headers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:jane-street-headers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:jane-street-headers.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="jbuilder.transition">jbuilder.transition</th><td><a id="4.06.1+multicore+bench:jbuilder.transition">-</a></td><td><a id="4.06.1+multicore-lazy+bench:jbuilder.transition">-</a></td><td><a id="4.06.1+trunk+bench:jbuilder.transition">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:jbuilder.transition" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:jbuilder.transition" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:jbuilder.transition" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:jbuilder.transition" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="js_of_ocaml.2.5">js_of_ocaml.2.5</th><td><a id="4.06.1+multicore+bench:js_of_ocaml.2.5" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:js_of_ocaml.2.5" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:js_of_ocaml.2.5" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:js_of_ocaml.2.5" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:js_of_ocaml.2.5" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:js_of_ocaml.2.5" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:js_of_ocaml.2.5" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="js_of_ocaml-bench.1.0">js_of_ocaml-bench.1.0</th><td><a id="4.06.1+multicore+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:js_of_ocaml-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="jsonm.1.0.1">jsonm.1.0.1</th><td><a id="4.06.1+multicore+bench:jsonm.1.0.1">-</a></td><td><a id="4.06.1+multicore-lazy+bench:jsonm.1.0.1">-</a></td><td><a id="4.06.1+trunk+bench:jsonm.1.0.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:jsonm.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:jsonm.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:jsonm.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:jsonm.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="jsonm-bench.1.0">jsonm-bench.1.0</th><td><a id="4.06.1+multicore+bench:jsonm-bench.1.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:jsonm-bench.1.0">-</a></td><td><a id="4.06.1+trunk+bench:jsonm-bench.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:jsonm-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:jsonm-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:jsonm-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:jsonm-bench.1.0" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="lablgtk.2.18.7">lablgtk.2.18.7</th><td><a id="4.06.1+multicore+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+trunk+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:lablgtk.2.18.7" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="lwt.3.3.0">lwt.3.3.0</th><td><a id="4.06.1+multicore+bench:lwt.3.3.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:lwt.3.3.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:lwt.3.3.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:lwt.3.3.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:lwt.3.3.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:lwt.3.3.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:lwt.3.3.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="menhir.20181113">menhir.20181113</th><td><a id="4.06.1+multicore+bench:menhir.20181113">-</a></td><td><a id="4.06.1+multicore-lazy+bench:menhir.20181113">-</a></td><td><a id="4.06.1+trunk+bench:menhir.20181113">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:menhir.20181113" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:menhir.20181113" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:menhir.20181113" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:menhir.20181113" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="menhir-bench.1.0">menhir-bench.1.0</th><td><a id="4.06.1+multicore+bench:menhir-bench.1.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:menhir-bench.1.0">-</a></td><td><a id="4.06.1+trunk+bench:menhir-bench.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:menhir-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:menhir-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:menhir-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:menhir-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="nbcodec.1.0">nbcodec.1.0</th><td><a id="4.06.1+multicore+bench:nbcodec.1.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:nbcodec.1.0">-</a></td><td><a id="4.06.1+trunk+bench:nbcodec.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:nbcodec.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:nbcodec.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:nbcodec.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:nbcodec.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="nbcodec-bench.1.0">nbcodec-bench.1.0</th><td><a id="4.06.1+multicore+bench:nbcodec-bench.1.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:nbcodec-bench.1.0">-</a></td><td><a id="4.06.1+trunk+bench:nbcodec-bench.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:nbcodec-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:nbcodec-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:nbcodec-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:nbcodec-bench.1.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ocaml-compiler-libs.v0.11.0">ocaml-compiler-libs.v0.11.0</th><td><a id="4.06.1+multicore+bench:ocaml-compiler-libs.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:ocaml-compiler-libs.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:ocaml-compiler-libs.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ocaml-compiler-libs.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ocaml-compiler-libs.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ocaml-compiler-libs.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ocaml-compiler-libs.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ocaml-migrate-parsetree.1.1.0">ocaml-migrate-parsetree.1.1.0</th><td><a id="4.06.1+multicore+bench:ocaml-migrate-parsetree.1.1.0" href="#log-4.06.1+multicore+bench-ocaml-migrate-parsetree-1.1.0">Failure (1)</a></td><td><a id="4.06.1+multicore-lazy+bench:ocaml-migrate-parsetree.1.1.0" href="#log-4.06.1+multicore-lazy+bench-ocaml-migrate-parsetree-1.1.0">Failure (1)</a></td><td><a id="4.06.1+trunk+bench:ocaml-migrate-parsetree.1.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ocaml-migrate-parsetree.1.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ocaml-migrate-parsetree.1.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ocaml-migrate-parsetree.1.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ocaml-migrate-parsetree.1.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>2.514</td><td>2.128</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ocamlbuild.0.12.0">ocamlbuild.0.12.0</th><td><a id="4.06.1+multicore+bench:ocamlbuild.0.12.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:ocamlbuild.0.12.0">-</a></td><td><a id="4.06.1+trunk+bench:ocamlbuild.0.12.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ocamlbuild.0.12.0" href="#log-4.08.0+optim_local_tailcalls+bench-ocamlbuild-0.12.0">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ocamlbuild.0.12.0" href="#log-4.08.0+optim_local_tailcalls+flambda+bench-ocamlbuild-0.12.0">Failure (2)</a></td><td><a id="4.08.0+trunk+bench:ocamlbuild.0.12.0" href="#log-4.08.0+trunk+bench-ocamlbuild-0.12.0">Failure (2)</a></td><td><a id="4.08.0+trunk+flambda+bench:ocamlbuild.0.12.0" href="#log-4.08.0+trunk+flambda+bench-ocamlbuild-0.12.0">Failure (2)</a></td><td>-</td><td>-</td><td>-</td><td>0.775</td><td>0.771</td><td>0.790</td><td>0.735</td></tr>
+  <tr><th id="ocamlgraph.1.8.8">ocamlgraph.1.8.8</th><td><a id="4.06.1+multicore+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+trunk+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ocamlgraph.1.8.8" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ocplib-endian.0.8">ocplib-endian.0.8</th><td><a id="4.06.1+multicore+bench:ocplib-endian.0.8">OK</a></td><td><a id="4.06.1+multicore-lazy+bench:ocplib-endian.0.8">OK</a></td><td><a id="4.06.1+trunk+bench:ocplib-endian.0.8">OK</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ocplib-endian.0.8" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ocplib-endian.0.8" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:ocplib-endian.0.8" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ocplib-endian.0.8" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>3.380</td><td>3.478</td><td>2.161</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="octavius.1.2.0">octavius.1.2.0</th><td><a id="4.06.1+multicore+bench:octavius.1.2.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:octavius.1.2.0">-</a></td><td><a id="4.06.1+trunk+bench:octavius.1.2.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:octavius.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:octavius.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:octavius.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:octavius.1.2.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="parsexp.v0.11.0">parsexp.v0.11.0</th><td><a id="4.06.1+multicore+bench:parsexp.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:parsexp.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:parsexp.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:parsexp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:parsexp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:parsexp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:parsexp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="patdiff.v0.11.0">patdiff.v0.11.0</th><td><a id="4.06.1+multicore+bench:patdiff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:patdiff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:patdiff.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:patdiff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:patdiff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:patdiff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:patdiff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="patdiff-bench.1.0">patdiff-bench.1.0</th><td><a id="4.06.1+multicore+bench:patdiff-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:patdiff-bench.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, pcre.7.3.4, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:patdiff-bench.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:patdiff-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:patdiff-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:patdiff-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:patdiff-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="patience_diff.v0.11.0">patience_diff.v0.11.0</th><td><a id="4.06.1+multicore+bench:patience_diff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:patience_diff.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:patience_diff.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:patience_diff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:patience_diff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:patience_diff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:patience_diff.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="pcre.7.3.4">pcre.7.3.4</th><td><a id="4.06.1+multicore+bench:pcre.7.3.4" href="#log-4.06.1+multicore+bench-pcre-7.3.4">Failure (1)</a></td><td><a id="4.06.1+multicore-lazy+bench:pcre.7.3.4" href="#log-4.06.1+multicore-lazy+bench-pcre-7.3.4">Failure (1)</a></td><td><a id="4.06.1+trunk+bench:pcre.7.3.4">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:pcre.7.3.4" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:pcre.7.3.4" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:pcre.7.3.4" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:pcre.7.3.4" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.499</td><td>0.508</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_assert.v0.11.0">ppx_assert.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_assert.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_assert.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_assert.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_assert.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_assert.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_assert.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_assert.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_base.v0.11.0">ppx_base.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_base.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_base.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_base.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_base.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_base.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_base.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_base.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_bench.v0.11.0">ppx_bench.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_bench.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_bench.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_bench.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_bin_prot.v0.11.1">ppx_bin_prot.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_bin_prot.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_bin_prot.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_compare.v0.11.1">ppx_compare.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_compare.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_compare.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_compare.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_compare.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_compare.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_compare.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_compare.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_custom_printf.v0.11.0">ppx_custom_printf.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_custom_printf.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_custom_printf.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_derivers.1.0">ppx_derivers.1.0</th><td><a id="4.06.1+multicore+bench:ppx_derivers.1.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_derivers.1.0">-</a></td><td><a id="4.06.1+trunk+bench:ppx_derivers.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_derivers.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_derivers.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_derivers.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_derivers.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_enumerate.v0.11.1">ppx_enumerate.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_enumerate.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_enumerate.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_expect.v0.11.1">ppx_expect.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_expect.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_expect.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_expect.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_expect.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_expect.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_expect.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_expect.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_fail.v0.11.0">ppx_fail.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_fail.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_fail.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_fail.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_fail.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_fail.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_fail.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_fail.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_fields_conv.v0.11.0">ppx_fields_conv.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_fields_conv.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_fields_conv.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_hash.v0.11.1">ppx_hash.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_hash.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_hash.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_hash.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_hash.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_hash.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_hash.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_hash.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_here.v0.11.0">ppx_here.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_here.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_here.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_here.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_here.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_here.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_here.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_here.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_inline_test.v0.11.0">ppx_inline_test.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_inline_test.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_inline_test.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_jane.v0.11.0">ppx_jane.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_jane.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_jane.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_jane.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_jane.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_jane.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_jane.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_jane.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_js_style.v0.11.0">ppx_js_style.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_js_style.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_js_style.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_js_style.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_js_style.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_js_style.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_js_style.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_js_style.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_let.v0.11.0">ppx_let.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_let.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_let.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_let.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_let.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_let.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_let.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_let.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_optcomp.v0.11.0">ppx_optcomp.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_optcomp.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_optcomp.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_optional.v0.11.0">ppx_optional.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_optional.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_optional.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_optional.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_optional.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_optional.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_optional.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_optional.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_pipebang.v0.11.0">ppx_pipebang.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_pipebang.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_pipebang.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_conv.v0.11.2">ppx_sexp_conv.v0.11.2</th><td><a id="4.06.1+multicore+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_sexp_conv.v0.11.2">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_sexp_conv.v0.11.2" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_message.v0.11.0">ppx_sexp_message.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_sexp_message.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_sexp_message.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_sexp_value.v0.11.0">ppx_sexp_value.v0.11.0</th><td><a id="4.06.1+multicore+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_sexp_value.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_sexp_value.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_tools_versioned.5.2.1">ppx_tools_versioned.5.2.1</th><td><a id="4.06.1+multicore+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_tools_versioned.5.2.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_tools_versioned.5.2.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_typerep_conv.v0.11.1">ppx_typerep_conv.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_typerep_conv.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_typerep_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppx_variants_conv.v0.11.1">ppx_variants_conv.v0.11.1</th><td><a id="4.06.1+multicore+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppx_variants_conv.v0.11.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppx_variants_conv.v0.11.1" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="ppxlib.0.5.0">ppxlib.0.5.0</th><td><a id="4.06.1+multicore+bench:ppxlib.0.5.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:ppxlib.0.5.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:ppxlib.0.5.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:ppxlib.0.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:ppxlib.0.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:ppxlib.0.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:ppxlib.0.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="protocol_version_header.v0.11.0">protocol_version_header.v0.11.0</th><td><a id="4.06.1+multicore+bench:protocol_version_header.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:protocol_version_header.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:protocol_version_header.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:protocol_version_header.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:protocol_version_header.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:protocol_version_header.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:protocol_version_header.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="re.1.8.0">re.1.8.0</th><td><a id="4.06.1+multicore+bench:re.1.8.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:re.1.8.0">-</a></td><td><a id="4.06.1+trunk+bench:re.1.8.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:re.1.8.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:re.1.8.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:re.1.8.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:re.1.8.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="re2.v0.11.0">re2.v0.11.0</th><td><a id="4.06.1+multicore+bench:re2.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:re2.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:re2.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:re2.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:re2.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:re2.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:re2.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="react.1.2.0">react.1.2.0</th><td><a id="4.06.1+multicore+bench:react.1.2.0">OK</a></td><td><a id="4.06.1+multicore-lazy+bench:react.1.2.0">OK</a></td><td><a id="4.06.1+trunk+bench:react.1.2.0">OK</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:react.1.2.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:react.1.2.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:react.1.2.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:react.1.2.0" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>2.012</td><td>2.049</td><td>0.858</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="result.1.3">result.1.3</th><td><a id="4.06.1+multicore+bench:result.1.3">-</a></td><td><a id="4.06.1+multicore-lazy+bench:result.1.3">-</a></td><td><a id="4.06.1+trunk+bench:result.1.3">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:result.1.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:result.1.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:result.1.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:result.1.3" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="sauvola-bench.1.0">sauvola-bench.1.0</th><td><a id="4.06.1+multicore+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.06.1+trunk+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:sauvola-bench.1.0" title="Failed dependencies: conf-gnomecanvas.2, conf-gtksourceview.2, dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="sexp_pretty.v0.11.0">sexp_pretty.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexp_pretty.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:sexp_pretty.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:sexp_pretty.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:sexp_pretty.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:sexp_pretty.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:sexp_pretty.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:sexp_pretty.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="sexplib.v0.11.0">sexplib.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexplib.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:sexplib.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:sexplib.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:sexplib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:sexplib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:sexplib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:sexplib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="sexplib0.v0.11.0">sexplib0.v0.11.0</th><td><a id="4.06.1+multicore+bench:sexplib0.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:sexplib0.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:sexplib0.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:sexplib0.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:sexplib0.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:sexplib0.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:sexplib0.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="spawn.v0.12.0">spawn.v0.12.0</th><td><a id="4.06.1+multicore+bench:spawn.v0.12.0" href="#log-4.06.1+multicore+bench-spawn-v0.12.0">Failure (1)</a></td><td><a id="4.06.1+multicore-lazy+bench:spawn.v0.12.0" href="#log-4.06.1+multicore-lazy+bench-spawn-v0.12.0">Failure (1)</a></td><td><a id="4.06.1+trunk+bench:spawn.v0.12.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:spawn.v0.12.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:spawn.v0.12.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:spawn.v0.12.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:spawn.v0.12.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.305</td><td>0.337</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="splittable_random.v0.11.0">splittable_random.v0.11.0</th><td><a id="4.06.1+multicore+bench:splittable_random.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:splittable_random.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:splittable_random.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:splittable_random.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:splittable_random.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:splittable_random.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:splittable_random.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="stdio.v0.11.0">stdio.v0.11.0</th><td><a id="4.06.1+multicore+bench:stdio.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:stdio.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:stdio.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:stdio.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:stdio.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:stdio.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:stdio.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="stringext.1.5.0">stringext.1.5.0</th><td><a id="4.06.1+multicore+bench:stringext.1.5.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:stringext.1.5.0">-</a></td><td><a id="4.06.1+trunk+bench:stringext.1.5.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:stringext.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:stringext.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:stringext.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:stringext.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="textutils.v0.11.0">textutils.v0.11.0</th><td><a id="4.06.1+multicore+bench:textutils.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:textutils.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:textutils.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:textutils.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:textutils.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:textutils.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:textutils.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="textutils_kernel.v0.11.0">textutils_kernel.v0.11.0</th><td><a id="4.06.1+multicore+bench:textutils_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:textutils_kernel.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:textutils_kernel.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:textutils_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:textutils_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:textutils_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:textutils_kernel.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="thread-bench.1.0">thread-bench.1.0</th><td><a id="4.06.1+multicore+bench:thread-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:thread-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:thread-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:thread-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:thread-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:thread-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:thread-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="topkg.1.0.0">topkg.1.0.0</th><td><a id="4.06.1+multicore+bench:topkg.1.0.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:topkg.1.0.0">-</a></td><td><a id="4.06.1+trunk+bench:topkg.1.0.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:topkg.1.0.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:topkg.1.0.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:topkg.1.0.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:topkg.1.0.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="typerep.v0.11.0">typerep.v0.11.0</th><td><a id="4.06.1+multicore+bench:typerep.v0.11.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:typerep.v0.11.0">-</a></td><td><a id="4.06.1+trunk+bench:typerep.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:typerep.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:typerep.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:typerep.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:typerep.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="uchar.0.0.2">uchar.0.0.2</th><td><a id="4.06.1+multicore+bench:uchar.0.0.2">-</a></td><td><a id="4.06.1+multicore-lazy+bench:uchar.0.0.2">-</a></td><td><a id="4.06.1+trunk+bench:uchar.0.0.2">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:uchar.0.0.2" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:uchar.0.0.2" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:uchar.0.0.2" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:uchar.0.0.2" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="uri.2.1.0">uri.2.1.0</th><td><a id="4.06.1+multicore+bench:uri.2.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:uri.2.1.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:uri.2.1.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:uri.2.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:uri.2.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:uri.2.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:uri.2.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="uuidm.0.9.5">uuidm.0.9.5</th><td><a id="4.06.1+multicore+bench:uuidm.0.9.5">OK</a></td><td><a id="4.06.1+multicore-lazy+bench:uuidm.0.9.5">OK</a></td><td><a id="4.06.1+trunk+bench:uuidm.0.9.5">OK</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:uuidm.0.9.5" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:uuidm.0.9.5" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:uuidm.0.9.5" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:uuidm.0.9.5" title="Failed dependencies: ocamlbuild.0.12.0">Aborted</a></td><td>3.376</td><td>3.435</td><td>2.565</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="uutf.1.0.1">uutf.1.0.1</th><td><a id="4.06.1+multicore+bench:uutf.1.0.1">-</a></td><td><a id="4.06.1+multicore-lazy+bench:uutf.1.0.1">-</a></td><td><a id="4.06.1+trunk+bench:uutf.1.0.1">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:uutf.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:uutf.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:uutf.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:uutf.1.0.1" title="Failed dependencies: cmdliner.1.0.3, dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="valet-bench.1.0">valet-bench.1.0</th><td><a id="4.06.1+multicore+bench:valet-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:valet-bench.1.0" title="Failed dependencies: camlp4.4.07+1, ocaml-migrate-parsetree.1.1.0, spawn.v0.12.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:valet-bench.1.0" title="Failed dependencies: camlp4.4.07+1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:valet-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:valet-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+bench:valet-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:valet-bench.1.0" title="Failed dependencies: dune.1.2.1, ocamlbuild.0.12.0">Aborted</a></td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="variantslib.v0.11.0">variantslib.v0.11.0</th><td><a id="4.06.1+multicore+bench:variantslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+multicore-lazy+bench:variantslib.v0.11.0" title="Failed dependencies: ocaml-migrate-parsetree.1.1.0">Aborted</a></td><td><a id="4.06.1+trunk+bench:variantslib.v0.11.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:variantslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:variantslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:variantslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:variantslib.v0.11.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.000</td><td>0.000</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="yojson.1.5.0">yojson.1.5.0</th><td><a id="4.06.1+multicore+bench:yojson.1.5.0">-</a></td><td><a id="4.06.1+multicore-lazy+bench:yojson.1.5.0">-</a></td><td><a id="4.06.1+trunk+bench:yojson.1.5.0">-</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:yojson.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:yojson.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:yojson.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:yojson.1.5.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>-</td><td>-</td><td>-</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+  <tr><th id="yojson-bench.1.0">yojson-bench.1.0</th><td><a id="4.06.1+multicore+bench:yojson-bench.1.0" href="#log-4.06.1+multicore+bench-yojson-bench-1.0">Failure (2)</a></td><td><a id="4.06.1+multicore-lazy+bench:yojson-bench.1.0" href="#log-4.06.1+multicore-lazy+bench-yojson-bench-1.0">Failure (2)</a></td><td><a id="4.06.1+trunk+bench:yojson-bench.1.0" href="#log-4.06.1+trunk+bench-yojson-bench-1.0">Failure (2)</a></td><td><a id="4.08.0+optim_local_tailcalls+bench:yojson-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+optim_local_tailcalls+flambda+bench:yojson-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+bench:yojson-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td><a id="4.08.0+trunk+flambda+bench:yojson-bench.1.0" title="Failed dependencies: dune.1.2.1">Aborted</a></td><td>0.415</td><td>0.390</td><td>0.266</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+</tbody>
+</table></div><div class="logs" id="log-4.06.1+trunk+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+trunk+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+trunk+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+multicore-lazy+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+multicore-lazy+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-yojson-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on yojson-bench.1.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C yojson</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'
+ocamlfind ocamlopt -I `ocamlfind query yojson` -o ydump_bench -package easy-format,biniou -linkpkg yojson.cmx yojson_biniou.cmx ydump.ml
+gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson_biniou.o: No such file or directory
+gcc: error: /root/.opam/4.06.1+multicore+bench/lib/yojson/yojson.o: No such file or directory
+File "caml_startup", line 1:
+Error: Error during linking
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/root/.opam/4.06.1+multicore+bench/.opam-switch/build/yojson-bench.1.0/yojson'</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-spawn-v0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on spawn.v0.12.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/spawn_stubs.o (exit 2)
+(cd _build/default/src &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+spawn_stubs.c: In function ‘spawn_pipe’:
+spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+   Field(res, 0) = Val_int(fd[0]);
+                 ^
+spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+   Field(res, 1) = Val_int(fd[1]);
+                 ^
+spawn_stubs.c: In function ‘subprocess_failure’:
+spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(failure_fd, &amp;failure, sizeof(failure));
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-spawn-v0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on spawn.v0.12.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p spawn -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/spawn_stubs.o (exit 2)
+(cd _build/default/src &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -g -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/threads -ccopt -g -o spawn_stubs.o spawn_stubs.c)
+spawn_stubs.c: In function ‘spawn_pipe’:
+spawn_stubs.c:88:17: error: lvalue required as left operand of assignment
+   Field(res, 0) = Val_int(fd[0]);
+                 ^
+spawn_stubs.c:89:17: error: lvalue required as left operand of assignment
+   Field(res, 1) = Val_int(fd[1]);
+                 ^
+spawn_stubs.c: In function ‘subprocess_failure’:
+spawn_stubs.c:158:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(failure_fd, &amp;failure, sizeof(failure));
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-pcre-7.3.4">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on pcre.7.3.4 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7</pre></p>
+  <h4>Output</h4><pre>    ocamlopt src/config/discover.exe (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base/caml -I /root/.opam/4.06.1+multicore-lazy+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore-lazy+bench/lib/configurator -I /root/.opam/4.06.1+multicore-lazy+bench/lib/sexplib0 -I /root/.opam/4.06.1+multicore-lazy+bench/lib/stdio /root/.opam/4.06.1+multicore-lazy+bench/lib/base/caml/caml.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/base/shadow_stdlib/shadow_stdlib.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/sexplib0/sexplib0.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/base/base.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/stdio/stdio.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/unix.cmxa /root/.opam/4.06.1+multicore-lazy+bench/lib/configurator/configurator.cmxa src/config/.discover.eobjs/discover.cmx)
+/root/.opam/4.06.1+multicore-lazy+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+/root/.opam/4.06.1+multicore-lazy+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-pcre-7.3.4">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on pcre.7.3.4 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p pcre -j 7</pre></p>
+  <h4>Output</h4><pre>    ocamlopt src/config/discover.exe (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlopt.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -o src/config/discover.exe -I /root/.opam/4.06.1+multicore+bench/lib/base -I /root/.opam/4.06.1+multicore+bench/lib/base/caml -I /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib -I /root/.opam/4.06.1+multicore+bench/lib/configurator -I /root/.opam/4.06.1+multicore+bench/lib/sexplib0 -I /root/.opam/4.06.1+multicore+bench/lib/stdio /root/.opam/4.06.1+multicore+bench/lib/base/caml/caml.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/shadow_stdlib/shadow_stdlib.cmxa /root/.opam/4.06.1+multicore+bench/lib/sexplib0/sexplib0.cmxa /root/.opam/4.06.1+multicore+bench/lib/base/base.cmxa /root/.opam/4.06.1+multicore+bench/lib/stdio/stdio.cmxa /root/.opam/4.06.1+multicore+bench/lib/ocaml/unix.cmxa /root/.opam/4.06.1+multicore+bench/lib/configurator/configurator.cmxa src/config/.discover.eobjs/discover.cmx)
+/root/.opam/4.06.1+multicore+bench/lib/base/libbase_stubs.a(exn_stubs.o): In function `Base_clear_caml_backtrace_pos':
+/root/.opam/4.06.1+multicore+bench/.opam-switch/build/base.v0.11.1/_build/default/src/exn_stubs.c:6: undefined reference to `caml_backtrace_pos'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+flambda+bench-ocamlbuild-0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocamlbuild.0.12.0 (4.08.0+trunk+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make check-if-preinstalled all opam-install</pre></p>
+  <h4>Output</h4><pre>if test -d /root/.opam/4.08.0+trunk+flambda+bench/lib/ocaml/ocamlbuild; then\
+  >&amp;2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+       "/root/.opam/4.08.0+trunk+flambda+bench/lib/ocaml/ocamlbuild";\
+  >&amp;2 echo "Installation aborted; if you want to bypass this"\
+        "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+  exit 2;\
+fi
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+File "src/my_std.ml", line 127, characters 20-38:
+127 |       let compare = Pervasives.compare
+                          &lt;alert>^^^^^^^^^^^^^^^^^^&lt;/alert>
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+ocamllex.opt src/glob_lexer.mll
+55 states, 419 transitions, table size 2006 bytes
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+ocamllex.opt src/lexers.mll
+251 states, 1051 transitions, table size 5710 bytes
+4334 additional bytes used for bindings
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+File "src/solver.ml", line 43, characters 31-32:
+43 |   if is_logging 4 then dprintf 4 "==%a> %a" pp_repeat (depth, "==") Resource.print target;
+                                    ^
+Error: This expression has type int but an expression was expected of type
+         ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+          Format.formatter -> unit)
+         format4 =
+           ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+            unit, unit, Format.formatter -> unit)
+           CamlinternalFormatBasics.format6
+Makefile:422: recipe for target 'src/solver.cmo' failed
+make: *** [src/solver.cmo] Error 2</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+bench-ocamlbuild-0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocamlbuild.0.12.0 (4.08.0+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make check-if-preinstalled all opam-install</pre></p>
+  <h4>Output</h4><pre>if test -d /root/.opam/4.08.0+trunk+bench/lib/ocaml/ocamlbuild; then\
+  >&amp;2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+       "/root/.opam/4.08.0+trunk+bench/lib/ocaml/ocamlbuild";\
+  >&amp;2 echo "Installation aborted; if you want to bypass this"\
+        "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+  exit 2;\
+fi
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+File "src/my_std.ml", line 127, characters 20-38:
+127 |       let compare = Pervasives.compare
+                          &lt;alert>^^^^^^^^^^^^^^^^^^&lt;/alert>
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+ocamllex.opt src/glob_lexer.mll
+55 states, 419 transitions, table size 2006 bytes
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+ocamllex.opt src/lexers.mll
+251 states, 1051 transitions, table size 5710 bytes
+4334 additional bytes used for bindings
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+File "src/solver.ml", line 43, characters 31-32:
+43 |   if is_logging 4 then dprintf 4 "==%a> %a" pp_repeat (depth, "==") Resource.print target;
+                                    ^
+Error: This expression has type int but an expression was expected of type
+         ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+          Format.formatter -> unit)
+         format4 =
+           ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+            unit, unit, Format.formatter -> unit)
+           CamlinternalFormatBasics.format6
+Makefile:422: recipe for target 'src/solver.cmo' failed
+make: *** [src/solver.cmo] Error 2</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+flambda+bench-ocamlbuild-0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocamlbuild.0.12.0 (4.08.0+optim_local_tailcalls+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make check-if-preinstalled all opam-install</pre></p>
+  <h4>Output</h4><pre>if test -d /root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/lib/ocaml/ocamlbuild; then\
+  >&amp;2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+       "/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/lib/ocaml/ocamlbuild";\
+  >&amp;2 echo "Installation aborted; if you want to bypass this"\
+        "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+  exit 2;\
+fi
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+File "src/my_std.ml", line 127, characters 20-38:
+127 |       let compare = Pervasives.compare
+                          &lt;alert>^^^^^^^^^^^^^^^^^^&lt;/alert>
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+ocamllex.opt src/glob_lexer.mll
+55 states, 419 transitions, table size 2006 bytes
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+ocamllex.opt src/lexers.mll
+251 states, 1051 transitions, table size 5710 bytes
+4334 additional bytes used for bindings
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+File "src/solver.ml", line 43, characters 31-32:
+43 |   if is_logging 4 then dprintf 4 "==%a> %a" pp_repeat (depth, "==") Resource.print target;
+                                    ^
+Error: This expression has type int but an expression was expected of type
+         ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+          Format.formatter -> unit)
+         format4 =
+           ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+            unit, unit, Format.formatter -> unit)
+           CamlinternalFormatBasics.format6
+Makefile:422: recipe for target 'src/solver.cmo' failed
+make: *** [src/solver.cmo] Error 2</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+bench-ocamlbuild-0.12.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocamlbuild.0.12.0 (4.08.0+optim_local_tailcalls+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make check-if-preinstalled all opam-install</pre></p>
+  <h4>Output</h4><pre>if test -d /root/.opam/4.08.0+optim_local_tailcalls+bench/lib/ocaml/ocamlbuild; then\
+  >&amp;2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+       "/root/.opam/4.08.0+optim_local_tailcalls+bench/lib/ocaml/ocamlbuild";\
+  >&amp;2 echo "Installation aborted; if you want to bypass this"\
+        "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+  exit 2;\
+fi
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+File "src/my_std.ml", line 127, characters 20-38:
+127 |       let compare = Pervasives.compare
+                          &lt;alert>^^^^^^^^^^^^^^^^^^&lt;/alert>
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+ocamllex.opt src/glob_lexer.mll
+55 states, 419 transitions, table size 2006 bytes
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+ocamllex.opt src/lexers.mll
+251 states, 1051 transitions, table size 5710 bytes
+4334 additional bytes used for bindings
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+File "src/solver.ml", line 43, characters 31-32:
+43 |   if is_logging 4 then dprintf 4 "==%a> %a" pp_repeat (depth, "==") Resource.print target;
+                                    ^
+Error: This expression has type int but an expression was expected of type
+         ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+          Format.formatter -> unit)
+         format4 =
+           ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+            unit, unit, Format.formatter -> unit)
+           CamlinternalFormatBasics.format6
+Makefile:422: recipe for target 'src/solver.cmo' failed
+make: *** [src/solver.cmo] Error 2</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-ocaml-migrate-parsetree-1.1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocaml-migrate-parsetree.1.1.0 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/.migrate_parsetree.objs/ast_406.{cmi,cmo,cmt} (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore-lazy+bench/bin/ocamlc.opt -w -40 -open Result -g -bin-annot -I src/.migrate_parsetree.objs -I src/.migrate_parsetree.objs/.private -I /root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml/compiler-libs -I /root/.opam/4.06.1+multicore-lazy+bench/lib/result -no-alias-deps -o src/.migrate_parsetree.objs/ast_406.cmo -c -impl src/ast_406.pp.ml)
+File "src/ast_406.ml", line 237, characters 2-1773:
+Error: This variant or record definition does not match that of type
+         Parsetree.pattern_desc
+       Fields number 17 have different names, Ppat_effect and Ppat_extension.</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-ocaml-migrate-parsetree-1.1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on ocaml-migrate-parsetree.1.1.0 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build jbuilder build -p ocaml-migrate-parsetree -j 7</pre></p>
+  <h4>Output</h4><pre>      ocamlc src/.migrate_parsetree.objs/ast_406.{cmi,cmo,cmt} (exit 2)
+(cd _build/default &amp;&amp; /root/.opam/4.06.1+multicore+bench/bin/ocamlc.opt -w -40 -open Result -g -bin-annot -I src/.migrate_parsetree.objs -I src/.migrate_parsetree.objs/.private -I /root/.opam/4.06.1+multicore+bench/lib/ocaml/compiler-libs -I /root/.opam/4.06.1+multicore+bench/lib/result -no-alias-deps -o src/.migrate_parsetree.objs/ast_406.cmo -c -impl src/ast_406.pp.ml)
+File "src/ast_406.ml", line 237, characters 2-1773:
+Error: This variant or record definition does not match that of type
+         Parsetree.pattern_desc
+       Fields number 17 have different names, Ppat_effect and Ppat_extension.</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+flambda+bench-dune-1.2.1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on dune.1.2.1 (4.08.0+trunk+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ocaml bootstrap.ml</pre></p>
+  <h4>Output</h4><pre>'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamllex.opt' -q src/meta_lexer.mll
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamllex.opt' -q src/dune_lexer.mll
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamllex.opt' -q src/dsexp/dune_lexer.mll
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/action.ml src/action_exec.ml src/action_intf.ml src/arg_spec.ml src/artifacts.ml src/bin.ml src/binary_kind.ml src/blang.ml src/build.ml src/build_interpret.ml src/build_system.ml src/clflags.ml src/cm_kind.ml src/colors.ml src/compilation_context.ml src/config.ml src/context.ml src/dep_path.ml src/deps.ml src/dir_contents.ml src/dir_status.ml src/dune_env.ml src/dune_file.ml src/dune_fmt.ml src/dune_lexer.ml src/dune_project.ml src/dynlink_supported.ml src/errors.ml src/exe.ml src/file_tree.ml src/findlib.ml src/gen_meta.ml src/gen_rules.ml src/glob_lexer.boot.ml src/hooks.ml src/import.ml src/inline_tests.boot.ml src/install.ml src/install_rules.ml src/installed_dune_file.ml src/jbuild_load.ml src/js_of_ocaml_rules.boot.ml src/lib.ml src/lib_deps_info.ml src/lib_file_deps.ml src/lib_info.ml src/lib_modules.ml src/lib_name.ml src/lib_rules.ml src/link_time_code_gen.ml src/log.ml src/main.ml src/menhir.boot.ml src/merlin.ml src/meta.ml src/meta_lexer.ml src/ml_kind.ml src/mode.ml src/module.ml src/module_compilation.ml src/modules_field_evaluator.ml src/ocaml_flags.ml src/ocaml_version.ml src/ocamldep.ml src/odoc.boot.ml vendor/boot/opamBaseParser.ml vendor/boot/opamLexer.ml vendor/boot/opamParserTypes.ml src/opam_file.ml src/ordered_set_lang.ml src/package.ml src/path_dsexp.ml src/per_item.ml src/pform.ml src/preprocessing.ml src/print_diff.ml src/process.ml src/promotion.ml vendor/boot/re.ml src/report_error.ml src/response_file.ml src/scheduler.ml src/scope.ml src/setup.boot.ml src/simple_rules.ml src/stanza.ml src/static_deps.ml src/string_with_vars.ml src/sub_system.ml src/sub_system_intf.ml src/sub_system_name.ml src/super_context.ml src/syntax.ml src/top_closure.ml src/utils.ml src/utop.ml src/value.ml src/variant.ml src/versioned_file.ml src/vfile_kind.ml src/virtual_rules.ml src/watermarks.ml src/workspace.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/stdune/caml/caml.ml src/stdune/caml/result.ml src/stdune/caml/result_compat.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/dsexp/dsexp.ml src/dsexp/atom.ml src/dsexp/dune_lexer.ml src/dsexp/escape.ml src/dsexp/jbuild_lexer.boot.ml src/dsexp/lexer.ml src/dsexp/lexer_shared.ml src/dsexp/template.ml src/dsexp/types.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/fiber/fiber.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/ocaml-config/ocaml_config.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/stdune/stdune.ml src/stdune/ansi_color.ml src/stdune/array.ml src/stdune/bool.ml src/stdune/bytes.ml src/stdune/char.ml src/stdune/common.ml src/stdune/comparable.ml src/stdune/either.ml src/stdune/env.ml src/stdune/escape.ml src/stdune/exn.ml src/stdune/filename.ml src/stdune/float.ml src/stdune/fmt.ml src/stdune/hashable.ml src/stdune/hashtbl.ml src/stdune/hashtbl_intf.ml src/stdune/import.ml src/stdune/int.ml src/stdune/interned.ml src/stdune/io.ml src/stdune/list.ml src/stdune/loc.ml src/stdune/map.ml src/stdune/map_intf.ml src/stdune/option.ml src/stdune/or_exn.ml src/stdune/ordering.ml src/stdune/path.ml src/stdune/pp.ml src/stdune/proc.ml src/stdune/result.ml src/stdune/set.ml src/stdune/set_intf.ml src/stdune/sexp.ml src/stdune/sexp_intf.ml src/stdune/staged.ml src/stdune/string.ml src/stdune/univ_map.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/which_program/which_program.boot.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamldep.opt' -modules src/xdg/xdg.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamllex.opt' -q src/let-syntax/lexer.mll
+'/root/.opam/4.08.0+trunk+flambda+bench/bin/ocamlc.opt' -g -w -40 -o boot.exe unix.cma boot.ml
+File "src/stdune/caml/result.ml", line 4, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/caml/result.mli", line 6, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/list.ml", line 3, characters 0-18:
+Error: Multiple definition of the type name t.
+       Names must be unique in a given structure or signature.</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+bench-dune-1.2.1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on dune.1.2.1 (4.08.0+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ocaml bootstrap.ml</pre></p>
+  <h4>Output</h4><pre>'/root/.opam/4.08.0+trunk+bench/bin/ocamllex.opt' -q src/meta_lexer.mll
+'/root/.opam/4.08.0+trunk+bench/bin/ocamllex.opt' -q src/dune_lexer.mll
+'/root/.opam/4.08.0+trunk+bench/bin/ocamllex.opt' -q src/dsexp/dune_lexer.mll
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/action.ml src/action_exec.ml src/action_intf.ml src/arg_spec.ml src/artifacts.ml src/bin.ml src/binary_kind.ml src/blang.ml src/build.ml src/build_interpret.ml src/build_system.ml src/clflags.ml src/cm_kind.ml src/colors.ml src/compilation_context.ml src/config.ml src/context.ml src/dep_path.ml src/deps.ml src/dir_contents.ml src/dir_status.ml src/dune_env.ml src/dune_file.ml src/dune_fmt.ml src/dune_lexer.ml src/dune_project.ml src/dynlink_supported.ml src/errors.ml src/exe.ml src/file_tree.ml src/findlib.ml src/gen_meta.ml src/gen_rules.ml src/glob_lexer.boot.ml src/hooks.ml src/import.ml src/inline_tests.boot.ml src/install.ml src/install_rules.ml src/installed_dune_file.ml src/jbuild_load.ml src/js_of_ocaml_rules.boot.ml src/lib.ml src/lib_deps_info.ml src/lib_file_deps.ml src/lib_info.ml src/lib_modules.ml src/lib_name.ml src/lib_rules.ml src/link_time_code_gen.ml src/log.ml src/main.ml src/menhir.boot.ml src/merlin.ml src/meta.ml src/meta_lexer.ml src/ml_kind.ml src/mode.ml src/module.ml src/module_compilation.ml src/modules_field_evaluator.ml src/ocaml_flags.ml src/ocaml_version.ml src/ocamldep.ml src/odoc.boot.ml vendor/boot/opamBaseParser.ml vendor/boot/opamLexer.ml vendor/boot/opamParserTypes.ml src/opam_file.ml src/ordered_set_lang.ml src/package.ml src/path_dsexp.ml src/per_item.ml src/pform.ml src/preprocessing.ml src/print_diff.ml src/process.ml src/promotion.ml vendor/boot/re.ml src/report_error.ml src/response_file.ml src/scheduler.ml src/scope.ml src/setup.boot.ml src/simple_rules.ml src/stanza.ml src/static_deps.ml src/string_with_vars.ml src/sub_system.ml src/sub_system_intf.ml src/sub_system_name.ml src/super_context.ml src/syntax.ml src/top_closure.ml src/utils.ml src/utop.ml src/value.ml src/variant.ml src/versioned_file.ml src/vfile_kind.ml src/virtual_rules.ml src/watermarks.ml src/workspace.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/stdune/caml/caml.ml src/stdune/caml/result.ml src/stdune/caml/result_compat.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/dsexp/dsexp.ml src/dsexp/atom.ml src/dsexp/dune_lexer.ml src/dsexp/escape.ml src/dsexp/jbuild_lexer.boot.ml src/dsexp/lexer.ml src/dsexp/lexer_shared.ml src/dsexp/template.ml src/dsexp/types.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/fiber/fiber.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/ocaml-config/ocaml_config.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/stdune/stdune.ml src/stdune/ansi_color.ml src/stdune/array.ml src/stdune/bool.ml src/stdune/bytes.ml src/stdune/char.ml src/stdune/common.ml src/stdune/comparable.ml src/stdune/either.ml src/stdune/env.ml src/stdune/escape.ml src/stdune/exn.ml src/stdune/filename.ml src/stdune/float.ml src/stdune/fmt.ml src/stdune/hashable.ml src/stdune/hashtbl.ml src/stdune/hashtbl_intf.ml src/stdune/import.ml src/stdune/int.ml src/stdune/interned.ml src/stdune/io.ml src/stdune/list.ml src/stdune/loc.ml src/stdune/map.ml src/stdune/map_intf.ml src/stdune/option.ml src/stdune/or_exn.ml src/stdune/ordering.ml src/stdune/path.ml src/stdune/pp.ml src/stdune/proc.ml src/stdune/result.ml src/stdune/set.ml src/stdune/set_intf.ml src/stdune/sexp.ml src/stdune/sexp_intf.ml src/stdune/staged.ml src/stdune/string.ml src/stdune/univ_map.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/which_program/which_program.boot.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamldep.opt' -modules src/xdg/xdg.ml > boot-depends.txt
+'/root/.opam/4.08.0+trunk+bench/bin/ocamllex.opt' -q src/let-syntax/lexer.mll
+'/root/.opam/4.08.0+trunk+bench/bin/ocamlc.opt' -g -w -40 -o boot.exe unix.cma boot.ml
+File "src/stdune/caml/result.ml", line 4, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/caml/result.mli", line 6, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/list.ml", line 3, characters 0-18:
+Error: Multiple definition of the type name t.
+       Names must be unique in a given structure or signature.</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+flambda+bench-dune-1.2.1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on dune.1.2.1 (4.08.0+optim_local_tailcalls+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ocaml bootstrap.ml</pre></p>
+  <h4>Output</h4><pre>'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamllex.opt' -q src/meta_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamllex.opt' -q src/dune_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamllex.opt' -q src/dsexp/dune_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/action.ml src/action_exec.ml src/action_intf.ml src/arg_spec.ml src/artifacts.ml src/bin.ml src/binary_kind.ml src/blang.ml src/build.ml src/build_interpret.ml src/build_system.ml src/clflags.ml src/cm_kind.ml src/colors.ml src/compilation_context.ml src/config.ml src/context.ml src/dep_path.ml src/deps.ml src/dir_contents.ml src/dir_status.ml src/dune_env.ml src/dune_file.ml src/dune_fmt.ml src/dune_lexer.ml src/dune_project.ml src/dynlink_supported.ml src/errors.ml src/exe.ml src/file_tree.ml src/findlib.ml src/gen_meta.ml src/gen_rules.ml src/glob_lexer.boot.ml src/hooks.ml src/import.ml src/inline_tests.boot.ml src/install.ml src/install_rules.ml src/installed_dune_file.ml src/jbuild_load.ml src/js_of_ocaml_rules.boot.ml src/lib.ml src/lib_deps_info.ml src/lib_file_deps.ml src/lib_info.ml src/lib_modules.ml src/lib_name.ml src/lib_rules.ml src/link_time_code_gen.ml src/log.ml src/main.ml src/menhir.boot.ml src/merlin.ml src/meta.ml src/meta_lexer.ml src/ml_kind.ml src/mode.ml src/module.ml src/module_compilation.ml src/modules_field_evaluator.ml src/ocaml_flags.ml src/ocaml_version.ml src/ocamldep.ml src/odoc.boot.ml vendor/boot/opamBaseParser.ml vendor/boot/opamLexer.ml vendor/boot/opamParserTypes.ml src/opam_file.ml src/ordered_set_lang.ml src/package.ml src/path_dsexp.ml src/per_item.ml src/pform.ml src/preprocessing.ml src/print_diff.ml src/process.ml src/promotion.ml vendor/boot/re.ml src/report_error.ml src/response_file.ml src/scheduler.ml src/scope.ml src/setup.boot.ml src/simple_rules.ml src/stanza.ml src/static_deps.ml src/string_with_vars.ml src/sub_system.ml src/sub_system_intf.ml src/sub_system_name.ml src/super_context.ml src/syntax.ml src/top_closure.ml src/utils.ml src/utop.ml src/value.ml src/variant.ml src/versioned_file.ml src/vfile_kind.ml src/virtual_rules.ml src/watermarks.ml src/workspace.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/stdune/caml/caml.ml src/stdune/caml/result.ml src/stdune/caml/result_compat.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/dsexp/dsexp.ml src/dsexp/atom.ml src/dsexp/dune_lexer.ml src/dsexp/escape.ml src/dsexp/jbuild_lexer.boot.ml src/dsexp/lexer.ml src/dsexp/lexer_shared.ml src/dsexp/template.ml src/dsexp/types.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/fiber/fiber.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/ocaml-config/ocaml_config.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/stdune/stdune.ml src/stdune/ansi_color.ml src/stdune/array.ml src/stdune/bool.ml src/stdune/bytes.ml src/stdune/char.ml src/stdune/common.ml src/stdune/comparable.ml src/stdune/either.ml src/stdune/env.ml src/stdune/escape.ml src/stdune/exn.ml src/stdune/filename.ml src/stdune/float.ml src/stdune/fmt.ml src/stdune/hashable.ml src/stdune/hashtbl.ml src/stdune/hashtbl_intf.ml src/stdune/import.ml src/stdune/int.ml src/stdune/interned.ml src/stdune/io.ml src/stdune/list.ml src/stdune/loc.ml src/stdune/map.ml src/stdune/map_intf.ml src/stdune/option.ml src/stdune/or_exn.ml src/stdune/ordering.ml src/stdune/path.ml src/stdune/pp.ml src/stdune/proc.ml src/stdune/result.ml src/stdune/set.ml src/stdune/set_intf.ml src/stdune/sexp.ml src/stdune/sexp_intf.ml src/stdune/staged.ml src/stdune/string.ml src/stdune/univ_map.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/which_program/which_program.boot.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamldep.opt' -modules src/xdg/xdg.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamllex.opt' -q src/let-syntax/lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench/bin/ocamlc.opt' -g -w -40 -o boot.exe unix.cma boot.ml
+File "src/stdune/caml/result.ml", line 4, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/caml/result.mli", line 6, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/list.ml", line 3, characters 0-18:
+Error: Multiple definition of the type name t.
+       Names must be unique in a given structure or signature.</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+bench-dune-1.2.1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on dune.1.2.1 (4.08.0+optim_local_tailcalls+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ocaml bootstrap.ml</pre></p>
+  <h4>Output</h4><pre>'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamllex.opt' -q src/meta_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamllex.opt' -q src/dune_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamllex.opt' -q src/dsexp/dune_lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/action.ml src/action_exec.ml src/action_intf.ml src/arg_spec.ml src/artifacts.ml src/bin.ml src/binary_kind.ml src/blang.ml src/build.ml src/build_interpret.ml src/build_system.ml src/clflags.ml src/cm_kind.ml src/colors.ml src/compilation_context.ml src/config.ml src/context.ml src/dep_path.ml src/deps.ml src/dir_contents.ml src/dir_status.ml src/dune_env.ml src/dune_file.ml src/dune_fmt.ml src/dune_lexer.ml src/dune_project.ml src/dynlink_supported.ml src/errors.ml src/exe.ml src/file_tree.ml src/findlib.ml src/gen_meta.ml src/gen_rules.ml src/glob_lexer.boot.ml src/hooks.ml src/import.ml src/inline_tests.boot.ml src/install.ml src/install_rules.ml src/installed_dune_file.ml src/jbuild_load.ml src/js_of_ocaml_rules.boot.ml src/lib.ml src/lib_deps_info.ml src/lib_file_deps.ml src/lib_info.ml src/lib_modules.ml src/lib_name.ml src/lib_rules.ml src/link_time_code_gen.ml src/log.ml src/main.ml src/menhir.boot.ml src/merlin.ml src/meta.ml src/meta_lexer.ml src/ml_kind.ml src/mode.ml src/module.ml src/module_compilation.ml src/modules_field_evaluator.ml src/ocaml_flags.ml src/ocaml_version.ml src/ocamldep.ml src/odoc.boot.ml vendor/boot/opamBaseParser.ml vendor/boot/opamLexer.ml vendor/boot/opamParserTypes.ml src/opam_file.ml src/ordered_set_lang.ml src/package.ml src/path_dsexp.ml src/per_item.ml src/pform.ml src/preprocessing.ml src/print_diff.ml src/process.ml src/promotion.ml vendor/boot/re.ml src/report_error.ml src/response_file.ml src/scheduler.ml src/scope.ml src/setup.boot.ml src/simple_rules.ml src/stanza.ml src/static_deps.ml src/string_with_vars.ml src/sub_system.ml src/sub_system_intf.ml src/sub_system_name.ml src/super_context.ml src/syntax.ml src/top_closure.ml src/utils.ml src/utop.ml src/value.ml src/variant.ml src/versioned_file.ml src/vfile_kind.ml src/virtual_rules.ml src/watermarks.ml src/workspace.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/stdune/caml/caml.ml src/stdune/caml/result.ml src/stdune/caml/result_compat.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/dsexp/dsexp.ml src/dsexp/atom.ml src/dsexp/dune_lexer.ml src/dsexp/escape.ml src/dsexp/jbuild_lexer.boot.ml src/dsexp/lexer.ml src/dsexp/lexer_shared.ml src/dsexp/template.ml src/dsexp/types.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/fiber/fiber.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/ocaml-config/ocaml_config.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/stdune/stdune.ml src/stdune/ansi_color.ml src/stdune/array.ml src/stdune/bool.ml src/stdune/bytes.ml src/stdune/char.ml src/stdune/common.ml src/stdune/comparable.ml src/stdune/either.ml src/stdune/env.ml src/stdune/escape.ml src/stdune/exn.ml src/stdune/filename.ml src/stdune/float.ml src/stdune/fmt.ml src/stdune/hashable.ml src/stdune/hashtbl.ml src/stdune/hashtbl_intf.ml src/stdune/import.ml src/stdune/int.ml src/stdune/interned.ml src/stdune/io.ml src/stdune/list.ml src/stdune/loc.ml src/stdune/map.ml src/stdune/map_intf.ml src/stdune/option.ml src/stdune/or_exn.ml src/stdune/ordering.ml src/stdune/path.ml src/stdune/pp.ml src/stdune/proc.ml src/stdune/result.ml src/stdune/set.ml src/stdune/set_intf.ml src/stdune/sexp.ml src/stdune/sexp_intf.ml src/stdune/staged.ml src/stdune/string.ml src/stdune/univ_map.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/which_program/which_program.boot.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamldep.opt' -modules src/xdg/xdg.ml > boot-depends.txt
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamllex.opt' -q src/let-syntax/lexer.mll
+'/root/.opam/4.08.0+optim_local_tailcalls+bench/bin/ocamlc.opt' -g -w -40 -o boot.exe unix.cma boot.ml
+File "src/stdune/caml/result.ml", line 4, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/caml/result.mli", line 6, characters 7-17:
+Alert deprecated: module Stdlib.Pervasives
+Use Stdlib instead.
+
+If you need to stay compatible with OCaml &lt; 4.07, you can use the 
+stdlib-shims library: https://github.com/ocaml/stdlib-shims
+File "src/stdune/list.ml", line 3, characters 0-18:
+Error: Multiple definition of the type name t.
+       Names must be unique in a given structure or signature.</pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-core-micro-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on core-micro-bench.1.0 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C core_micro</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/core-micro-bench.1.0/core_micro'
+ocamlbuild -use-ocamlfind runner.native
+ocamlfind ocamldep -package str -package core -package core_bench.inline_benchmarks -modules runner.ml > runner.ml.depends
+ocamlfind ocamlc -c -thread -package str -package core -package core_bench.inline_benchmarks -o runner.cmo runner.ml
++ ocamlfind ocamlc -c -thread -package str -package core -package core_bench.inline_benchmarks -o runner.cmo runner.ml
+File "runner.ml", line 1, characters 5-13:
+Warning 3: deprecated: module Core.Std
+[since 2017-02] Use Core. The Std sub-module is no longer needed
+File "runner.ml", line 3, characters 15-55:
+Error: Unbound module Pa_bench_lib
+Command exited with code 2.
+Makefile:4: recipe for target 'all' failed
+make: *** [all] Error 10
+make: Leaving directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/core-micro-bench.1.0/core_micro'</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+flambda+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.08.0+trunk+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.08.0+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+flambda+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.08.0+optim_local_tailcalls+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.08.0+optim_local_tailcalls+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-conf-gtksourceview-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gtksourceview.2 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config --short-errors --print-errors gtksourceview-2.0</pre></p>
+  <h4>Output</h4><pre>No package 'gtksourceview-2.0' found</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+flambda+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.08.0+trunk+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.08.0+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+flambda+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.08.0+optim_local_tailcalls+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.08.0+optim_local_tailcalls+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-conf-gnomecanvas-2">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on conf-gnomecanvas.2 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build pkg-config libgnomecanvas-2.0</pre></p>
+  <h4>Output</h4><pre></pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+flambda+bench-cmdliner-1.0.3">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on cmdliner.1.0.3 (4.08.0+trunk+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make all PREFIX=/root/.opam/4.08.0+trunk+flambda+bench</pre></p>
+  <h4>Output</h4><pre>ocaml build.ml cma
+File "cmdliner.ml", line 124, characters 29-32:
+124 |     | Error _ as err -> Some err
+                                   ^^^
+Error: This expression has type
+         ('a,
+          [ `Error of bool * string
+          | `Exn of exn * Printexc.raw_backtrace
+          | `Help of Cmdliner_manpage.format * string option
+          | `Parse of string
+          | `Std_help of Manpage.format
+          | `Std_version ])
+         Pervasives.result
+       but an expression was expected of type
+         ('b, [> `Std_help of 'c ]) Stdlib.result
+exited with 2: 'ocamlc.opt' '-g' '-bin-annot' '-safe-string' '-w' '-3' 'cmdliner_suggest.mli' 'cmdliner_suggest.ml' 'cmdliner_trie.mli' 'cmdliner_manpage.mli' 'cmdliner_trie.ml' 'cmdliner_base.mli' 'cmdliner_info.mli' 'cmdliner_base.ml' 'cmdliner.mli' 'cmdliner_cline.mli' 'cmdliner_docgen.mli' 'cmdliner_term.mli' 'cmdliner_manpage.ml' 'cmdliner_arg.mli' 'cmdliner_info.ml' 'cmdliner_msg.mli' 'cmdliner_docgen.ml' 'cmdliner_msg.ml' 'cmdliner_cline.ml' 'cmdliner_term.ml' 'cmdliner_arg.ml' 'cmdliner.ml' '-a' '-o' 'cmdliner.cma'
+Makefile:44: recipe for target 'build-byte' failed
+make: *** [build-byte] Error 1</pre>
+</div>
+<div class="logs" id="log-4.08.0+trunk+bench-cmdliner-1.0.3">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on cmdliner.1.0.3 (4.08.0+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make all PREFIX=/root/.opam/4.08.0+trunk+bench</pre></p>
+  <h4>Output</h4><pre>ocaml build.ml cma
+File "cmdliner.ml", line 124, characters 29-32:
+124 |     | Error _ as err -> Some err
+                                   ^^^
+Error: This expression has type
+         ('a,
+          [ `Error of bool * string
+          | `Exn of exn * Printexc.raw_backtrace
+          | `Help of Cmdliner_manpage.format * string option
+          | `Parse of string
+          | `Std_help of Manpage.format
+          | `Std_version ])
+         Pervasives.result
+       but an expression was expected of type
+         ('b, [> `Std_help of 'c ]) Stdlib.result
+exited with 2: 'ocamlc.opt' '-g' '-bin-annot' '-safe-string' '-w' '-3' 'cmdliner_suggest.mli' 'cmdliner_suggest.ml' 'cmdliner_trie.mli' 'cmdliner_manpage.mli' 'cmdliner_trie.ml' 'cmdliner_base.mli' 'cmdliner_info.mli' 'cmdliner_base.ml' 'cmdliner.mli' 'cmdliner_cline.mli' 'cmdliner_docgen.mli' 'cmdliner_term.mli' 'cmdliner_manpage.ml' 'cmdliner_arg.mli' 'cmdliner_info.ml' 'cmdliner_msg.mli' 'cmdliner_docgen.ml' 'cmdliner_msg.ml' 'cmdliner_cline.ml' 'cmdliner_term.ml' 'cmdliner_arg.ml' 'cmdliner.ml' '-a' '-o' 'cmdliner.cma'
+Makefile:44: recipe for target 'build-byte' failed
+make: *** [build-byte] Error 1</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+flambda+bench-cmdliner-1.0.3">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on cmdliner.1.0.3 (4.08.0+optim_local_tailcalls+flambda+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make all PREFIX=/root/.opam/4.08.0+optim_local_tailcalls+flambda+bench</pre></p>
+  <h4>Output</h4><pre>ocaml build.ml cma
+File "cmdliner.ml", line 124, characters 29-32:
+124 |     | Error _ as err -> Some err
+                                   ^^^
+Error: This expression has type
+         ('a,
+          [ `Error of bool * string
+          | `Exn of exn * Printexc.raw_backtrace
+          | `Help of Cmdliner_manpage.format * string option
+          | `Parse of string
+          | `Std_help of Manpage.format
+          | `Std_version ])
+         Pervasives.result
+       but an expression was expected of type
+         ('b, [> `Std_help of 'c ]) Stdlib.result
+exited with 2: 'ocamlc.opt' '-g' '-bin-annot' '-safe-string' '-w' '-3' 'cmdliner_suggest.mli' 'cmdliner_suggest.ml' 'cmdliner_trie.mli' 'cmdliner_manpage.mli' 'cmdliner_trie.ml' 'cmdliner_base.mli' 'cmdliner_info.mli' 'cmdliner_base.ml' 'cmdliner.mli' 'cmdliner_cline.mli' 'cmdliner_docgen.mli' 'cmdliner_term.mli' 'cmdliner_manpage.ml' 'cmdliner_arg.mli' 'cmdliner_info.ml' 'cmdliner_msg.mli' 'cmdliner_docgen.ml' 'cmdliner_msg.ml' 'cmdliner_cline.ml' 'cmdliner_term.ml' 'cmdliner_arg.ml' 'cmdliner.ml' '-a' '-o' 'cmdliner.cma'
+Makefile:44: recipe for target 'build-byte' failed
+make: *** [build-byte] Error 1</pre>
+</div>
+<div class="logs" id="log-4.08.0+optim_local_tailcalls+bench-cmdliner-1.0.3">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on cmdliner.1.0.3 (4.08.0+optim_local_tailcalls+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make all PREFIX=/root/.opam/4.08.0+optim_local_tailcalls+bench</pre></p>
+  <h4>Output</h4><pre>ocaml build.ml cma
+File "cmdliner.ml", line 124, characters 29-32:
+124 |     | Error _ as err -> Some err
+                                   ^^^
+Error: This expression has type
+         ('a,
+          [ `Error of bool * string
+          | `Exn of exn * Printexc.raw_backtrace
+          | `Help of Cmdliner_manpage.format * string option
+          | `Parse of string
+          | `Std_help of Manpage.format
+          | `Std_version ])
+         Pervasives.result
+       but an expression was expected of type
+         ('b, [> `Std_help of 'c ]) Stdlib.result
+exited with 2: 'ocamlc.opt' '-g' '-bin-annot' '-safe-string' '-w' '-3' 'cmdliner_suggest.mli' 'cmdliner_suggest.ml' 'cmdliner_trie.mli' 'cmdliner_manpage.mli' 'cmdliner_trie.ml' 'cmdliner_base.mli' 'cmdliner_info.mli' 'cmdliner_base.ml' 'cmdliner.mli' 'cmdliner_cline.mli' 'cmdliner_docgen.mli' 'cmdliner_term.mli' 'cmdliner_manpage.ml' 'cmdliner_arg.mli' 'cmdliner_info.ml' 'cmdliner_msg.mli' 'cmdliner_docgen.ml' 'cmdliner_msg.ml' 'cmdliner_cline.ml' 'cmdliner_term.ml' 'cmdliner_arg.ml' 'cmdliner.ml' '-a' '-o' 'cmdliner.cma'
+Makefile:44: recipe for target 'build-byte' failed
+make: *** [build-byte] Error 1</pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-camlp4-4.07+1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on camlp4.4.07+1 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+trunk+bench/bin --libdir=/root/.opam/4.06.1+trunk+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+trunk+bench/lib</pre></p>
+  <h4>Output</h4><pre>This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1.</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore-lazy+bench-camlp4-4.07+1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on camlp4.4.07+1 (4.06.1+multicore-lazy+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore-lazy+bench/bin --libdir=/root/.opam/4.06.1+multicore-lazy+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore-lazy+bench/lib</pre></p>
+  <h4>Output</h4><pre>This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1+multicore-dev0.</pre>
+</div>
+<div class="logs" id="log-4.06.1+multicore+bench-camlp4-4.07+1">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on camlp4.4.07+1 (4.06.1+multicore+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build ./configure --bindir=/root/.opam/4.06.1+multicore+bench/bin --libdir=/root/.opam/4.06.1+multicore+bench/lib/ocaml --pkgdir=/root/.opam/4.06.1+multicore+bench/lib</pre></p>
+  <h4>Output</h4><pre>This version of Camlp4 is for OCaml 4.07 but you are using OCaml 4.06.1+multicore-dev0.</pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-async-rpc-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on async-rpc-bench.1.0 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C async_rpc</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/async-rpc-bench.1.0/async_rpc'
+ocamlfind ocamlopt -thread -syntax camlp4o -package async -package bin_prot.syntax -package core -c rpc_common.ml
+ocamlfind: Package `bin_prot.syntax' not found
+Makefile:12: recipe for target 'rpc_common.cmx' failed
+make: *** [rpc_common.cmx] Error 2
+make: Leaving directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/async-rpc-bench.1.0/async_rpc'</pre>
+</div>
+<div class="logs" id="log-4.06.1+trunk+bench-async-echo-bench-1.0">
+  <a class="close" href="#close">Close</a>
+  <h3>Error on async-echo-bench.1.0 (4.06.1+trunk+bench)</h3>
+  <p>Command: <pre>~/.opam/opam-init/hooks/sandbox.sh build make -C async_echo</pre></p>
+  <h4>Output</h4><pre>make: Entering directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/async-echo-bench.1.0/async_echo'
+ocamlfind ocamlopt -thread -syntax camlp4o -package async -package bin_prot.syntax -package core -c echo_common.ml
+ocamlfind: Package `bin_prot.syntax' not found
+Makefile:20: recipe for target 'echo_common.cmx' failed
+make: *** [echo_common.cmx] Error 2
+make: Leaving directory '/root/.opam/4.06.1+trunk+bench/.opam-switch/build/async-echo-bench.1.0/async_echo'</pre>
+</div>
+</body></html>
