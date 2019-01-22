@@ -1,0 +1,46 @@
+((success false) (name kb-no-exc) (context_id 4.06.1+multicore-lazy+bench)
+ (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 310352362) (stddev -NAN) (mini 310352362)
+     (maxi 310352362) (runs 1)))
+   (Size
+    ((success true) (mean 868665) (stddev 0) (mini 868665) (maxi 868665)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 671965) (stddev 0) (mini 671965) (maxi 671965)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 196700) (stddev 0) (mini 196700) (maxi 196700)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 37609472) (stddev -NAN) (mini 37609472)
+     (maxi 37609472) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 4644410) (stddev -NAN) (mini 4644410)
+     (maxi 4644410) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 4644332) (stddev -NAN) (mini 4644332)
+     (maxi 4644332) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 507904) (stddev -NAN) (mini 507904) (maxi 507904)
+     (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 143) (stddev -NAN) (mini 143) (maxi 143) (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 57) (stddev -NAN) (mini 57) (maxi 57) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 270336) (stddev -NAN) (mini 270336) (maxi 270336)
+     (runs 1)))))
+ (error
+  ((""
+     "allocated_words: 37609550\
+    \nminor_words: 37609472\
+    \npromoted_words: 4644332\
+    \nmajor_words: 4644410\
+    \nminor_collections: 143\
+    \nmajor_collections: 57\
+    \nheap_words: 270336\
+    \ntop_heap_words: 507904\
+    \nfree(): invalid size\
+    \n"))))
