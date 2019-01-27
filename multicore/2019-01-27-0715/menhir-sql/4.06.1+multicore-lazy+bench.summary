@@ -1,0 +1,46 @@
+((success false) (name menhir-sql) (context_id 4.06.1+multicore-lazy+bench)
+ (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 3302735967) (stddev -NAN) (mini 3302735967)
+     (maxi 3302735967) (runs 1)))
+   (Size
+    ((success true) (mean 4100394) (stddev 0) (mini 4100394) (maxi 4100394)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 3021058) (stddev 0) (mini 3021058) (maxi 3021058)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 1079336) (stddev 0) (mini 1079336) (maxi 1079336)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 1007379335) (stddev -NAN) (mini 1007379335)
+     (maxi 1007379335) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 55346591) (stddev -NAN) (mini 55346591)
+     (maxi 55346591) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 45685473) (stddev -NAN) (mini 45685473)
+     (maxi 45685473) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 48282383) (stddev -NAN) (mini 48282383)
+     (maxi 48282383) (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 3867) (stddev -NAN) (mini 3867) (maxi 3867)
+     (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 15) (stddev -NAN) (mini 15) (maxi 15) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 48282383) (stddev -NAN) (mini 48282383)
+     (maxi 48282383) (runs 1)))))
+ (error
+  ((""
+     "allocated_words: 1017040453\
+    \nminor_words: 1007379335\
+    \npromoted_words: 45685473\
+    \nmajor_words: 55346591\
+    \nminor_collections: 3867\
+    \nmajor_collections: 15\
+    \nheap_words: 48282383\
+    \ntop_heap_words: 48282383\
+    \n"))))
