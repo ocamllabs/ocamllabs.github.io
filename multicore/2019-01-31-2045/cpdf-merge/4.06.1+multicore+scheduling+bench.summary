@@ -1,0 +1,45 @@
+((success false) (name cpdf-merge)
+ (context_id 4.06.1+multicore+scheduling+bench) (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 5368945130) (stddev -NAN) (mini 5368945130)
+     (maxi 5368945130) (runs 1)))
+   (Size
+    ((success true) (mean 5425968) (stddev 0) (mini 5425968) (maxi 5425968)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 3570136) (stddev 0) (mini 3570136) (maxi 3570136)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 1855832) (stddev 0) (mini 1855832) (maxi 1855832)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 186168648) (stddev -NAN) (mini 186168648)
+     (maxi 186168648) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 90412572) (stddev -NAN) (mini 90412572)
+     (maxi 90412572) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 81048705) (stddev -NAN) (mini 81048705)
+     (maxi 81048705) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 41250573) (stddev -NAN) (mini 41250573)
+     (maxi 41250573) (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 714) (stddev -NAN) (mini 714) (maxi 714) (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 30) (stddev -NAN) (mini 30) (maxi 30) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 37871373) (stddev -NAN) (mini 37871373)
+     (maxi 37871373) (runs 1)))))
+ (error
+  ((""
+     "allocated_words: 195532515\
+    \nminor_words: 186168648\
+    \npromoted_words: 81048705\
+    \nmajor_words: 90412572\
+    \nminor_collections: 714\
+    \nmajor_collections: 30\
+    \nheap_words: 37871373\
+    \ntop_heap_words: 41250573\
+    \n"))))
