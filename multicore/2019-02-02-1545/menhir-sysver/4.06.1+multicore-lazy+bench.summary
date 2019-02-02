@@ -1,0 +1,768 @@
+((success false) (name menhir-sysver)
+ (context_id 4.06.1+multicore-lazy+bench) (weight 1)
+ (data
+  (((Time Real)
+    ((success false) (mean 53089380916) (stddev -NAN) (mini 53089380916)
+     (maxi 53089380916) (runs 1)))
+   (Size
+    ((success true) (mean 4100394) (stddev 0) (mini 4100394) (maxi 4100394)
+     (runs 1)))
+   ((Size Code)
+    ((success true) (mean 3021058) (stddev 0) (mini 3021058) (maxi 3021058)
+     (runs 1)))
+   ((Size Data)
+    ((success true) (mean 1079336) (stddev 0) (mini 1079336) (maxi 1079336)
+     (runs 1)))
+   ((Gc Minor_words)
+    ((success false) (mean 8157054740) (stddev -NAN) (mini 8157054740)
+     (maxi 8157054740) (runs 1)))
+   ((Gc Major_words)
+    ((success false) (mean 434543188) (stddev -NAN) (mini 434543188)
+     (maxi 434543188) (runs 1)))
+   ((Gc Promoted_words)
+    ((success false) (mean 323522732) (stddev -NAN) (mini 323522732)
+     (maxi 323522732) (runs 1)))
+   ((Gc Top_heap_words)
+    ((success false) (mean 93400447) (stddev -NAN) (mini 93400447)
+     (maxi 93400447) (runs 1)))
+   ((Gc Minor_collections)
+    ((success false) (mean 31199) (stddev -NAN) (mini 31199) (maxi 31199)
+     (runs 1)))
+   ((Gc Major_collections)
+    ((success false) (mean 38) (stddev -NAN) (mini 38) (maxi 38) (runs 1)))
+   ((Gc Heap_words)
+    ((success false) (mean 83671184) (stddev -NAN) (mini 83671184)
+     (maxi 83671184) (runs 1)))))
+ (error
+  ((""
+     "File \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 459, characters 8-19:\
+    \nWarning: the token ALTERNATIVE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 429, characters 15-17:\
+    \nWarning: the token AS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 430, characters 16-22:\
+    \nWarning: the token ASCNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 460, characters 8-18:\
+    \nWarning: the token ASSIGNMENT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 461, characters 8-13:\
+    \nWarning: the token BIDIR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 462, characters 16-22:\
+    \nWarning: the token BINNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 463, characters 8-14:\
+    \nWarning: the token BITSEL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 266, characters 7-11:\
+    \nWarning: the token BOLD is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 464, characters 8-16:\
+    \nWarning: the token CASECOND is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 465, characters 8-15:\
+    \nWarning: the token CELLPIN is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 431, characters 14-18:\
+    \nWarning: the token CHAR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 466, characters 8-14:\
+    \nWarning: the token CONCAT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 202, characters 7-16:\
+    \nWarning: the token COUNTONES is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 468, characters 16-22:\
+    \nWarning: the token DECNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 443, characters 87-94:\
+    \nWarning: the token DECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 469, characters 8-21:\
+    \nWarning: the token DLYASSIGNMENT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 470, characters 20-26:\
+    \nWarning: the token DOTTED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 435, characters 23-29:\
+    \nWarning: the token DOUBLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 472, characters 8-14:\
+    \nWarning: the token DRIVER is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 445, characters 103-113:\
+    \nWarning: the token DUODECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 455, characters 183-195:\
+    \nWarning: the token DUOVIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 315, characters 7-18:\
+    \nWarning: the token D_ATTRIBUTE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 96, characters 7-13:\
+    \nWarning: the token D_BITS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 467, characters 8-11:\
+    \nWarning: the token D_C is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 4, characters 7-14:\
+    \nWarning: the token D_CLOG2 is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 167, characters 7-21:\
+    \nWarning: the token D_COUNTDRIVERS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 265, characters 7-18:\
+    \nWarning: the token D_COUNTONES is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 197, characters 7-16:\
+    \nWarning: the token D_DISPLAY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 412, characters 7-14:\
+    \nWarning: the token D_ERROR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 138, characters 7-14:\
+    \nWarning: the token D_FATAL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 170, characters 7-15:\
+    \nWarning: the token D_FCLOSE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 348, characters 7-17:\
+    \nWarning: the token D_FDISPLAY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 147, characters 7-13:\
+    \nWarning: the token D_FEOF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 17, characters 7-15:\
+    \nWarning: the token D_FFLUSH is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 128, characters 7-14:\
+    \nWarning: the token D_FGETC is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 155, characters 7-14:\
+    \nWarning: the token D_FGETS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 387, characters 7-15:\
+    \nWarning: the token D_FINISH is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 23, characters 7-14:\
+    \nWarning: the token D_FOPEN is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 78, characters 7-15:\
+    \nWarning: the token D_FSCANF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 26, characters 7-15:\
+    \nWarning: the token D_FWRITE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 408, characters 7-16:\
+    \nWarning: the token D_FWRITEH is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 329, characters 7-13:\
+    \nWarning: the token D_INFO is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 275, characters 7-18:\
+    \nWarning: the token D_ISUNKNOWN is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 76, characters 7-16:\
+    \nWarning: the token D_MONITOR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 345, characters 7-15:\
+    \nWarning: the token D_ONEHOT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 230, characters 7-16:\
+    \nWarning: the token D_ONEHOT0 is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 471, characters 8-16:\
+    \nWarning: the token D_RANDOM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 5, characters 7-17:\
+    \nWarning: the token D_READMEMB is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11, characters 7-17:\
+    \nWarning: the token D_READMEMH is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 313, characters 7-17:\
+    \nWarning: the token D_REALTIME is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 323, characters 7-15:\
+    \nWarning: the token D_SIGNED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 249, characters 7-15:\
+    \nWarning: the token D_SSCANF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 473, characters 8-15:\
+    \nWarning: the token D_STIME is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 354, characters 7-13:\
+    \nWarning: the token D_STOP is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 113, characters 7-22:\
+    \nWarning: the token D_TEST_PLUSARGS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 390, characters 7-13:\
+    \nWarning: the token D_TIME is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 247, characters 7-17:\
+    \nWarning: the token D_UNSIGNED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 366, characters 7-16:\
+    \nWarning: the token D_WARNING is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 337, characters 7-14:\
+    \nWarning: the token D_WRITE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 61, characters 7-12:\
+    \nWarning: the token EMPTY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 474, characters 8-16:\
+    \nWarning: the token ENDLABEL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 475, characters 8-17:\
+    \nWarning: the token ENDOFFILE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 476, characters 15-23:\
+    \nWarning: the token FLOATNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 428, characters 15-17:\
+    \nWarning: the token FS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 477, characters 8-29:\
+    \nWarning: the token FULLSKEW_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 478, characters 8-15:\
+    \nWarning: the token FUNCREF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 479, characters 8-16:\
+    \nWarning: the token FUNCUSED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 480, characters 8-15:\
+    \nWarning: the token GENCASE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 481, characters 8-19:\
+    \nWarning: the token GENCASECOND is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 482, characters 16-22:\
+    \nWarning: the token HEXNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 483, characters 8-25:\
+    \nWarning: the token HOLD_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 432, characters 16-18:\
+    \nWarning: the token ID is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 484, characters 8-16:\
+    \nWarning: the token IMPLICIT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 434, characters 13-16:\
+    \nWarning: the token INT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 485, characters 16-22:\
+    \nWarning: the token INTNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 486, characters 8-14:\
+    \nWarning: the token IOPORT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 215, characters 7-16:\
+    \nWarning: the token ISUNKNOWN is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 145, characters 7-20:\
+    \nWarning: the token IS_DEFINED_AS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 487, characters 8-20:\
+    \nWarning: the token LEFT_BRACKET is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 488, characters 8-18:\
+    \nWarning: the token LEFT_CURLY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 489, characters 8-14:\
+    \nWarning: the token MEMORY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 490, characters 8-17:\
+    \nWarning: the token MINTYPMAX is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 491, characters 8-15:\
+    \nWarning: the token MODINST is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 424, characters 15-17:\
+    \nWarning: the token MS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 492, characters 8-13:\
+    \nWarning: the token NAMED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 493, characters 8-29:\
+    \nWarning: the token NOCHANGE_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 442, characters 79-86:\
+    \nWarning: the token NONUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 452, characters 159-171:\
+    \nWarning: the token NOVEMDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 426, characters 15-17:\
+    \nWarning: the token NS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 494, characters 16-22:\
+    \nWarning: the token OCTNUM is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 451, characters 151-162:\
+    \nWarning: the token OCTODECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 441, characters 71-78:\
+    \nWarning: the token OCTUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 495, characters 8-17:\
+    \nWarning: the token PARAMUSED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 496, characters 8-15:\
+    \nWarning: the token PARTSEL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 506, characters 8-27:\
+    \nWarning: the token PERIOD_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 511, characters 16-25:\
+    \nWarning: the token PRAGMATIC is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 512, characters 16-23:\
+    \nWarning: the token PREPROC is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 514, characters 8-16:\
+    \nWarning: the token PRIMINST is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 427, characters 15-17:\
+    \nWarning: the token PS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 1, characters 7-13:\
+    \nWarning: the token P_ATAT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 497, characters 8-20:\
+    \nWarning: the token P_CELLDEFINE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 498, characters 8-16:\
+    \nWarning: the token P_DEFINE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 499, characters 8-25:\
+    \nWarning: the token P_DELAY_MODE_PATH is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 500, characters 8-28:\
+    \nWarning: the token P_DISABLE_PORTFAULTS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 501, characters 8-14:\
+    \nWarning: the token P_ELSE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 502, characters 8-27:\
+    \nWarning: the token P_ENABLE_PORTFAULTS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 503, characters 8-23:\
+    \nWarning: the token P_ENDCELLDEFINE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 504, characters 8-15:\
+    \nWarning: the token P_ENDIF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 505, characters 8-20:\
+    \nWarning: the token P_ENDPROTECT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 507, characters 8-15:\
+    \nWarning: the token P_IFDEF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 508, characters 16-25:\
+    \nWarning: the token P_INCLUDE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 216, characters 7-12:\
+    \nWarning: the token P_NOR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 509, characters 8-27:\
+    \nWarning: the token P_NOSUPPRESS_FAULTS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 82, characters 7-13:\
+    \nWarning: the token P_OREQ is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 66, characters 7-15:\
+    \nWarning: the token P_OREQGT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 46, characters 7-18:\
+    \nWarning: the token P_ORMINUSGT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 35, characters 7-13:\
+    \nWarning: the token P_OROR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 510, characters 8-17:\
+    \nWarning: the token P_PROTECT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 513, characters 8-18:\
+    \nWarning: the token P_RESETALL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 515, characters 8-25:\
+    \nWarning: the token P_SUPPRESS_FAULTS is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 516, characters 16-27:\
+    \nWarning: the token P_TIMESCALE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 336, characters 7-18:\
+    \nWarning: the token P_WILDEQUAL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 135, characters 7-21:\
+    \nWarning: the token P_WILDNOTEQUAL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 437, characters 39-48:\
+    \nWarning: the token QUADRUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 447, characters 119-134:\
+    \nWarning: the token QUATTUORDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 457, characters 199-216:\
+    \nWarning: the token QUATTUORVIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 448, characters 127-138:\
+    \nWarning: the token QUINDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 438, characters 47-56:\
+    \nWarning: the token QUINTUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 458, characters 207-220:\
+    \nWarning: the token QUINVIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 433, characters 24-29:\
+    \nWarning: the token RANGE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 517, characters 8-16:\
+    \nWarning: the token RECEIVER is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 518, characters 8-29:\
+    \nWarning: the token RECOVERY_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 519, characters 8-27:\
+    \nWarning: the token RECREM_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 520, characters 8-28:\
+    \nWarning: the token REMOVAL_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 521, characters 8-21:\
+    \nWarning: the token RIGHT_BRACKET is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 522, characters 8-19:\
+    \nWarning: the token RIGHT_CURLY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 523, characters 8-14:\
+    \nWarning: the token SCALAR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 524, characters 8-16:\
+    \nWarning: the token SENSUSED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 450, characters 143-156:\
+    \nWarning: the token SEPTENDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 440, characters 63-71:\
+    \nWarning: the token SEPTUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 525, characters 8-30:\
+    \nWarning: the token SETUPHOLD_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 526, characters 8-26:\
+    \nWarning: the token SETUP_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 449, characters 135-145:\
+    \nWarning: the token SEXDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 439, characters 55-63:\
+    \nWarning: the token SEXTUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 527, characters 8-25:\
+    \nWarning: the token SKEW_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 528, characters 8-15:\
+    \nWarning: the token SPECIAL is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 291, characters 7-11:\
+    \nWarning: the token STEP is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 529, characters 8-14:\
+    \nWarning: the token SUBCCT is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 530, characters 8-17:\
+    \nWarning: the token SUBMODULE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 531, characters 8-19:\
+    \nWarning: the token SUBTRACTION is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 532, characters 8-15:\
+    \nWarning: the token TASKREF is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 533, characters 8-16:\
+    \nWarning: the token TASKUSED is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 534, characters 8-29:\
+    \nWarning: the token TIMESKEW_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 535, characters 8-18:\
+    \nWarning: the token TIMINGSPEC is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 536, characters 20-25:\
+    \nWarning: the token TLIST is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9, characters 7-22:\
+    \nWarning: the token TOKEN_1364_2001 is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 248, characters 7-15:\
+    \nWarning: the token TOKEN_9_ is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 239, characters 7-21:\
+    \nWarning: the token TOKEN_9_DOLLAR is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 350, characters 7-20:\
+    \nWarning: the token TOKEN_EDGE_11 is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 13, characters 7-20:\
+    \nWarning: the token TOKEN_NEWLINE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 168, characters 7-26:\
+    \nWarning: the token TOKEN_RBRACK_LCURLY is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 446, characters 111-121:\
+    \nWarning: the token TREDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 456, characters 191-203:\
+    \nWarning: the token TREVIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 436, characters 31-37:\
+    \nWarning: the token TRIPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 444, characters 95-104:\
+    \nWarning: the token UNDECUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 537, characters 8-15:\
+    \nWarning: the token UNKNOWN is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 454, characters 175-186:\
+    \nWarning: the token UNVIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 425, characters 15-17:\
+    \nWarning: the token US is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 16, characters 7-13:\
+    \nWarning: the token U_WIRE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 453, characters 167-176:\
+    \nWarning: the token VIGENUPLE is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 538, characters 8-26:\
+    \nWarning: the token WIDTH_TIMING_CHECK is unused.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8017, characters 8-23:\
+    \nWarning: symbol actual_arg_expr is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9113, characters 8-17:\
+    \nWarning: symbol attr_name is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9408, characters 0-9:\
+    \nWarning: symbol attr_spec is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9737, characters 8-26:\
+    \nWarning: symbol attribute_instance is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12078, characters 0-20:\
+    \nWarning: symbol attribute_instance_4 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9540, characters 8-23:\
+    \nWarning: symbol base_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 565, characters 0-11:\
+    \nWarning: symbol binary_base is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 551, characters 0-13:\
+    \nWarning: symbol binary_base_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9962, characters 8-21:\
+    \nWarning: symbol block_comment is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7952, characters 8-24:\
+    \nWarning: symbol block_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 555, characters 0-12:\
+    \nWarning: symbol c_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10263, characters 8-19:\
+    \nWarning: symbol cell_clause is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12702, characters 8-21:\
+    \nWarning: symbol cell_clause_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9485, characters 8-23:\
+    \nWarning: symbol cell_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8817, characters 8-27:\
+    \nWarning: symbol checktime_condition is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9081, characters 8-24:\
+    \nWarning: symbol class_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9281, characters 8-27:\
+    \nWarning: symbol clocking_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9878, characters 0-7:\
+    \nWarning: symbol comment is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8267, characters 8-20:\
+    \nWarning: symbol comment_text is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10575, characters 0-14:\
+    \nWarning: symbol comment_text_2 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9927, characters 8-26:\
+    \nWarning: symbol config_declaration is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12314, characters 0-20:\
+    \nWarning: symbol config_declaration_6 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8023, characters 8-25:\
+    \nWarning: symbol config_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10300, characters 0-21:\
+    \nWarning: symbol config_rule_statement is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7936, characters 8-24:\
+    \nWarning: symbol const_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8676, characters 8-32:\
+    \nWarning: symbol constant_base_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9777, characters 8-33:\
+    \nWarning: symbol constant_param_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8667, characters 8-29:\
+    \nWarning: symbol constraint_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9091, characters 8-34:\
+    \nWarning: symbol controlled_reference_event is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10125, characters 8-18:\
+    \nWarning: symbol data_event is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9422, characters 8-30:\
+    \nWarning: symbol data_source_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 563, characters 0-12:\
+    \nWarning: symbol decimal_base is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 561, characters 0-14:\
+    \nWarning: symbol decimal_base_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10286, characters 8-22:\
+    \nWarning: symbol default_clause is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9256, characters 8-24:\
+    \nWarning: symbol design_statement is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11537, characters 0-18:\
+    \nWarning: symbol design_statement_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11533, characters 8-28:\
+    \nWarning: symbol design_statement_3_4 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10211, characters 8-37:\
+    \nWarning: symbol dimension_constant_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 564, characters 0-11:\
+    \nWarning: symbol edge_symbol is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9900, characters 8-23:\
+    \nWarning: symbol enable_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7949, characters 8-23:\
+    \nWarning: symbol end_edge_offset is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8787, characters 8-23:\
+    \nWarning: symbol enum_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9723, characters 8-25:\
+    \nWarning: symbol error_limit_value is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10214, characters 8-24:\
+    \nWarning: symbol event_based_flag is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9217, characters 8-24:\
+    \nWarning: symbol event_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 568, characters 0-3:\
+    \nWarning: symbol exp is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9147, characters 8-19:\
+    \nWarning: symbol expression1 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9150, characters 8-19:\
+    \nWarning: symbol expression2 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9153, characters 8-19:\
+    \nWarning: symbol expression3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8207, characters 8-22:\
+    \nWarning: symbol file_path_spec is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8750, characters 8-25:\
+    \nWarning: symbol formal_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9488, characters 8-27:\
+    \nWarning: symbol function_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8169, characters 8-32:\
+    \nWarning: symbol gate_instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7988, characters 8-33:\
+    \nWarning: symbol generate_block_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9930, characters 8-25:\
+    \nWarning: symbol genvar_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 558, characters 0-8:\
+    \nWarning: symbol hex_base is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 567, characters 0-10:\
+    \nWarning: symbol hex_base_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 569, characters 0-9:\
+    \nWarning: symbol hex_digit is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10198, characters 8-37:\
+    \nWarning: symbol hierarchical_block_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9016, characters 8-37:\
+    \nWarning: symbol hierarchical_event_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9428, characters 8-40:\
+    \nWarning: symbol hierarchical_function_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9293, characters 8-35:\
+    \nWarning: symbol hierarchical_net_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8811, characters 8-41:\
+    \nWarning: symbol hierarchical_parameter_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9042, characters 8-36:\
+    \nWarning: symbol hierarchical_task_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8712, characters 8-40:\
+    \nWarning: symbol hierarchical_variable_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8893, characters 8-25:\
+    \nWarning: symbol include_statement is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8587, characters 8-29:\
+    \nWarning: symbol inout_port_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8902, characters 8-22:\
+    \nWarning: symbol inout_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10307, characters 8-29:\
+    \nWarning: symbol input_port_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10280, characters 8-22:\
+    \nWarning: symbol input_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7979, characters 8-19:\
+    \nWarning: symbol inst_clause is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9909, characters 8-17:\
+    \nWarning: symbol inst_name is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12306, characters 0-11:\
+    \nWarning: symbol inst_name_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8239, characters 8-27:\
+    \nWarning: symbol instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8828, characters 8-28:\
+    \nWarning: symbol interface_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8391, characters 8-37:\
+    \nWarning: symbol interface_instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 572, characters 0-12:\
+    \nWarning: symbol level_symbol is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9501, characters 8-22:\
+    \nWarning: symbol liblist_clause is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11790, characters 0-16:\
+    \nWarning: symbol liblist_clause_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7905, characters 8-27:\
+    \nWarning: symbol library_declaration is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10314, characters 0-21:\
+    \nWarning: symbol library_declaration_5 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10322, characters 8-29:\
+    \nWarning: symbol library_declaration_6 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10318, characters 0-23:\
+    \nWarning: symbol library_declaration_6_5 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10045, characters 0-20:\
+    \nWarning: symbol library_descriptions is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9313, characters 8-26:\
+    \nWarning: symbol library_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9353, characters 8-20:\
+    \nWarning: symbol library_text is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11634, characters 0-14:\
+    \nWarning: symbol library_text_2 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9894, characters 8-31:\
+    \nWarning: symbol lsb_constant_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8673, characters 8-25:\
+    \nWarning: symbol method_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8899, characters 8-26:\
+    \nWarning: symbol modport_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9078, characters 8-25:\
+    \nWarning: symbol module_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8177, characters 8-34:\
+    \nWarning: symbol module_instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10266, characters 8-31:\
+    \nWarning: symbol msb_constant_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 552, characters 0-20:\
+    \nWarning: symbol name_of_udp_instance is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7926, characters 8-25:\
+    \nWarning: symbol ncontrol_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10028, characters 8-22:\
+    \nWarning: symbol net_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9676, characters 8-18:\
+    \nWarning: symbol notify_reg is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 566, characters 0-10:\
+    \nWarning: symbol octal_base is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 559, characters 0-12:\
+    \nWarning: symbol octal_base_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9758, characters 8-24:\
+    \nWarning: symbol one_line_comment is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8945, characters 8-30:\
+    \nWarning: symbol output_port_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 571, characters 0-13:\
+    \nWarning: symbol output_symbol is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10145, characters 8-23:\
+    \nWarning: symbol output_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8882, characters 8-28:\
+    \nWarning: symbol parameter_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8298, characters 8-25:\
+    \nWarning: symbol pcontrol_terminal is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9188, characters 8-23:\
+    \nWarning: symbol port_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9110, characters 8-26:\
+    \nWarning: symbol program_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9985, characters 8-35:\
+    \nWarning: symbol program_instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9347, characters 8-27:\
+    \nWarning: symbol property_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8398, characters 8-23:\
+    \nWarning: symbol reference_event is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9770, characters 8-26:\
+    \nWarning: symbol reject_limit_value is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9203, characters 8-26:\
+    \nWarning: symbol remain_active_flag is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8382, characters 8-23:\
+    \nWarning: symbol sequence_abbrev is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10103, characters 8-27:\
+    \nWarning: symbol sequence_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9937, characters 8-25:\
+    \nWarning: symbol signal_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 554, characters 0-17:\
+    \nWarning: symbol simple_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9872, characters 8-12:\
+    \nWarning: symbol size is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7985, characters 8-28:\
+    \nWarning: symbol specparam_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9622, characters 8-27:\
+    \nWarning: symbol stamptime_condition is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8885, characters 8-25:\
+    \nWarning: symbol start_edge_offset is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 556, characters 0-26:\
+    \nWarning: symbol system_function_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 562, characters 0-22:\
+    \nWarning: symbol system_task_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8094, characters 8-33:\
+    \nWarning: symbol t01_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8443, characters 8-33:\
+    \nWarning: symbol t0x_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9253, characters 8-33:\
+    \nWarning: symbol t0z_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10100, characters 8-33:\
+    \nWarning: symbol t10_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8422, characters 8-33:\
+    \nWarning: symbol t1x_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9244, characters 8-33:\
+    \nWarning: symbol t1z_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9548, characters 8-31:\
+    \nWarning: symbol t_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8540, characters 8-23:\
+    \nWarning: symbol task_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8437, characters 8-27:\
+    \nWarning: symbol terminal_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8365, characters 8-29:\
+    \nWarning: symbol text_macro_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9059, characters 8-35:\
+    \nWarning: symbol tfall_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8802, characters 8-17:\
+    \nWarning: symbol threshold is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 557, characters 0-9:\
+    \nWarning: symbol time_unit is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8936, characters 8-26:\
+    \nWarning: symbol timing_check_limit is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9764, characters 8-28:\
+    \nWarning: symbol topmodule_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8097, characters 8-35:\
+    \nWarning: symbol trise_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10056, characters 8-33:\
+    \nWarning: symbol tx0_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8029, characters 8-33:\
+    \nWarning: symbol tx1_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9191, characters 8-33:\
+    \nWarning: symbol txz_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9495, characters 8-23:\
+    \nWarning: symbol type_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9959, characters 8-33:\
+    \nWarning: symbol tz0_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7963, characters 8-33:\
+    \nWarning: symbol tz1_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9344, characters 8-32:\
+    \nWarning: symbol tz_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8318, characters 8-33:\
+    \nWarning: symbol tzx_path_delay_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8037, characters 0-16:\
+    \nWarning: symbol udp_declaration2 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10415, characters 0-19:\
+    \nWarning: symbol udp_declaration2_10 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8605, characters 8-22:\
+    \nWarning: symbol udp_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8670, characters 8-31:\
+    \nWarning: symbol udp_instance_identifier is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 553, characters 0-15:\
+    \nWarning: symbol unsigned_number is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8446, characters 8-18:\
+    \nWarning: symbol use_clause is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10739, characters 8-20:\
+    \nWarning: symbol use_clause_3 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10743, characters 8-20:\
+    \nWarning: symbol use_clause_5 is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 7966, characters 8-33:\
+    \nWarning: symbol width_constant_expression is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 573, characters 0-7:\
+    \nWarning: symbol x_digit is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 570, characters 0-7:\
+    \nWarning: symbol z_digit is unreachable from any of the start symbol(s).\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 560, characters 0-6:\
+    \nWarning: symbol z_or_x is unreachable from any of the start symbol(s).\
+    \nWarning: 1392 states have shift/reduce conflicts.\
+    \nWarning: 1245 states have reduce/reduce conflicts.\
+    \nWarning: 5132 shift/reduce conflicts were arbitrarily resolved.\
+    \nWarning: 7328 reduce/reduce conflicts were arbitrarily resolved.\
+    \nWarning: 742 states have an end-of-stream conflict.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11593, characters 31-31:\
+    \nWarning: production class_scope_type_identifier_9 -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8251, characters 3-21:\
+    \nWarning: production constant_primary -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8253, characters 3-21:\
+    \nWarning: production constant_primary -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8254, characters 3-21:\
+    \nWarning: production constant_primary -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8322, characters 3-51:\
+    \nWarning: production disable_statement -> DISABLE hierarchical_identifier SEMICOLON is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10491, characters 17-17:\
+    \nWarning: production dpi_dimension_4 -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10277, characters 3-121:\
+    \nWarning: production dpi_function_proto -> function_data_type identifier LPAREN RPAREN is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10277, characters 3-121:\
+    \nWarning: production dpi_function_proto -> signing function_data_type identifier LPAREN RPAREN is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12727, characters 3-81:\
+    \nWarning: production escaped_hierarchical_identifier_3 -> escaped_hierarchical_identifier_3 DOT SIMPLE_IDENTIFIER simple_hierarchical_branch_3 is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12728, characters 3-41:\
+    \nWarning: production escaped_hierarchical_identifier_3 -> DOT BACKSLASH TOKEN_ANY_ASCII white_space escaped_hierarchical_branch_3 is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12686, characters 33-33:\
+    \nWarning: production function_if_else_if_statement_8 -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12687, characters 3-157:\
+    \nWarning: production function_if_else_if_statement_8 -> function_if_else_if_statement_8 ELSE IF LPAREN expression RPAREN function_statement_or_null is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12687, characters 3-157:\
+    \nWarning: production function_if_else_if_statement_8 -> function_if_else_if_statement_8 ELSE unique_priority IF LPAREN expression RPAREN function_statement_or_null is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12262, characters 24-24:\
+    \nWarning: production if_else_if_statement_8 -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12263, characters 3-130:\
+    \nWarning: production if_else_if_statement_8 -> if_else_if_statement_8 ELSE IF LPAREN expression RPAREN statement_or_null is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 12263, characters 3-130:\
+    \nWarning: production if_else_if_statement_8 -> if_else_if_statement_8 ELSE unique_priority IF LPAREN expression RPAREN statement_or_null is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9933, characters 24-54:\
+    \nWarning: production implicit_class_handle -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9934, characters 3-33:\
+    \nWarning: production implicit_class_handle -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9827, characters 3-20:\
+    \nWarning: production input_identifier -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9440, characters 3-33:\
+    \nWarning: production module_path_primary -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8315, characters 3-20:\
+    \nWarning: production output_identifier -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 11710, characters 18-18:\
+    \nWarning: production sequence_expr_17 -> is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 549, characters 7-25:\
+    \nWarning: production start -> source_text_3 is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 549, characters 7-25:\
+    \nWarning: production start -> timeunits_declaration source_text_3 is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8416, characters 3-22:\
+    \nWarning: production statement_item -> hierarchical_identifier SEMICOLON is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8416, characters 3-22:\
+    \nWarning: production statement_item -> hierarchical_identifier LPAREN list_of_arguments RPAREN SEMICOLON is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 8664, characters 3-20:\
+    \nWarning: production struct_member_label -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 9634, characters 3-20:\
+    \nWarning: production task_or_function_identifier -> identifier is never reduced.\
+    \nFile \"/root/.opam/4.06.1+multicore-lazy+bench/share/menhir-bench/sysver.mly\", line 10119, characters 3-10:\
+    \nWarning: production tf_data_type -> CHANDLE is never reduced.\
+    \nWarning: in total, 29 productions are never reduced.\
+    \nallocated_words: 8268075196\
+    \nminor_words: 8157054740\
+    \npromoted_words: 323522732\
+    \nmajor_words: 434543188\
+    \nminor_collections: 31199\
+    \nmajor_collections: 38\
+    \nheap_words: 83671184\
+    \ntop_heap_words: 93400447\
+    \n"))))
